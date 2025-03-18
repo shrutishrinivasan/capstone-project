@@ -34,8 +34,7 @@ def vertical_navbar():
                 "Getting Started",
                 "Upload Data",
                 "Overview",
-                "Income",
-                "Expense",
+                "Income/Expense",
                 "Goals & Savings",
                 "Custom Bot",
                 "Performance Analysis",
@@ -48,7 +47,6 @@ def vertical_navbar():
                 "house",
                 "cloud-upload",
                 "pie-chart",
-                "graph-up-arrow",
                 "currency-dollar",
                 "piggy-bank",
                 "chat-dots",
@@ -62,14 +60,20 @@ def vertical_navbar():
             default_index=0,
             styles={
                 "container": {"padding": "4!important", "background-color": "#262730"},
-                "icon": {"color": "white", "font-size": "14px"},
+                "icon": {"color": "white", "font-size": "18px"},
                 "nav-link": {
-                    "font-size": "14px",
+                    "font-family": "Candara, sans-serif",
+                    "font-size": "18px",
                     "text-align": "left",
                     "margin": "0px",
                     "--hover-color": "#3A3B46",
                 },
                 "nav-link-selected": {"background-color": "#1E1E24"},
+                "menu-title": {
+                    "font-family": "Candara, sans-serif",
+                    "font-size": "24px",
+                    "font-weight": "bold",
+                }
             }
         )
         
@@ -89,21 +93,27 @@ def sub_menu():
                 "Scenario Testing",
             ],
             icons=[
-                "butterfly",
-                "bar-chart",
+                "wind",
+                "graph-up-arrow",
             ],
             menu_icon="lightbulb",
             default_index=0,
             styles={
                 "container": {"padding": "4!important", "background-color": "#262730"},
-                "icon": {"color": "white", "font-size": "14px"},
+                "icon": {"color": "white", "font-size": "18px"},
                 "nav-link": {
-                    "font-size": "14px",
+                    "font-family": "Candara, sans-serif",
+                    "font-size": "18px",
                     "text-align": "left",
                     "margin": "0px",
                     "--hover-color": "#3A3B46",
                 },
                 "nav-link-selected": {"background-color": "#1E1E24"},
+                "menu-title": {
+                    "font-family": "Candara, sans-serif",
+                    "font-size": "20px",
+                    "font-weight": "bold",
+                }
             }
         )
     

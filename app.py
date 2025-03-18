@@ -13,7 +13,6 @@ from pages.generic.login import login_page
 from pages.personal.start import getting_started
 from pages.personal.upload import upload_data
 from pages.personal.overview import overview
-from pages.personal.income import income
 from pages.personal.expense import expense
 from pages.personal.saving import goals_savings
 from pages.personal.chatbot import custom_bot
@@ -23,7 +22,6 @@ from pages.personal.edu import education
 from pages.personal.logout import logout
 from pages.personal.butterfly import butterfly
 from pages.personal.scenario import scenario
-from pages.personal.settings import settings
 
 # Set page configuration
 st.set_page_config(
@@ -102,9 +100,7 @@ def main():
                 upload_data()
             elif selected_tab == "Overview":
                 overview()
-            elif selected_tab == "Income":
-                income()
-            elif selected_tab == "Expense":
+            elif selected_tab == "Income/Expense":
                 expense()
             elif selected_tab == "Goals & Savings":
                 goals_savings()
@@ -116,8 +112,6 @@ def main():
                 financial_suggestions()
             elif selected_tab == "Education":
                 education()
-            elif selected_tab == "Settings":
-                settings()
             elif selected_tab == "Log Out":
                 logout()
         else:
