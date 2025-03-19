@@ -14,7 +14,7 @@ def expense():
     st.markdown("""
     <style>
         * {
-        font-family: Verdana, sans-serif !important;
+            font-family: Verdana, sans-serif !important;
         }
         div.stButton > button {
             background-color: #ffd166; 
@@ -40,21 +40,21 @@ def expense():
             background-color: #191a1c;  
         }
         div[data-testid="stForm"] > div > div > button[kind="primary"] {
-            background-color: #834da3;    /* Purple background */
-            color: #ffffff;               /* White text */
-            border: none;                 /* No border */
-            border-radius: 8px;           /* Rounded corners */
-            padding: 8px 20px;            /* Button padding */
-            font-weight: bold;            /* Bold text */
-            width: 100%;                  /* Full width */
-            cursor: pointer;              /* Pointer cursor */
+            background-color: #834da3;    
+            color: #ffffff;              
+            border: none;               
+            border-radius: 8px;         
+            padding: 8px 20px;           
+            font-weight: bold;           
+            width: 100%;         
+            cursor: pointer;    
             transition: background-color 0.3s ease;
         }
         div[data-testid="stForm"] > div > div > button[kind="primary"]:hover {
-            background-color: #5e358a;    /* Darker purple on hover */
+            background-color: #5e358a;   
         }
         div[data-testid="stForm"] > div > div > button[kind="primary"]:focus {
-            background-color: #5e358a;    /* Same color for click */
+            background-color: #5e358a;  
             outline: none;
         }        
     </style>
@@ -64,9 +64,10 @@ def expense():
     
     # Initialize session state for finance dataframe if not exists
     if 'finance_df' not in st.session_state:
-        st.session_state.finance_df = pd.DataFrame(columns=[
-            'Date', 'Mode', 'Category', 'Remark', 'Amount', 'Income_Expense', 'Transaction_id'
-        ])
+        st.info("Please upload a CSV file to get started or load the sample data instead!")
+        # st.session_state.finance_df = pd.DataFrame(columns=[
+        #     'Date', 'Mode', 'Category', 'Remark', 'Amount', 'Income_Expense', 'Transaction_id'
+        # ])
     
     # Category descriptions for information
     category_descriptions = {
@@ -199,7 +200,7 @@ def expense():
             if submitted:
                 # Create new transaction
                 new_transaction = pd.DataFrame({
-                    'Date': [date.strftime('%Y-%m-%d')],
+                    'Date': [date.strftime('%d-%m-%Y')],
                     'Mode': [mode],
                     'Category': [category],
                     'Remark': [remark],
@@ -269,13 +270,11 @@ def expense():
         add_transaction(st.session_state.selected_category)
         
     # Recent transactions display
-    if not st.session_state.finance_df.empty:
+    if st.session_state.finance_df is not None:
         st.write("### Recent Transactions")
         
         # # Sort by date (most recent first) and display last 5
-        # recent_df = st.session_state.finance_df.sort_values(by='Date', ascending=False).head(5)
-
-        st.session_state.finance_df['Date'] = pd.to_datetime(st.session_state.finance_df['Date'], errors='coerce')
+        st.session_state.finance_df['Date'] = pd.to_datetime(st.session_state.finance_df['Date'], errors='coerce').dt.date
         recent_df = st.session_state.finance_df.sort_values(by='Date', ascending=False).head(5)
         
         # Display with custom formatting

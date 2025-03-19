@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import datetime
 from st_aggrid import AgGrid, GridUpdateMode
 from st_aggrid.grid_options_builder import GridOptionsBuilder
 
@@ -12,7 +11,6 @@ def upload_data():
     * {
         font-family: Verdana, sans-serif !important;
     }
-                
     /* Custom styling for Streamlit elements */
     .stTabs [data-baseweb="tab-list"] {
         gap: 24px;
@@ -79,12 +77,16 @@ def upload_data():
             st.metric("Columns", df.shape[1])
         with col3:
             date_cols = [col for col in df.columns if 'date' in col.lower()]
-            if date_cols and pd.to_datetime(df[date_cols[0]], errors='coerce').notna().any():
+
+            if date_cols:
                 date_col = date_cols[0]
-                df[date_col] = pd.to_datetime(df[date_col], errors='coerce')
-                min_date = df[date_col].min().strftime('%b %Y') if not pd.isna(df[date_col].min()) else "N/A"
-                max_date = df[date_col].max().strftime('%b %Y') if not pd.isna(df[date_col].max()) else "N/A"
-                st.metric("Date Range", f"{min_date} to {max_date}")
+                try:
+                    df[date_col] = pd.to_datetime(df[date_col], format='%d-%m-%Y').dt.date 
+                    min_date = df[date_col].min().strftime('%b %Y') if not pd.isna(df[date_col].min()) else "N/A"
+                    max_date = df[date_col].max().strftime('%b %Y') if not pd.isna(df[date_col].max()) else "N/A"
+                    st.metric("Date Range", f"{min_date} to {max_date}")
+                except Exception as e:
+                    st.warning(f"Failed to convert '{date_col}' to date format. Error: {e}")
         
         # Display tabs for viewing and editing
         view_tab, edit_tab = st.tabs(["View", "Edit"])
@@ -98,21 +100,22 @@ def upload_data():
             st.download_button(
                 label="Download Current Data",
                 data=csv,
-                file_name=f"finance_data_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
+                file_name=f"finance_data.csv",
                 mime="text/csv"
             )
         
         with edit_tab:
             st.write("#### Edit Your Data")
-            st.write("Click the 'Add New Row' button given below, to make a fresh entry as 'NAT' and directly edit the cells on screen to insert values.")
-            st.write("Select one or more columns to remove them using the 'Delete Rows' button at the bottom.")
-            st.write("Don't forget to save your changes with the help of 'Update Changes' option!")
+            st.write("To record fresh transactions, please go to Income/Expense Section!")
+            st.write("To edit any of the existing cell values, directly make changes on the screen.\
+            Select one or more columns to remove them using the 'Delete Rows' button at the bottom.\
+            Don't forget to save your changes!")
             
-            # Add row functionality
-            if st.button("Add New Row"):
-                new_row = pd.DataFrame({col: [""] for col in df.columns}, index=[0])
-                st.session_state.finance_df = pd.concat([df, new_row], ignore_index=True)
-                st.rerun()
+            # # Add row functionality
+            # if st.button("Add New Row"):
+            #     new_row = pd.DataFrame({col: [""] for col in df.columns}, index=[0])
+            #     st.session_state.finance_df = pd.concat([df, new_row], ignore_index=True)
+            #     st.rerun()
             
             # Create an editable grid
             gb = GridOptionsBuilder.from_dataframe(df)
@@ -124,7 +127,7 @@ def upload_data():
             date_cols = [col for col in df.columns if 'date' in col.lower()]
             for date_col in date_cols:
                 gb.configure_column(date_col, type=["dateColumnFilter", "customDateTimeFormat"], 
-                                  custom_format_string='yyyy-MM-dd')
+                                  custom_format_string='dd-MM-yy')
             
             # Make amount columns use number editors if they exist
             amount_cols = [col for col in df.columns if any(term in col.lower() for term in ['amount', 'price', 'cost', 'value'])]
@@ -155,10 +158,10 @@ def upload_data():
                 st.rerun()
             
             # Save button
-            if st.button('Update Changes'):
+            if st.button('Save Changes'):
                 # Update session state with the edited dataframe
                 st.session_state.finance_df = updated_df
-                st.success("Changes synced successfully across the portal!")
+                st.success("Changes synced successfully!")
                 
     else:
         # Show placeholder when no file is uploaded
@@ -169,24 +172,30 @@ def upload_data():
             # Create sample finance data
             sample_data = {
                 'Date': [
-                    '2023-01-01', '2023-01-02', '2023-01-05', '2023-01-10', 
-                    '2023-01-15', '2023-01-20', '2023-01-25', '2023-01-31'
+                    '12-04-2022','13-04-2022','13-04-2022','14-04-2022','15-04-2022',
+                    '15-05-2022','15-05-2022','16-05-2022','16-05-2022','17-05-2022'
+                ],
+                'Mode': [
+                    'Credit Card','Credit Card', 'Bank Transfer', 'UPI', 'Debit Card', 
+                    'Credit Card', 'UPI' , 'Mobile Wallet', 'Cash', 'Net Banking'
                 ],
                 'Category': [
-                    'Groceries', 'Utilities', 'Dining', 'Transportation', 
-                    'Shopping', 'Entertainment', 'Housing', 'Income'
+                    'Groceries', 'Utilities', 'Rent', 'Communication', 'Education',
+                    'Shopping', 'Care Essentials', 'Entertainment', 'Domestic Help', 'Income'
                 ],
-                'Description': [
-                    'Supermarket', 'Electricity Bill', 'Restaurant', 'Gas', 
-                    'Clothing', 'Movie tickets', 'Rent', 'Salary'
+                'Remark': [
+                    'supermarket', 'electricity bill', 'april rent paid', 'wifi bill', 'tuition fees',
+                    'designer wear', 'face cream', 'movie tickets', 'maid salary', 'april salary credited'
                 ],
                 'Amount': [
-                    -125.30, -85.00, -45.75, -35.25, 
-                    -78.50, -22.00, -950.00, 2500.00
+                    2000, 1000, 15000, 950, 10000, 2800, 100, 570, 700, 50000
                 ],
-                'Payment Method': [
-                    'Credit Card', 'Bank Transfer', 'Credit Card', 'Debit Card', 
-                    'Credit Card', 'Cash', 'Bank Transfer', 'Direct Deposit'
+                'Income_Expense': [
+                    'Expense','Expense','Expense','Expense','Expense',
+                    'Expense','Expense','Expense','Expense','Income'
+                ],
+                'Transaction_id': [
+                    'TXN1','TXN2','TXN3','TXN4','TXN5','TXN6','TXN7','TXN8','TXN9','TXN10'
                 ]
             }
             
