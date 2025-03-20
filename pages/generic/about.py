@@ -5,7 +5,7 @@ def get_base64_image(image_path):
     with open(image_path, "rb") as img_file:
         return base64.b64encode(img_file.read()).decode()
 
-encoded_logo = get_base64_image(r"C:\Users\USER\Desktop\capstone_project\static\logo.png")
+encoded_logo = get_base64_image("static/logo.png")
 
 
 def about_page():
@@ -111,7 +111,7 @@ def about_page():
     with col5:
         st.markdown("""
         <div style="text-align: center;">
-        <h3>📚 Financial Education</h3>
+        <h3>📰 Financial Education</h3>
         <p>Learn as you go with tailored resources</p>
         </div>
         """, unsafe_allow_html=True)

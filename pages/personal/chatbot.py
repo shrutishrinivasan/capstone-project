@@ -46,7 +46,7 @@ def custom_bot():
     st.write("Choose between two specialized bots: one that analyzes your transaction history for insights, and another that provides expert financial advice.")
     
     # Create tabs for bot versions in the top navigation
-    tab1, tab2 = st.tabs(["DataDigger📈: History-Based", "FinMentor🧠: Intelligence-Based"])
+    tab1, tab2 = st.tabs(["DataDigger🔍: History-Based", "FinMentor🧠: Intelligence-Based"])
     
     # Content for Bot Version 1
     with tab1:

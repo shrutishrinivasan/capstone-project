@@ -35,12 +35,12 @@ def vertical_navbar():
                 "Upload Data",
                 "Overview",
                 "Income/Expense",
-                "Goals & Savings",
+                # "Goals & Savings",
+                "Financial Foresight",
+                "Trend Analysis",
                 "Custom Bot",
-                "Performance Analysis",
-                "Financial Suggestions",
-                "Education",
-                "Settings",
+                "Explore Resources",
+                # "Settings",
                 "Log Out"
             ],
             icons=[
@@ -48,12 +48,12 @@ def vertical_navbar():
                 "cloud-upload",
                 "pie-chart",
                 "currency-dollar",
-                "piggy-bank",
-                "chat-dots",
-                "activity",
+                # "piggy-bank",
                 "lightbulb",
-                "mortarboard",
-                "gear",
+                "activity",
+                "chat-dots",
+                "search",
+                # "gear",
                 "box-arrow-right"
             ],
             menu_icon="bank",
@@ -87,7 +87,7 @@ def sub_menu():
     """Create submenu for financial suggestions"""
     with st.sidebar:
         selected = option_menu(
-            menu_title="Financial Suggestions",
+            menu_title="Financial Foresight",
             options=[
                 "Butterfly Effect",
                 "Scenario Testing",

@@ -29,11 +29,11 @@ def overview():
     st.write("## 🌐 Overview")
     st.write("A snapshot of your financial metrics reflecting your income and expense trends at a glance.")
 
-    # Get data from session state
+    # Initialize session state to store the dataframe
     if 'finance_df' not in st.session_state:
-        st.warning("Please upload data first, record some transactions or use the sample dataset.")
-        return
-    elif st.session_state.finance_df is None:
+        st.session_state.finance_df = None
+        
+    if st.session_state.finance_df is None:
         st.warning("Please upload data first, record some transactions or use the sample dataset.")
         return
     else:
