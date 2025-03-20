@@ -34,7 +34,7 @@ st.set_page_config(
 
 # Initialize session state
 if 'logged_in' not in st.session_state:
-    st.session_state.logged_in = True
+    st.session_state.logged_in = False
 
 # Track navigation state
 if "menu_state" not in st.session_state:
