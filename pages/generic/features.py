@@ -45,7 +45,7 @@ def features_page():
     """, unsafe_allow_html=True)
     
     # Image placeholder for Feature 1
-    st.image(r"C:\Users\USER\Desktop\capstone_project\static\chat.JPG", caption="AI Assistant Dashboard", use_container_width=True)
+    st.image("static/chat.JPG", caption="AI Assistant Dashboard", use_container_width=True)
     
     # Feature 2: Butterfly Effect Model
     st.markdown("""
@@ -66,7 +66,7 @@ def features_page():
     """, unsafe_allow_html=True)
     
     # Image placeholder for Feature 2
-    st.image(r"C:\Users\USER\Desktop\capstone_project\static\butterfly.JPG", caption="Butterfly Effect Dashboard", use_container_width=True)
+    st.image("static/butterfly.JPG", caption="Butterfly Effect Dashboard", use_container_width=True)
     
     # Feature 3: Scenario Testing Model
     st.markdown("""
@@ -87,4 +87,4 @@ def features_page():
     """, unsafe_allow_html=True)
     
     # Image placeholder for Feature 3
-    st.image(r"C:\Users\USER\Desktop\capstone_project\static\car.JPG", caption="Scenario Testing Dashboard", use_container_width=True)
+    st.image("static/car.JPG", caption="Scenario Testing Dashboard", use_container_width=True)

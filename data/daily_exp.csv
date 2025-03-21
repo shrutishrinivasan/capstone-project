@@ -1,0 +1,1827 @@
+Date,Mode,Category,Remark,Amount,Income_Expense,Transaction_id
+19-02-2015,Cash,Healthcare,Medicine,34,Expense,TXN127
+19-02-2015,Cash,Healthcare,Health,45,Expense,TXN128
+23-02-2015,Credit Card,Transportation,train,526,Expense,TXN129
+23-02-2015,Cash,Discretionary,Footwear,20,Expense,TXN130
+23-02-2015,Cash,Transportation,Train,20,Expense,TXN131
+23-02-2015,Cash,Transportation,auto,20,Expense,TXN132
+24-02-2015,Cash,Transportation,auto,66,Expense,TXN135
+24-02-2015,Cash,Groceries,Grocery,160,Expense,TXN136
+24-02-2015,Cash,Groceries,Tea,10,Expense,TXN134
+26-02-2015,Cash,Groceries,Tea,6,Expense,TXN137
+26-02-2015,Cash,Transportation,auto,60,Expense,TXN138
+26-02-2015,Cash,Groceries,Milk,26,Expense,TXN139
+26-02-2015,Cash,Groceries,Grocery,30,Expense,TXN140
+28-02-2015,Cash,Groceries,Tea,20,Expense,TXN141
+28-02-2015,Cash,Groceries,Lunch,55,Expense,TXN142
+28-02-2015,Cash,Groceries,Milk,26,Expense,TXN143
+01-03-2015,Cash,Groceries,Tea,6,Expense,TXN145
+01-03-2015,Saving Bank account 1,Groceries,Lunch,88,Expense,TXN146
+01-03-2015,Cash,Groceries,Dinner,80,Expense,TXN147
+01-03-2015,Cash,Groceries,fruits,20,Expense,TXN148
+02-03-2015,Cash,Groceries,Tea,30,Expense,TXN149
+02-03-2015,Cash,Healthcare,Hospital,300,Expense,TXN153
+02-03-2015,Cash,Groceries,Lunch,25,Expense,TXN154
+02-03-2015,Cash,Groceries,breakfast,40,Expense,TXN152
+02-03-2015,Cash,Transportation,auto,10,Expense,TXN155
+02-03-2015,Cash,Healthcare,Medicine,226,Expense,TXN156
+03-03-2015,Cash,Healthcare,Hospital,3000,Expense,TXN162
+03-03-2015,Cash,Healthcare,Medicine,82,Expense,TXN159
+04-03-2015,Cash,Groceries,beverage,25,Expense,TXN163
+05-03-2015,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN164
+05-03-2015,Cash,Discretionary,grooming,40,Expense,TXN165
+06-03-2015,Cash,Groceries,beverage,25,Expense,TXN166
+06-03-2015,Cash,Transportation,auto,10,Expense,TXN167
+06-03-2015,Cash,Transportation,auto,10,Expense,TXN168
+07-03-2015,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN170
+10-03-2015,Cash,Transportation,Train,20,Expense,TXN175
+10-03-2015,Cash,Transportation,auto,20,Expense,TXN173
+10-03-2015,Cash,Transportation,auto,10,Expense,TXN174
+10-03-2015,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN177
+10-03-2015,Saving Bank account 1,Transportation,train,11.8,Expense,TXN178
+10-03-2015,Saving Bank account 1,Transportation,train,11.8,Expense,TXN176
+11-03-2015,Cash,Groceries,Tea,8,Expense,TXN179
+12-03-2015,Credit Card,Healthcare,Hospital,1900,Expense,TXN181
+12-03-2015,Cash,Groceries,Tea,30,Expense,TXN182
+13-03-2015,Cash,Transportation,auto,10,Expense,TXN183
+14-03-2015,Cash,Discretionary,Laundry,40,Expense,TXN184
+14-03-2015,Cash,Groceries,Milk,26,Expense,TXN185
+15-03-2015,Cash,Groceries,Milk,36,Expense,TXN187
+15-03-2015,Cash,Discretionary,Clothing,30,Expense,TXN188
+16-03-2015,Cash,Groceries,Tea,20,Expense,TXN189
+16-03-2015,Cash,Healthcare,Hospital,1000,Expense,TXN190
+18-03-2015,Cash,Groceries,Lunch,25,Expense,TXN194
+18-03-2015,Cash,Groceries,snacks,53,Expense,TXN195
+18-03-2015,Cash,Groceries,Milk,26,Expense,TXN192
+18-03-2015,Cash,Groceries,breakfast,20,Expense,TXN193
+19-03-2015,Cash,Utilities,Kitchen,50,Expense,TXN196
+20-03-2015,Cash,Discretionary,Laundry,100,Expense,TXN197
+20-03-2015,Credit Card,Healthcare,Hospital,3700,Expense,TXN198
+23-03-2015,Credit Card,Groceries,Grocery,433.8,Expense,TXN199
+24-03-2015,Cash,Groceries,Milk,26,Expense,TXN201
+29-03-2015,Cash,Groceries,Grocery,150,Expense,TXN203
+29-03-2015,Cash,Healthcare,Medicine,269,Expense,TXN204
+01-04-2015,Cash,Groceries,Grocery,50,Expense,TXN206
+04-04-2015,Credit Card,Groceries,Grocery,889,Expense,TXN210
+04-04-2015,Cash,Groceries,Grocery,287,Expense,TXN211
+06-04-2015,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN213
+07-04-2015,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN214
+08-04-2015,Cash,Groceries,Grocery,156,Expense,TXN216
+10-04-2015,Cash,Groceries,Grocery,699,Expense,TXN217
+13-04-2015,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN218
+18-04-2015,Saving Bank account 1,Groceries,Grocery,324,Expense,TXN222
+23-04-2015,Cash,Groceries,Milk,56,Expense,TXN223
+24-04-2015,Saving Bank account 1,Groceries,Grocery,420,Expense,TXN224
+26-04-2015,Saving Bank account 1,Groceries,Grocery,110,Expense,TXN226
+26-04-2015,Saving Bank account 1,Groceries,Dinner,114,Expense,TXN225
+28-04-2015,Cash,Groceries,Milk,28,Expense,TXN229
+01-05-2015,Cash,Groceries,Grocery,20,Expense,TXN230
+02-05-2015,Cash,Groceries,Milk,28,Expense,TXN231
+03-05-2015,Saving Bank account 1,Groceries,Grocery,1178,Expense,TXN234
+05-05-2015,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN236
+05-05-2015,Cash,Groceries,Grocery,100,Expense,TXN237
+05-05-2015,Cash,Groceries,Milk,26,Expense,TXN238
+06-05-2015,Cash,Healthcare,Medicine,70,Expense,TXN240
+07-05-2015,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN241
+08-05-2015,Cash,Groceries,Milk,26,Expense,TXN242
+09-05-2015,Cash,Healthcare,Health,290,Expense,TXN245
+09-05-2015,Cash,Groceries,Grocery,20,Expense,TXN243
+09-05-2015,Cash,Groceries,Milk,52,Expense,TXN244
+10-05-2015,Cash,Utilities,Toiletries,160,Expense,TXN246
+11-05-2015,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN247
+11-05-2015,Cash,Groceries,Milk,26,Expense,TXN249
+11-05-2015,Cash,Groceries,Grocery,20,Expense,TXN250
+12-05-2015,Cash,Groceries,Milk,26,Expense,TXN251
+13-05-2015,Saving Bank account 1,Groceries,Milk,26,Expense,TXN252
+13-05-2015,Cash,Healthcare,Health,250,Expense,TXN253
+15-05-2015,Saving Bank account 1,Groceries,Milk,26,Expense,TXN255
+16-05-2015,Cash,Groceries,fruits,20,Expense,TXN257
+16-05-2015,Saving Bank account 1,Groceries,Milk,26,Expense,TXN258
+17-05-2015,Saving Bank account 1,Transportation,Taxi,6000,Expense,TXN259
+31-05-2015,Saving Bank account 1,Utilities,Appliances,2671,Expense,TXN262
+05-06-2015,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN266
+08-06-2015,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN268
+10-06-2015,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN271
+06-07-2015,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN281
+07-07-2015,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN282
+10-07-2015,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN285
+05-08-2015,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN294
+07-08-2015,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN295
+10-08-2015,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN297
+14-08-2015,Saving Bank account 1,Utilities,Kitchen,3499,Expense,TXN299
+05-09-2015,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN307
+07-09-2015,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN309
+10-09-2015,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN311
+11-09-2015,Saving Bank account 1,Groceries,Lunch,379,Expense,TXN312
+28-09-2015,Cash,Healthcare,Health,300,Expense,TXN317
+28-09-2015,Cash,Healthcare,Health,120,Expense,TXN318
+02-10-2015,Saving Bank account 1,Groceries,beverage,420,Expense,TXN322
+05-10-2015,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN324
+07-10-2015,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN326
+10-10-2015,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN327
+18-10-2015,Saving Bank account 1,Transportation,Taxi,803,Expense,TXN330
+18-10-2015,Saving Bank account 1,Discretionary,Clothing,1479,Expense,TXN331
+23-10-2015,Cash,Transportation,auto,20,Expense,TXN335
+24-10-2015,Cash,Utilities,Appliances,100,Expense,TXN336
+25-10-2015,Cash,Utilities,Kitchen,240,Expense,TXN337
+28-10-2015,Cash,Transportation,Bus,660,Expense,TXN340
+29-10-2015,Saving Bank account 1,Transportation,Bus,665,Expense,TXN341
+30-10-2015,Cash,Transportation,auto,30,Expense,TXN342
+30-10-2015,Cash,Discretionary,grooming,50,Expense,TXN343
+31-10-2015,Cash,Healthcare,Health,150,Expense,TXN345
+31-10-2015,Cash,Groceries,Tea,10,Expense,TXN347
+31-10-2015,Cash,Transportation,auto,180,Expense,TXN344
+31-10-2015,Cash,Transportation,auto,71,Expense,TXN348
+31-10-2015,Cash,Groceries,snacks,250,Expense,TXN350
+31-10-2015,Cash,Groceries,snacks,70,Expense,TXN349
+01-11-2015,Cash,Transportation,auto,70,Expense,TXN351
+03-11-2015,Cash,Transportation,auto,40,Expense,TXN353
+05-11-2015,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN356
+05-11-2015,Cash,Groceries,Dinner,84,Expense,TXN357
+07-11-2015,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN359
+10-11-2015,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN360
+12-11-2015,Cash,Groceries,Eating out,25,Expense,TXN362
+21-11-2015,Cash,Groceries,Eggs,84,Expense,TXN365
+27-11-2015,Cash,Groceries,snacks,25,Expense,TXN368
+29-11-2015,Cash,Transportation,auto,50,Expense,TXN371
+29-11-2015,Cash,Transportation,auto,40,Expense,TXN369
+29-11-2015,Cash,Transportation,auto,30,Expense,TXN370
+01-12-2015,Saving Bank account 1,Discretionary,Footwear,773,Expense,TXN373
+01-12-2015,Cash,Groceries,Eggs,84,Expense,TXN374
+02-12-2015,Cash,Discretionary,Footwear,325,Expense,TXN378
+05-12-2015,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN379
+05-12-2015,Cash,Groceries,snacks,90,Expense,TXN381
+07-12-2015,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN383
+10-12-2015,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN386
+11-12-2015,Cash,Transportation,auto,100,Expense,TXN387
+12-12-2015,Saving Bank account 1,Transportation,auto,50,Expense,TXN388
+19-12-2015,Cash,Groceries,Eggs,80,Expense,TXN389
+19-12-2015,Saving Bank account 1,Healthcare,Medicine,220,Expense,TXN390
+19-12-2015,Saving Bank account 1,Healthcare,Medicine,235,Expense,TXN391
+25-12-2015,Cash,Utilities,Kitchen,50,Expense,TXN394
+25-12-2015,Saving Bank account 1,Discretionary,Footwear,270,Expense,TXN395
+30-12-2015,Cash,Discretionary,Makeup,2000,Expense,TXN398
+01-01-2016,Saving Bank account 1,Financial Obligations,Public Provident Fund,10000,Expense,TXN404
+05-01-2016,Cash,Transportation,auto,30,Expense,TXN406
+05-01-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN408
+05-01-2016,Saving Bank account 1,Financial Obligations,RD,1000,Expense,TXN409
+07-01-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN410
+09-01-2016,Saving Bank account 1,Communication,Mobile Service Provider,251,Expense,TXN412
+10-01-2016,Cash,Utilities,Kitchen,15,Expense,TXN413
+11-01-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN414
+11-01-2016,Saving Bank account 1,Financial Obligations,RD,1000,Expense,TXN415
+12-01-2016,Cash,Discretionary,Footwear,200,Expense,TXN416
+22-01-2016,Saving Bank account 1,Communication,Kindle unlimited,169,Expense,TXN418
+26-01-2016,Saving Bank account 1,Communication,Audible,199,Expense,TXN419
+01-02-2016,Saving Bank account 1,Financial Obligations,Public Provident Fund,10000,Expense,TXN422
+05-02-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN423
+05-02-2016,Saving Bank account 1,Financial Obligations,RD,1000,Expense,TXN424
+07-02-2016,Cash,Groceries,Grocery,160,Expense,TXN425
+08-02-2016,Saving Bank account 1,Communication,Mobile Service Provider,251,Expense,TXN426
+08-02-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN427
+10-02-2016,Saving Bank account 1,Financial Obligations,RD,1000,Expense,TXN428
+10-02-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN429
+13-02-2016,Saving Bank account 1,Healthcare,Health,80,Expense,TXN430
+13-02-2016,Cash,Transportation,auto,40,Expense,TXN431
+14-02-2016,Cash,Groceries,Grocery,165,Expense,TXN432
+20-02-2016,Cash,Groceries,Grocery,85,Expense,TXN433
+22-02-2016,Saving Bank account 1,Communication,Kindle unlimited,169,Expense,TXN434
+22-02-2016,Cash,Groceries,snacks,40,Expense,TXN435
+24-02-2016,Saving Bank account 1,Communication,Audible,199,Expense,TXN436
+27-02-2016,Saving Bank account 1,Communication,Mobile Service Provider,251,Expense,TXN441
+27-02-2016,Saving Bank account 1,Groceries,snacks,50,Expense,TXN439
+28-02-2016,Saving Bank account 1,Groceries,snacks,100,Expense,TXN443
+28-02-2016,Cash,Healthcare,Saloon,100,Expense,TXN444
+28-02-2016,Saving Bank account 1,Groceries,snacks,70,Expense,TXN445
+02-03-2016,Saving Bank account 1,Financial Obligations,Public Provident Fund,10000,Expense,TXN446
+05-03-2016,Saving Bank account 1,Financial Obligations,RD,1000,Expense,TXN447
+05-03-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN448
+06-03-2016,Saving Bank account 1,Communication,Mobile Service Provider,251,Expense,TXN449
+08-03-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN450
+10-03-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN451
+10-03-2016,Saving Bank account 1,Financial Obligations,RD,1000,Expense,TXN452
+11-03-2016,Cash,Education,School supplies,20,Expense,TXN453
+11-03-2016,Cash,Groceries,Grocery,60,Expense,TXN455
+15-03-2016,Saving Bank account 1,Communication,Mobile Service Provider,251,Expense,TXN456
+20-03-2016,Cash,Groceries,Grocery,35,Expense,TXN459
+21-03-2016,Saving Bank account 1,Communication,Mobile Service Provider,251,Expense,TXN460
+22-03-2016,Saving Bank account 1,Communication,Kindle unlimited,169,Expense,TXN461
+01-04-2016,Saving Bank account 1,Financial Obligations,Public Provident Fund,10000,Expense,TXN465
+02-04-2016,Saving Bank account 1,Communication,Mobile Service Provider,251,Expense,TXN467
+02-04-2016,Cash,Transportation,auto,50,Expense,TXN469
+02-04-2016,Cash,Groceries,beverage,20,Expense,TXN470
+03-04-2016,Saving Bank account 1,Communication,OTT Platform,300,Expense,TXN471
+05-04-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN472
+05-04-2016,Saving Bank account 1,Financial Obligations,RD,1000,Expense,TXN473
+07-04-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN474
+11-04-2016,Saving Bank account 1,Groceries,Grocery,1279,Expense,TXN475
+11-04-2016,Saving Bank account 1,Communication,Mobile Service Provider,251,Expense,TXN476
+12-04-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN477
+12-04-2016,Saving Bank account 1,Financial Obligations,RD,1000,Expense,TXN478
+15-04-2016,Saving Bank account 1,Communication,Mobile Service Provider,251,Expense,TXN479
+16-04-2016,Cash,Utilities,Toiletries,50,Expense,TXN480
+20-04-2016,Saving Bank account 1,Communication,Mobile Service Provider,251,Expense,TXN481
+24-04-2016,Saving Bank account 1,Communication,Kindle unlimited,169,Expense,TXN482
+26-04-2016,Saving Bank account 1,Groceries,Grocery,259,Expense,TXN483
+28-04-2016,Saving Bank account 1,Communication,Hotstar,299,Expense,TXN484
+01-05-2016,Saving Bank account 1,Financial Obligations,Public Provident Fund,10000,Expense,TXN487
+03-05-2016,Saving Bank account 1,Communication,Mobile Service Provider,251,Expense,TXN489
+05-05-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN490
+05-05-2016,Saving Bank account 1,Financial Obligations,RD,1000,Expense,TXN491
+06-05-2016,Saving Bank account 1,Communication,Mobile Service Provider,251,Expense,TXN492
+07-05-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN493
+10-05-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN494
+10-05-2016,Saving Bank account 1,Financial Obligations,RD,1000,Expense,TXN495
+16-05-2016,Saving Bank account 1,Communication,Mobile Service Provider,251,Expense,TXN496
+17-05-2016,Saving Bank account 1,Financial Obligations,LIC,11286,Expense,TXN498
+19-05-2016,Saving Bank account 1,Groceries,Grocery,180,Expense,TXN499
+22-05-2016,Cash,Transportation,auto,40,Expense,TXN500
+22-05-2016,Saving Bank account 1,Healthcare,Saloon,120,Expense,TXN501
+29-05-2016,Saving Bank account 1,Groceries,Grocery,504,Expense,TXN502
+30-05-2016,Saving Bank account 1,Communication,Mobile Service Provider,251,Expense,TXN503
+31-05-2016,Saving Bank account 1,Transportation,auto,50,Expense,TXN505
+01-06-2016,Cash,Groceries,Water,25,Expense,TXN507
+01-06-2016,Saving Bank account 1,Financial Obligations,Public Provident Fund,10000,Expense,TXN506
+05-06-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN510
+05-06-2016,Saving Bank account 1,Financial Obligations,RD,1000,Expense,TXN511
+05-06-2016,Cash,Groceries,Grocery,68,Expense,TXN509
+07-06-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN512
+10-06-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN513
+10-06-2016,Saving Bank account 1,Financial Obligations,RD,1000,Expense,TXN514
+12-06-2016,Saving Bank account 1,Communication,Mobile Service Provider,251,Expense,TXN515
+12-06-2016,Cash,Groceries,Eggs,84,Expense,TXN516
+19-06-2016,Saving Bank account 1,Healthcare,exam fee,905,Expense,TXN518
+19-06-2016,Saving Bank account 1,Groceries,Grocery,600,Expense,TXN519
+20-06-2016,Saving Bank account 1,Groceries,snacks,140,Expense,TXN520
+22-06-2016,Saving Bank account 1,Communication,Mobile Service Provider,350,Expense,TXN521
+23-06-2016,Saving Bank account 1,Communication,Amazon Prime,995,Expense,TXN522
+27-06-2016,Saving Bank account 1,Communication,Mobile Service Provider,251,Expense,TXN523
+27-06-2016,Saving Bank account 1,Transportation,Travels,3200,Expense,TXN524
+01-07-2016,Saving Bank account 1,Financial Obligations,Public Provident Fund,10000,Expense,TXN529
+01-07-2016,Saving Bank account 1,Healthcare,misc,2599,Expense,TXN530
+04-07-2016,Saving Bank account 1,Communication,Mobile Service Provider,251,Expense,TXN531
+05-07-2016,Saving Bank account 1,Financial Obligations,RD,1000,Expense,TXN532
+05-07-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN533
+05-07-2016,Saving Bank account 1,Communication,Mobile Service Provider,251,Expense,TXN534
+07-07-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN535
+12-07-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN536
+12-07-2016,Saving Bank account 1,Financial Obligations,RD,1000,Expense,TXN537
+13-07-2016,Cash,Healthcare,Medicine,10,Expense,TXN538
+20-07-2016,Saving Bank account 1,Communication,Mobile Service Provider,2599,Expense,TXN539
+21-07-2016,Saving Bank account 1,Communication,Mobile Service Provider,251,Expense,TXN540
+25-07-2016,Saving Bank account 1,Communication,Mobile Service Provider,251,Expense,TXN541
+01-08-2016,Saving Bank account 1,Financial Obligations,Public Provident Fund,10000,Expense,TXN544
+04-08-2016,Saving Bank account 1,Healthcare,misc,260,Expense,TXN546
+05-08-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN547
+05-08-2016,Saving Bank account 1,Financial Obligations,RD,1000,Expense,TXN548
+07-08-2016,Saving Bank account 1,Healthcare,exam fee,750,Expense,TXN549
+07-08-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN550
+09-08-2016,Saving Bank account 1,Communication,Mobile Service Provider,251,Expense,TXN551
+10-08-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN552
+10-08-2016,Saving Bank account 1,Financial Obligations,RD,1000,Expense,TXN553
+11-08-2016,Saving Bank account 1,Financial Obligations,LIC,11286,Expense,TXN554
+14-08-2016,Cash,Healthcare,Saloon,100,Expense,TXN555
+18-08-2016,Saving Bank account 1,Communication,Mobile Service Provider,251,Expense,TXN557
+22-08-2016,Saving Bank account 1,Discretionary,Rakshabandhan,500,Expense,TXN559
+23-08-2016,Saving Bank account 1,Healthcare,Pocket money,2000,Expense,TXN560
+24-08-2016,Saving Bank account 1,Discretionary,Rakshabandhan,500,Expense,TXN561
+29-08-2016,Cash,Utilities,Kitchen,40,Expense,TXN562
+29-08-2016,Saving Bank account 1,Utilities,Toiletries,98,Expense,TXN563
+29-08-2016,Cash,Discretionary,Ganesh Pujan,361,Expense,TXN564
+01-09-2016,Saving Bank account 1,Financial Obligations,Public Provident Fund,10000,Expense,TXN567
+01-09-2016,Saving Bank account 1,Communication,Mobile Service Provider,251,Expense,TXN568
+01-09-2016,Saving Bank account 1,Transportation,Travels,750,Expense,TXN569
+05-09-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN570
+05-09-2016,Saving Bank account 1,Financial Obligations,RD,1000,Expense,TXN571
+06-09-2016,Saving Bank account 1,Transportation,Travels,598.5,Expense,TXN572
+07-09-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN573
+07-09-2016,Cash,Groceries,Eggs,72,Expense,TXN574
+08-09-2016,Saving Bank account 1,Communication,Mobile Service Provider,251,Expense,TXN575
+08-09-2016,Cash,Groceries,Grocery,20,Expense,TXN576
+08-09-2016,Saving Bank account 1,Groceries,beverage,30,Expense,TXN577
+09-09-2016,Cash,Groceries,Milk,70,Expense,TXN578
+10-09-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN579
+10-09-2016,Saving Bank account 1,Financial Obligations,RD,1000,Expense,TXN580
+11-09-2016,Saving Bank account 1,Groceries,Milk,35,Expense,TXN582
+11-09-2016,Cash,Groceries,Grocery,70,Expense,TXN583
+11-09-2016,Cash,Transportation,auto,20,Expense,TXN581
+12-09-2016,Cash,Groceries,Milk,35,Expense,TXN585
+12-09-2016,Cash,Groceries,Grocery,35,Expense,TXN586
+12-09-2016,Saving Bank account 1,Groceries,snacks,20,Expense,TXN584
+13-09-2016,Saving Bank account 1,Groceries,Eating out,845,Expense,TXN587
+13-09-2016,Cash,Groceries,snacks,70,Expense,TXN588
+14-09-2016,Saving Bank account 1,Healthcare,gift,437,Expense,TXN589
+14-09-2016,Saving Bank account 1,Communication,Mobile Service Provider,251,Expense,TXN590
+15-09-2016,Cash,Groceries,Grocery,95,Expense,TXN591
+19-09-2016,Cash,Groceries,Milk,33,Expense,TXN592
+01-10-2016,Cash,Discretionary,Navratri,200,Expense,TXN596
+01-10-2016,Saving Bank account 1,Financial Obligations,Public Provident Fund,10000,Expense,TXN598
+05-10-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN599
+05-10-2016,Saving Bank account 1,Financial Obligations,RD,1000,Expense,TXN600
+07-10-2016,Saving Bank account 1,Communication,Netflix,199,Expense,TXN601
+08-10-2016,Saving Bank account 1,Discretionary,grooming,174,Expense,TXN602
+09-10-2016,Saving Bank account 1,Transportation,auto,80,Expense,TXN604
+09-10-2016,Saving Bank account 1,Groceries,Grocery,90,Expense,TXN603
+09-10-2016,Saving Bank account 1,Healthcare,misc,249,Expense,TXN606
+09-10-2016,Saving Bank account 1,Healthcare,Medicine,40,Expense,TXN605
+10-10-2016,Cash,Groceries,Grocery,100,Expense,TXN607
+10-10-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN608
+10-10-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN609
+10-10-2016,Saving Bank account 1,Financial Obligations,RD,1000,Expense,TXN610
+12-10-2016,Saving Bank account 1,Groceries,Grocery,150,Expense,TXN611
+13-10-2016,Saving Bank account 1,Healthcare,misc,249,Expense,TXN612
+14-10-2016,Saving Bank account 1,Groceries,Grocery,120,Expense,TXN613
+15-10-2016,Saving Bank account 1,Groceries,Grocery,430,Expense,TXN614
+17-10-2016,Cash,Groceries,Grocery,215,Expense,TXN615
+22-10-2016,Cash,Groceries,Eating out,20,Expense,TXN616
+22-10-2016,Cash,Groceries,Grocery,35,Expense,TXN617
+24-10-2016,Cash,Groceries,Grocery,320,Expense,TXN618
+25-10-2016,Cash,Groceries,snacks,25,Expense,TXN619
+26-10-2016,Saving Bank account 1,Healthcare,Medicine,617,Expense,TXN620
+27-10-2016,Cash,Groceries,Grocery,25,Expense,TXN623
+27-10-2016,Saving Bank account 1,Healthcare,gift,1119.2,Expense,TXN624
+27-10-2016,Saving Bank account 1,Communication,Mobile Service Provider,251,Expense,TXN621
+27-10-2016,Cash,Groceries,fruits,170,Expense,TXN622
+28-10-2016,Saving Bank account 1,Healthcare,Medicine,221,Expense,TXN625
+28-10-2016,Cash,Transportation,auto,40,Expense,TXN626
+31-10-2016,Saving Bank account 1,Discretionary,Diwali,1999,Expense,TXN628
+01-11-2016,Saving Bank account 1,Financial Obligations,Public Provident Fund,10000,Expense,TXN630
+01-11-2016,Cash,Groceries,fruits,50,Expense,TXN631
+01-11-2016,Cash,Discretionary,Diwali,450,Expense,TXN632
+02-11-2016,Cash,Healthcare,Saloon,80,Expense,TXN633
+03-11-2016,Cash,Groceries,Grocery,240,Expense,TXN634
+03-11-2016,Saving Bank account 1,Healthcare,Medicine,700,Expense,TXN635
+04-11-2016,Cash,Discretionary,Diwali,50,Expense,TXN638
+05-11-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN639
+05-11-2016,Saving Bank account 1,Financial Obligations,RD,1000,Expense,TXN640
+05-11-2016,Cash,Transportation,auto,30,Expense,TXN641
+07-11-2016,Cash,Groceries,Eating out,45,Expense,TXN642
+08-11-2016,Saving Bank account 1,Communication,Netflix,199,Expense,TXN643
+10-11-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN645
+10-11-2016,Saving Bank account 1,Financial Obligations,LIC,11286,Expense,TXN646
+10-11-2016,Saving Bank account 1,Financial Obligations,RD,1000,Expense,TXN647
+10-11-2016,Cash,Transportation,auto,40,Expense,TXN648
+10-11-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN649
+12-11-2016,Cash,Groceries,snacks,10,Expense,TXN650
+12-11-2016,Cash,Healthcare,Medicine,55,Expense,TXN651
+14-11-2016,Saving Bank account 1,Transportation,Travels,4662,Expense,TXN652
+14-11-2016,Saving Bank account 1,Transportation,Travels,1800,Expense,TXN653
+15-11-2016,Cash,Groceries,Grocery,20,Expense,TXN654
+15-11-2016,Cash,Groceries,fruits,180,Expense,TXN656
+17-11-2016,Cash,Groceries,snacks,10,Expense,TXN657
+19-11-2016,Cash,Transportation,auto,40,Expense,TXN665
+19-11-2016,Cash,Transportation,auto,40,Expense,TXN658
+19-11-2016,Cash,Groceries,chocolate,2,Expense,TXN659
+19-11-2016,Cash,Transportation,auto,50,Expense,TXN661
+19-11-2016,Cash,Groceries,Water,40,Expense,TXN662
+19-11-2016,Saving Bank account 1,Groceries,Eating out,1087,Expense,TXN660
+19-11-2016,Cash,Transportation,Taxi,100,Expense,TXN669
+19-11-2016,Cash,Groceries,beverage,40,Expense,TXN666
+19-11-2016,Cash,Transportation,ropeway,338,Expense,TXN668
+19-11-2016,Cash,Transportation,auto,80,Expense,TXN670
+19-11-2016,Cash,Transportation,Bus,54,Expense,TXN671
+19-11-2016,Cash,Transportation,Taxi,100,Expense,TXN672
+19-11-2016,Cash,Transportation,Bus,94,Expense,TXN664
+20-11-2016,Cash,Transportation,auto,50,Expense,TXN673
+21-11-2016,Cash,Transportation,auto,70,Expense,TXN674
+21-11-2016,Cash,Healthcare,Medicine,15,Expense,TXN675
+21-11-2016,Cash,Transportation,auto,50,Expense,TXN676
+25-11-2016,Saving Bank account 1,Communication,Mobile Service Provider,251,Expense,TXN677
+28-11-2016,Saving Bank account 1,Utilities,Appliances,20500,Expense,TXN679
+28-11-2016,Cash,Groceries,Ice cream,20,Expense,TXN680
+29-11-2016,Cash,Healthcare,misc,60,Expense,TXN682
+30-11-2016,Saving Bank account 1,Communication,Mobile Service Provider,98,Expense,TXN683
+30-11-2016,Saving Bank account 1,Healthcare,clothes,500,Expense,TXN687
+30-11-2016,Saving Bank account 1,Communication,Mobile Service Provider,251,Expense,TXN684
+01-12-2016,Saving Bank account 1,Financial Obligations,Public Provident Fund,40000,Expense,TXN689
+03-12-2016,Cash,Groceries,chocolate,20,Expense,TXN690
+03-12-2016,Cash,Groceries,Grocery,55,Expense,TXN691
+04-12-2016,Cash,Groceries,vegetables,8,Expense,TXN692
+04-12-2016,Cash,Groceries,vegetables,25,Expense,TXN693
+04-12-2016,Cash,Groceries,vegetables,90,Expense,TXN696
+04-12-2016,Cash,Groceries,vegetables,50,Expense,TXN697
+04-12-2016,Cash,Groceries,snacks,45,Expense,TXN698
+04-12-2016,Cash,Groceries,vegetables,25,Expense,TXN699
+04-12-2016,Cash,Groceries,fruits,20,Expense,TXN700
+04-12-2016,Cash,Groceries,snacks,15,Expense,TXN701
+04-12-2016,Cash,Groceries,vegetables,10,Expense,TXN694
+04-12-2016,Cash,Groceries,vegetables,30,Expense,TXN695
+05-12-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN703
+05-12-2016,Cash,Healthcare,medicine,155,Expense,TXN704
+07-12-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN705
+08-12-2016,Saving Bank account 1,Groceries,Grocery,30,Expense,TXN707
+09-12-2016,Saving Bank account 1,Communication,Mobile Service Provider,301,Expense,TXN708
+10-12-2016,Saving Bank account 1,Financial Obligations,Mutual fund,1000,Expense,TXN710
+10-12-2016,Cash,Groceries,Ice cream,30,Expense,TXN711
+11-12-2016,Saving Bank account 1,Healthcare,Medicine,257,Expense,TXN712
+11-12-2016,Cash,Healthcare,Hospital,200,Expense,TXN713
+13-12-2016,Cash,Utilities,Toiletries,25,Expense,TXN716
+14-12-2016,Cash,Groceries,vegetables,200,Expense,TXN718
+17-12-2016,Saving Bank account 1,Communication,Mobile Service Provider,301,Expense,TXN719
+18-12-2016,Saving Bank account 1,Healthcare,Pocket money,2000,Expense,TXN721
+19-12-2016,Cash,Groceries,fruits,170,Expense,TXN723
+19-12-2016,Saving Bank account 1,Utilities,Toiletries,49,Expense,TXN725
+19-12-2016,Cash,Groceries,snacks,30,Expense,TXN726
+19-12-2016,Cash,Groceries,snacks,29,Expense,TXN724
+21-12-2016,Saving Bank account 1,Transportation,train,251.8,Expense,TXN728
+21-12-2016,Saving Bank account 1,Healthcare,clothes,1874,Expense,TXN729
+21-12-2016,Saving Bank account 1,Transportation,Travels,1900,Expense,TXN727
+22-12-2016,Saving Bank account 1,Transportation,train,11.8,Expense,TXN730
+25-12-2016,Saving Bank account 1,Communication,Mobile Service Provider,301,Expense,TXN732
+28-12-2016,Cash,Groceries,Grocery,10,Expense,TXN733
+29-12-2016,Saving Bank account 1,Transportation,train,403,Expense,TXN736
+29-12-2016,Saving Bank account 1,Communication,Tata Sky,214,Expense,TXN737
+29-12-2016,Cash,Groceries,flour mill,14,Expense,TXN738
+29-12-2016,Cash,Groceries,snacks,10,Expense,TXN739
+30-12-2016,Cash,Transportation,auto,100,Expense,TXN741
+31-12-2016,Saving Bank account 1,Groceries,Dinner,375,Expense,TXN742
+31-12-2016,Saving Bank account 1,Groceries,Lunch,170,Expense,TXN746
+31-12-2016,Cash,Groceries,snacks,25,Expense,TXN743
+31-12-2016,Saving Bank account 1,Groceries,Grocery,77,Expense,TXN745
+31-12-2016,Cash,Communication,Edtech Course,2816,Expense,TXN748
+31-12-2016,Saving Bank account 1,Groceries,Grocery,160,Expense,TXN749
+31-12-2016,Saving Bank account 1,Healthcare,Medicine,24,Expense,TXN750
+01-01-2017,Saving Bank account 1,Groceries,Dinner,340,Expense,TXN757
+01-01-2017,Saving Bank account 1,Groceries,Grocery,510,Expense,TXN751
+01-01-2017,Saving Bank account 1,Healthcare,Medicine,354,Expense,TXN752
+01-01-2017,Saving Bank account 1,Utilities,Kitchen,50,Expense,TXN753
+01-01-2017,Cash,Groceries,Grocery,40,Expense,TXN754
+01-01-2017,Saving Bank account 1,Healthcare,Hospital,300,Expense,TXN755
+02-01-2017,Cash,Utilities,Kitchen,110,Expense,TXN759
+02-01-2017,Cash,Transportation,auto,60,Expense,TXN760
+02-01-2017,Saving Bank account 1,Groceries,Dinner,386,Expense,TXN758
+03-01-2017,Cash,Groceries,Water,70,Expense,TXN766
+03-01-2017,Cash,Groceries,Tea,20,Expense,TXN761
+03-01-2017,Cash,Groceries,chocolate,50,Expense,TXN763
+03-01-2017,Saving Bank account 1,Groceries,Milk,31,Expense,TXN764
+03-01-2017,Cash,Groceries,Grocery,140,Expense,TXN762
+03-01-2017,Cash,Transportation,train,20,Expense,TXN769
+03-01-2017,Cash,Groceries,Lunch,330,Expense,TXN767
+03-01-2017,Cash,Discretionary,Movie,400,Expense,TXN768
+03-01-2017,Cash,Groceries,Lunch,310,Expense,TXN770
+03-01-2017,Cash,Transportation,auto,30,Expense,TXN771
+03-01-2017,Saving Bank account 1,Communication,Edtech Course,2816.92,Expense,TXN765
+04-01-2017,Cash,Groceries,Grocery,40,Expense,TXN772
+05-01-2017,Saving Bank account 1,Communication,Mobile Service Provider,301,Expense,TXN773
+05-01-2017,Cash,Groceries,Milk,31,Expense,TXN774
+05-01-2017,Cash,Utilities,Appliances,100,Expense,TXN775
+06-01-2017,Saving Bank account 1,Groceries,snacks,48,Expense,TXN778
+06-01-2017,Saving Bank account 1,Transportation,Travels,1396.5,Expense,TXN777
+06-01-2017,Saving Bank account 1,Groceries,Dinner,294,Expense,TXN780
+06-01-2017,Cash,Groceries,Milk,31,Expense,TXN779
+06-01-2017,Cash,Utilities,Appliances,200,Expense,TXN776
+07-01-2017,Cash,Transportation,auto,50,Expense,TXN781
+07-01-2017,Saving Bank account 1,Groceries,snacks,175,Expense,TXN782
+08-01-2017,Cash,Transportation,auto,50,Expense,TXN783
+08-01-2017,Saving Bank account 1,Communication,Netflix,149,Expense,TXN784
+09-01-2017,Cash,Discretionary,grooming,80,Expense,TXN785
+09-01-2017,Saving Bank account 1,Groceries,Grocery,99,Expense,TXN786
+10-01-2017,Cash,Groceries,fruits,160,Expense,TXN787
+11-01-2017,Saving Bank account 1,Healthcare,Medicine,90,Expense,TXN788
+11-01-2017,Cash,Groceries,Grocery,45,Expense,TXN789
+15-01-2017,Cash,Groceries,Grocery,140,Expense,TXN790
+15-01-2017,Cash,Groceries,Grocery,540,Expense,TXN791
+16-01-2017,Saving Bank account 1,Utilities,Furniture,2400,Expense,TXN793
+16-01-2017,Cash,Transportation,auto,40,Expense,TXN794
+19-01-2017,Saving Bank account 1,Healthcare,medicine,145,Expense,TXN795
+19-01-2017,Cash,Groceries,snacks,20,Expense,TXN796
+20-01-2017,Saving Bank account 1,Communication,Mobile Service Provider,301,Expense,TXN797
+21-01-2017,Saving Bank account 1,Communication,Mobile Service Provider,149,Expense,TXN798
+22-01-2017,Cash,Groceries,Grocery,410,Expense,TXN799
+22-01-2017,Saving Bank account 1,Healthcare,Pocket money,2000,Expense,TXN800
+23-01-2017,Saving Bank account 1,Communication,Tata Sky,181,Expense,TXN802
+29-01-2017,Cash,Groceries,Dinner,250,Expense,TXN803
+29-01-2017,Cash,Groceries,snacks,60,Expense,TXN804
+29-01-2017,Cash,Groceries,snacks,30,Expense,TXN805
+29-01-2017,Saving Bank account 1,Groceries,breakfast,35,Expense,TXN806
+29-01-2017,Cash,Transportation,auto,30,Expense,TXN807
+29-01-2017,Cash,Transportation,auto,30,Expense,TXN808
+29-01-2017,Cash,Groceries,Milk,35,Expense,TXN809
+29-01-2017,Cash,Transportation,Bus,510,Expense,TXN810
+30-01-2017,Cash,Groceries,snacks,15,Expense,TXN811
+30-01-2017,Saving Bank account 1,Groceries,Milk,35,Expense,TXN812
+31-01-2017,Saving Bank account 1,Groceries,Milk,35,Expense,TXN813
+01-02-2017,Saving Bank account 1,Groceries,Milk,33,Expense,TXN816
+01-02-2017,Saving Bank account 1,Communication,Mobile Service Provider,301,Expense,TXN817
+02-02-2017,Saving Bank account 1,Communication,Mobile Service Provider,301,Expense,TXN818
+02-02-2017,Saving Bank account 1,Groceries,Dinner,1160,Expense,TXN819
+03-02-2017,Cash,Healthcare,Medicine,8,Expense,TXN820
+03-02-2017,Saving Bank account 1,Groceries,Dinner,412.25,Expense,TXN821
+03-02-2017,Cash,Groceries,beverage,12,Expense,TXN822
+03-02-2017,Saving Bank account 1,Groceries,snacks,50,Expense,TXN823
+03-02-2017,Saving Bank account 1,Communication,Edtech Course,2700.1,Expense,TXN824
+03-02-2017,Cash,Groceries,breakfast,10,Expense,TXN825
+04-02-2017,Cash,Groceries,Milk,30,Expense,TXN826
+04-02-2017,Cash,Groceries,snacks,53,Expense,TXN827
+04-02-2017,Saving Bank account 1,Groceries,beverage,60,Expense,TXN828
+04-02-2017,Cash,Discretionary,Laundry,38,Expense,TXN829
+05-02-2017,Cash,Transportation,auto,40,Expense,TXN830
+05-02-2017,Cash,Groceries,Tea,10,Expense,TXN831
+05-02-2017,Cash,Transportation,Bus,330,Expense,TXN832
+06-02-2017,Saving Bank account 1,Groceries,Grocery,110,Expense,TXN833
+06-02-2017,Cash,Groceries,Grocery,195,Expense,TXN834
+06-02-2017,Cash,Groceries,fruits,140,Expense,TXN835
+06-02-2017,Cash,Groceries,fruits,30,Expense,TXN836
+11-02-2017,Cash,Groceries,snacks,10,Expense,TXN839
+11-02-2017,Cash,Healthcare,Pocket money,1000,Expense,TXN840
+13-02-2017,Saving Bank account 1,Communication,Mobile Service Provider,301,Expense,TXN842
+18-02-2017,Saving Bank account 1,Communication,Mobile Service Provider,301,Expense,TXN844
+18-02-2017,Cash,Healthcare,Pocket money,500,Expense,TXN845
+19-02-2017,Cash,Groceries,beverage,30,Expense,TXN848
+19-02-2017,Saving Bank account 1,Discretionary,Clothing,498,Expense,TXN846
+19-02-2017,Cash,Education,Stationary,25,Expense,TXN847
+21-02-2017,Cash,Groceries,snacks,10,Expense,TXN850
+22-02-2017,Saving Bank account 1,Transportation,Taxi,5500,Expense,TXN851
+22-02-2017,Cash,Education,Stationary,30,Expense,TXN852
+23-02-2017,Cash,Groceries,Ice cream,80,Expense,TXN853
+24-02-2017,Cash,Groceries,Grocery,75,Expense,TXN854
+24-02-2017,Cash,Groceries,Tea,30,Expense,TXN855
+24-02-2017,Cash,Groceries,Lunch,100,Expense,TXN856
+25-02-2017,Saving Bank account 1,Groceries,Lunch,247,Expense,TXN857
+25-02-2017,Saving Bank account 1,Communication,Tata Sky,100,Expense,TXN858
+25-02-2017,Saving Bank account 1,Groceries,Dinner,318,Expense,TXN859
+25-02-2017,Cash,Utilities,Kitchen,920,Expense,TXN860
+25-02-2017,Cash,Utilities,Appliances,1600,Expense,TXN861
+25-02-2017,Saving Bank account 1,Utilities,Appliances,8500,Expense,TXN862
+26-02-2017,Saving Bank account 1,Groceries,snacks,58,Expense,TXN863
+26-02-2017,Saving Bank account 1,Utilities,Kirana,846,Expense,TXN865
+26-02-2017,Cash,Transportation,auto,30,Expense,TXN866
+26-02-2017,Cash,Utilities,Kitchen,360,Expense,TXN864
+26-02-2017,Cash,Transportation,Train,20,Expense,TXN867
+27-02-2017,Cash,Transportation,auto,30,Expense,TXN868
+27-02-2017,Cash,Transportation,auto,30,Expense,TXN869
+27-02-2017,Cash,Transportation,Train,40,Expense,TXN870
+27-02-2017,Cash,Utilities,Appliances,55,Expense,TXN871
+27-02-2017,Saving Bank account 1,Groceries,Milk,76,Expense,TXN872
+27-02-2017,Saving Bank account 1,Groceries,Lunch,88,Expense,TXN873
+28-02-2017,Cash,Transportation,Train,80,Expense,TXN881
+28-02-2017,Cash,Transportation,Taxi,40,Expense,TXN874
+28-02-2017,Cash,Groceries,Grocery,85,Expense,TXN876
+28-02-2017,Cash,Transportation,auto,30,Expense,TXN877
+28-02-2017,Cash,Transportation,Train,10,Expense,TXN878
+28-02-2017,Cash,Transportation,Bus,12,Expense,TXN879
+28-02-2017,Cash,Transportation,auto,30,Expense,TXN886
+28-02-2017,Saving Bank account 1,Groceries,Dinner,2421,Expense,TXN882
+28-02-2017,Cash,Transportation,Train,20,Expense,TXN883
+28-02-2017,Cash,Groceries,breakfast,30,Expense,TXN884
+28-02-2017,Cash,Transportation,auto,40,Expense,TXN885
+28-02-2017,Cash,Transportation,auto,57,Expense,TXN888
+28-02-2017,Cash,Groceries,Tea,10,Expense,TXN880
+01-03-2017,Cash,Utilities,Hardware,50,Expense,TXN889
+03-03-2017,Saving Bank account 1,Groceries,Grocery,148,Expense,TXN891
+04-03-2017,Cash,Groceries,Ice cream,20,Expense,TXN892
+05-03-2017,Cash,Utilities,Toiletries,140,Expense,TXN896
+05-03-2017,Saving Bank account 1,Groceries,Grocery,949,Expense,TXN894
+05-03-2017,Cash,Transportation,auto,30,Expense,TXN895
+05-03-2017,Cash,Transportation,Train,20,Expense,TXN899
+05-03-2017,Cash,Transportation,auto,30,Expense,TXN897
+05-03-2017,Cash,Groceries,beverage,30,Expense,TXN898
+05-03-2017,Cash,Discretionary,Footwear,10,Expense,TXN893
+06-03-2017,Cash,Groceries,breakfast,45,Expense,TXN900
+06-03-2017,Cash,Groceries,Milk,62,Expense,TXN901
+07-03-2017,Saving Bank account 1,Groceries,Milk,62,Expense,TXN904
+07-03-2017,Cash,Groceries,fruits,190,Expense,TXN902
+07-03-2017,Saving Bank account 1,Groceries,Ice cream,20,Expense,TXN905
+07-03-2017,Cash,Groceries,Grocery,105,Expense,TXN906
+07-03-2017,Saving Bank account 1,Communication,Edtech Course,2700.1,Expense,TXN903
+08-03-2017,Saving Bank account 1,Groceries,Ice cream,150,Expense,TXN907
+09-03-2017,Cash,Groceries,beverage,100,Expense,TXN908
+09-03-2017,Saving Bank account 1,Groceries,Grocery,100,Expense,TXN909
+10-03-2017,Saving Bank account 1,Transportation,Travels,1599.98,Expense,TXN910
+10-03-2017,Saving Bank account 1,Communication,Mobile Service Provider,296,Expense,TXN911
+10-03-2017,Saving Bank account 1,Groceries,snacks,72,Expense,TXN912
+10-03-2017,Saving Bank account 1,Groceries,Milk,62,Expense,TXN913
+11-03-2017,Saving Bank account 1,Groceries,Grocery,200,Expense,TXN914
+11-03-2017,Cash,Groceries,snacks,60,Expense,TXN915
+11-03-2017,Cash,Transportation,Train,20,Expense,TXN916
+11-03-2017,Cash,Transportation,auto,30,Expense,TXN917
+12-03-2017,Cash,Discretionary,Movie,440,Expense,TXN920
+12-03-2017,Cash,Transportation,Train,40,Expense,TXN919
+12-03-2017,Cash,Transportation,auto,30,Expense,TXN918
+12-03-2017,Cash,Groceries,Lunch,130,Expense,TXN921
+12-03-2017,Cash,Transportation,auto,30,Expense,TXN923
+12-03-2017,Cash,Groceries,beverage,40,Expense,TXN922
+13-03-2017,Cash,Groceries,Grocery,100,Expense,TXN924
+13-03-2017,Cash,Discretionary,grooming,100,Expense,TXN925
+13-03-2017,Cash,Utilities,Hardware,1600,Expense,TXN926
+13-03-2017,Cash,Utilities,Hardware,400,Expense,TXN927
+14-03-2017,Cash,Utilities,Hardware,300,Expense,TXN928
+15-03-2017,Cash,Groceries,Ice cream,40,Expense,TXN929
+15-03-2017,Cash,Utilities,Kirana,111,Expense,TXN930
+15-03-2017,Cash,Utilities,Kitchen,50,Expense,TXN931
+16-03-2017,Saving Bank account 1,Communication,Wifi Internet Service,2820,Expense,TXN932
+18-03-2017,Cash,Groceries,fruits,310,Expense,TXN934
+18-03-2017,Saving Bank account 1,Groceries,Grocery,160,Expense,TXN935
+18-03-2017,Cash,Groceries,snacks,57,Expense,TXN936
+19-03-2017,Saving Bank account 1,Communication,Mobile Service Provider,296,Expense,TXN937
+20-03-2017,Saving Bank account 1,Utilities,Appliances,450,Expense,TXN938
+22-03-2017,Cash,Transportation,auto,30,Expense,TXN946
+22-03-2017,Cash,Transportation,Bus,18,Expense,TXN943
+22-03-2017,Cash,Transportation,auto,50,Expense,TXN941
+22-03-2017,Cash,Transportation,Train,20,Expense,TXN942
+22-03-2017,Cash,Transportation,auto,33,Expense,TXN940
+22-03-2017,Saving Bank account 1,Transportation,Travels,600,Expense,TXN944
+22-03-2017,Cash,Utilities,Furniture,500,Expense,TXN945
+22-03-2017,Cash,Transportation,auto,20,Expense,TXN939
+23-03-2017,Saving Bank account 1,Groceries,beverage,60,Expense,TXN948
+23-03-2017,Saving Bank account 1,Healthcare,Pocket money,3000,Expense,TXN949
+25-03-2017,Cash,Groceries,Milk,60,Expense,TXN950
+25-03-2017,Cash,Healthcare,Hospital,150,Expense,TXN951
+25-03-2017,Saving Bank account 1,Transportation,Travels,900,Expense,TXN952
+25-03-2017,Saving Bank account 1,Healthcare,Medicine,110,Expense,TXN953
+25-03-2017,Saving Bank account 1,Healthcare,Medicine,29,Expense,TXN954
+25-03-2017,Cash,Groceries,Grocery,20,Expense,TXN956
+26-03-2017,Saving Bank account 1,Groceries,Milk,60,Expense,TXN957
+26-03-2017,Saving Bank account 1,Utilities,Kirana,786,Expense,TXN958
+27-03-2017,Saving Bank account 1,Groceries,Milk,60,Expense,TXN959
+27-03-2017,Saving Bank account 1,Utilities,Appliances,260,Expense,TXN960
+28-03-2017,Cash,Groceries,beverage,12,Expense,TXN961
+30-03-2017,Saving Bank account 1,Utilities,Kirana,245,Expense,TXN962
+31-03-2017,Cash,Transportation,Train,60,Expense,TXN965
+31-03-2017,Cash,Transportation,Taxi,30,Expense,TXN966
+31-03-2017,Cash,Transportation,Taxi,30,Expense,TXN967
+31-03-2017,Cash,Transportation,auto,30,Expense,TXN968
+31-03-2017,Cash,Transportation,auto,15,Expense,TXN969
+31-03-2017,Cash,Utilities,Hardware,2500,Expense,TXN970
+31-03-2017,Cash,Transportation,auto,15,Expense,TXN971
+31-03-2017,Cash,Groceries,Lunch,495,Expense,TXN972
+01-04-2017,Cash,Groceries,Grocery,52,Expense,TXN974
+01-04-2017,Cash,Groceries,snacks,40,Expense,TXN976
+01-04-2017,Cash,Groceries,Grocery,10,Expense,TXN975
+03-04-2017,Saving Bank account 1,Communication,Edtech Course,2700.1,Expense,TXN977
+03-04-2017,Saving Bank account 1,Groceries,snacks,60,Expense,TXN978
+04-04-2017,Saving Bank account 1,Groceries,Ice cream,45,Expense,TXN979
+06-04-2017,Saving Bank account 1,Transportation,train,213.6,Expense,TXN980
+10-04-2017,Saving Bank account 1,Groceries,beverage,20,Expense,TXN981
+12-04-2017,Saving Bank account 1,Groceries,breakfast,125,Expense,TXN982
+14-04-2017,Saving Bank account 1,Healthcare,Pocket money,5000,Expense,TXN983
+16-04-2017,Saving Bank account 1,Communication,Tata Sky,192,Expense,TXN984
+17-04-2017,Saving Bank account 1,Groceries,Dinner,1076,Expense,TXN985
+17-04-2017,Saving Bank account 1,Healthcare,clothes,1497,Expense,TXN986
+18-04-2017,Saving Bank account 1,Groceries,Milk,64,Expense,TXN987
+18-04-2017,Saving Bank account 1,Groceries,Ice cream,20,Expense,TXN988
+20-04-2017,Saving Bank account 1,Groceries,Milk,64,Expense,TXN989
+20-04-2017,Saving Bank account 1,Utilities,Kirana,621.68,Expense,TXN990
+21-04-2017,Saving Bank account 1,Communication,Cable TV,261,Expense,TXN991
+21-04-2017,Saving Bank account 1,Healthcare,Medicine,40,Expense,TXN992
+22-04-2017,Saving Bank account 1,Transportation,Train,30,Expense,TXN994
+22-04-2017,Saving Bank account 1,Groceries,Grocery,205,Expense,TXN995
+22-04-2017,Saving Bank account 1,Groceries,beverage,20,Expense,TXN993
+23-04-2017,Saving Bank account 1,Groceries,snacks,40,Expense,TXN996
+23-04-2017,Saving Bank account 1,Groceries,vegetables,15,Expense,TXN997
+25-04-2017,Saving Bank account 1,Groceries,Milk,64,Expense,TXN999
+25-04-2017,Cash,Transportation,auto,30,Expense,TXN1000
+25-04-2017,Cash,Transportation,Train,20,Expense,TXN1001
+25-04-2017,Cash,Transportation,auto,10,Expense,TXN1002
+25-04-2017,Saving Bank account 1,Groceries,snacks,24,Expense,TXN1003
+27-04-2017,Saving Bank account 1,Groceries,Milk,64,Expense,TXN1005
+28-04-2017,Saving Bank account 1,Communication,Netflix,149,Expense,TXN1006
+28-04-2017,Saving Bank account 1,Groceries,Ice cream,30,Expense,TXN1007
+30-04-2017,Cash,Groceries,snacks,110,Expense,TXN1012
+30-04-2017,Cash,Groceries,fruits,25,Expense,TXN1010
+30-04-2017,Saving Bank account 1,Groceries,Milk,64,Expense,TXN1014
+30-04-2017,Saving Bank account 1,Groceries,Ice cream,10,Expense,TXN1008
+30-04-2017,Saving Bank account 1,Groceries,Dinner,221,Expense,TXN1015
+30-04-2017,Cash,Transportation,auto,30,Expense,TXN1011
+30-04-2017,Saving Bank account 1,Groceries,Grocery,17,Expense,TXN1013
+01-05-2017,Saving Bank account 1,Discretionary,Clothing,599,Expense,TXN1021
+01-05-2017,Cash,Transportation,auto,30,Expense,TXN1018
+01-05-2017,Cash,Transportation,auto,30,Expense,TXN1019
+01-05-2017,Saving Bank account 1,Groceries,Dinner,321,Expense,TXN1017
+01-05-2017,Saving Bank account 1,Groceries,flour mill,47,Expense,TXN1023
+01-05-2017,Saving Bank account 1,Discretionary,Clothing,399,Expense,TXN1025
+01-05-2017,Cash,Transportation,Train,10,Expense,TXN1020
+02-05-2017,Saving Bank account 1,Groceries,Milk,64,Expense,TXN1026
+02-05-2017,Saving Bank account 1,Groceries,Tea,20,Expense,TXN1027
+02-05-2017,Saving Bank account 1,Discretionary,Footwear,2421,Expense,TXN1028
+02-05-2017,Saving Bank account 1,Healthcare,Medicine,40,Expense,TXN1029
+03-05-2017,Cash,Transportation,Train,60,Expense,TXN1030
+03-05-2017,Saving Bank account 1,Utilities,Kitchen,8825,Expense,TXN1034
+03-05-2017,Cash,Transportation,auto,30,Expense,TXN1032
+03-05-2017,Cash,Transportation,Train,10,Expense,TXN1037
+03-05-2017,Cash,Transportation,auto,15,Expense,TXN1031
+03-05-2017,Cash,Transportation,train,1100,Expense,TXN1036
+03-05-2017,Saving Bank account 1,Communication,Edtech Course,2700.1,Expense,TXN1033
+04-05-2017,Saving Bank account 1,Communication,Mobile Service Provider,296,Expense,TXN1038
+05-05-2017,Saving Bank account 1,Groceries,breakfast,33,Expense,TXN1039
+05-05-2017,Cash,Groceries,beverage,20,Expense,TXN1040
+05-05-2017,Saving Bank account 1,Groceries,Dinner,45,Expense,TXN1041
+06-05-2017,Saving Bank account 1,Groceries,Lunch,330,Expense,TXN1042
+06-05-2017,Cash,Groceries,Tea,10,Expense,TXN1043
+06-05-2017,Cash,Groceries,snacks,20,Expense,TXN1044
+06-05-2017,Cash,Groceries,Dinner,25,Expense,TXN1045
+07-05-2017,Saving Bank account 1,Groceries,snacks,98,Expense,TXN1046
+07-05-2017,Saving Bank account 1,Groceries,Dinner,30,Expense,TXN1047
+07-05-2017,Saving Bank account 1,Groceries,breakfast,45,Expense,TXN1048
+07-05-2017,Saving Bank account 1,Communication,Mobile Service Provider,296,Expense,TXN1049
+08-05-2017,Saving Bank account 1,Groceries,breakfast,35,Expense,TXN1050
+08-05-2017,Saving Bank account 1,Groceries,Dinner,191,Expense,TXN1051
+09-05-2017,Saving Bank account 1,Groceries,Lunch,45,Expense,TXN1052
+09-05-2017,Saving Bank account 1,Groceries,Dinner,20,Expense,TXN1053
+09-05-2017,Cash,Groceries,Tea,10,Expense,TXN1054
+09-05-2017,Cash,Groceries,Ice cream,40,Expense,TXN1055
+10-05-2017,Saving Bank account 1,Groceries,breakfast,34,Expense,TXN1056
+10-05-2017,Saving Bank account 1,Groceries,Lunch,45,Expense,TXN1057
+10-05-2017,Cash,Groceries,snacks,125,Expense,TXN1058
+10-05-2017,Saving Bank account 1,Groceries,Dinner,20,Expense,TXN1059
+10-05-2017,Saving Bank account 1,Education,Stationary,24,Expense,TXN1060
+10-05-2017,Saving Bank account 1,Education,Stationary,12,Expense,TXN1061
+10-05-2017,Saving Bank account 1,Education,Stationary,100,Expense,TXN1062
+11-05-2017,Saving Bank account 1,Communication,Tata Sky,230,Expense,TXN1064
+11-05-2017,Saving Bank account 1,Groceries,Lunch,233,Expense,TXN1063
+11-05-2017,Cash,Groceries,Tea,10,Expense,TXN1066
+11-05-2017,Saving Bank account 1,Discretionary,grooming,318,Expense,TXN1065
+12-05-2017,Saving Bank account 1,Healthcare,Pocket money,5000,Expense,TXN1067
+12-05-2017,Cash,Groceries,Tea,10,Expense,TXN1068
+12-05-2017,Saving Bank account 1,Groceries,Lunch,20,Expense,TXN1069
+12-05-2017,Cash,Groceries,Tea,10,Expense,TXN1070
+13-05-2017,Cash,Groceries,Tea,5,Expense,TXN1072
+13-05-2017,Saving Bank account 1,Groceries,breakfast,35,Expense,TXN1071
+13-05-2017,Saving Bank account 1,Groceries,Lunch,20,Expense,TXN1073
+13-05-2017,Saving Bank account 1,Groceries,Dinner,242,Expense,TXN1075
+13-05-2017,Cash,Groceries,Tea,10,Expense,TXN1074
+14-05-2017,Saving Bank account 1,Groceries,Lunch,242,Expense,TXN1076
+14-05-2017,Saving Bank account 1,Utilities,Kirana,50,Expense,TXN1077
+15-05-2017,Saving Bank account 1,Groceries,breakfast,35,Expense,TXN1078
+15-05-2017,Cash,Groceries,Dinner,100,Expense,TXN1079
+15-05-2017,Saving Bank account 1,Communication,Newspaper,380,Expense,TXN1080
+16-05-2017,Cash,Groceries,Tea,5,Expense,TXN1083
+16-05-2017,Saving Bank account 1,Discretionary,grooming,247,Expense,TXN1082
+16-05-2017,Saving Bank account 1,Groceries,Lunch,234,Expense,TXN1084
+16-05-2017,Cash,Groceries,Tea,10,Expense,TXN1081
+17-05-2017,Saving Bank account 1,Groceries,Ice cream,99,Expense,TXN1087
+17-05-2017,Cash,Groceries,Tea,5,Expense,TXN1088
+17-05-2017,Cash,Groceries,Tea,10,Expense,TXN1085
+17-05-2017,Saving Bank account 1,Groceries,Lunch,210,Expense,TXN1086
+18-05-2017,Saving Bank account 1,Groceries,Dinner,219,Expense,TXN1089
+18-05-2017,Cash,Groceries,Tea,10,Expense,TXN1090
+18-05-2017,Saving Bank account 1,Groceries,vegetables,60,Expense,TXN1091
+18-05-2017,Saving Bank account 1,Groceries,Lunch,45,Expense,TXN1092
+18-05-2017,Saving Bank account 1,Groceries,breakfast,25,Expense,TXN1093
+18-05-2017,Cash,Discretionary,grooming,50,Expense,TXN1094
+18-05-2017,Saving Bank account 1,Groceries,Milk,64,Expense,TXN1095
+18-05-2017,Cash,Groceries,Tea,10,Expense,TXN1096
+21-05-2017,Cash,Groceries,flour mill,24,Expense,TXN1099
+21-05-2017,Saving Bank account 1,Communication,Cable TV,261,Expense,TXN1097
+21-05-2017,Cash,Transportation,auto,30,Expense,TXN1100
+21-05-2017,Cash,Transportation,Train,30,Expense,TXN1101
+21-05-2017,Cash,Transportation,auto,20,Expense,TXN1098
+22-05-2017,Saving Bank account 1,Groceries,flour mill,88,Expense,TXN1102
+22-05-2017,Saving Bank account 1,Utilities,Appliances,50,Expense,TXN1103
+22-05-2017,Saving Bank account 1,Groceries,beverage,15,Expense,TXN1104
+22-05-2017,Saving Bank account 1,Groceries,beverage,40,Expense,TXN1105
+23-05-2017,Saving Bank account 1,Education,Stationary,75,Expense,TXN1106
+23-05-2017,Cash,Utilities,Kirana,46,Expense,TXN1107
+23-05-2017,Saving Bank account 1,Groceries,snacks,25,Expense,TXN1108
+24-05-2017,Saving Bank account 1,Groceries,Milk,64,Expense,TXN1109
+24-05-2017,Cash,Transportation,Train,30,Expense,TXN1110
+24-05-2017,Cash,Groceries,snacks,15,Expense,TXN1111
+24-05-2017,Saving Bank account 1,Communication,Cable TV,261,Expense,TXN1112
+25-05-2017,Cash,Transportation,Train,15,Expense,TXN1113
+25-05-2017,Cash,Groceries,snacks,30,Expense,TXN1114
+27-05-2017,Saving Bank account 1,Education,Stationary,20,Expense,TXN1116
+27-05-2017,Saving Bank account 1,Groceries,Milk,64,Expense,TXN1117
+27-05-2017,Saving Bank account 1,Groceries,vegetables,20,Expense,TXN1115
+28-05-2017,Saving Bank account 1,Utilities,Kirana,996,Expense,TXN1118
+28-05-2017,Saving Bank account 1,Groceries,snacks,24,Expense,TXN1119
+28-05-2017,Cash,Groceries,vegetables,45,Expense,TXN1120
+28-05-2017,Cash,Groceries,Grocery,30,Expense,TXN1121
+28-05-2017,Saving Bank account 1,Groceries,breakfast,70,Expense,TXN1122
+28-05-2017,Saving Bank account 1,Groceries,Grocery,140,Expense,TXN1123
+28-05-2017,Saving Bank account 1,Groceries,vegetables,60,Expense,TXN1124
+29-05-2017,Saving Bank account 1,Groceries,Milk,64,Expense,TXN1125
+29-05-2017,Cash,Education,Stationary,30,Expense,TXN1126
+29-05-2017,Saving Bank account 1,Groceries,Grocery,35,Expense,TXN1127
+30-05-2017,Cash,Utilities,Kitchen,275,Expense,TXN1131
+30-05-2017,Cash,Transportation,Train,80,Expense,TXN1129
+30-05-2017,Saving Bank account 1,Groceries,Tea,34,Expense,TXN1130
+30-05-2017,Cash,Transportation,auto,30,Expense,TXN1128
+30-05-2017,Cash,Groceries,Lunch,120,Expense,TXN1132
+30-05-2017,Cash,Groceries,beverage,40,Expense,TXN1133
+30-05-2017,Saving Bank account 1,Groceries,Dinner,25,Expense,TXN1135
+30-05-2017,Cash,Transportation,auto,30,Expense,TXN1134
+31-05-2017,Saving Bank account 1,Discretionary,Clothing,655,Expense,TXN1137
+01-06-2017,Saving Bank account 1,Groceries,snacks,24,Expense,TXN1138
+01-06-2017,Saving Bank account 1,Groceries,Milk,65,Expense,TXN1139
+01-06-2017,Saving Bank account 1,Miscellaneous,Home,10000,Expense,TXN1141
+02-06-2017,Saving Bank account 1,Groceries,flour mill,141,Expense,TXN1142
+02-06-2017,Saving Bank account 1,Groceries,snacks,20,Expense,TXN1143
+03-06-2017,Saving Bank account 1,Communication,Edtech Course,2700.1,Expense,TXN1144
+03-06-2017,Saving Bank account 1,Groceries,Lunch,242.95,Expense,TXN1145
+03-06-2017,Saving Bank account 1,Utilities,Kirana,267,Expense,TXN1146
+03-06-2017,Saving Bank account 1,Groceries,beverage,20,Expense,TXN1147
+04-06-2017,Saving Bank account 1,Groceries,Milk,64,Expense,TXN1148
+04-06-2017,Saving Bank account 1,Groceries,vegetables,25,Expense,TXN1149
+05-06-2017,Saving Bank account 1,Healthcare,Pocket money,2500,Expense,TXN1150
+05-06-2017,Saving Bank account 1,Healthcare,Medicine,190,Expense,TXN1151
+05-06-2017,Cash,Healthcare,Medicine,18,Expense,TXN1152
+05-06-2017,Cash,Groceries,chocolate,20,Expense,TXN1153
+05-06-2017,Cash,Groceries,Dinner,180,Expense,TXN1154
+06-06-2017,Cash,Groceries,snacks,40,Expense,TXN1156
+06-06-2017,Saving Bank account 1,Groceries,Milk,64,Expense,TXN1157
+06-06-2017,Cash,Education,Stationary,3,Expense,TXN1155
+07-06-2017,Cash,Utilities,Kitchen,26,Expense,TXN1158
+08-06-2017,Saving Bank account 1,Groceries,Eggs,35,Expense,TXN1159
+08-06-2017,Saving Bank account 1,Groceries,Milk,64,Expense,TXN1160
+08-06-2017,Saving Bank account 1,Groceries,breakfast,35,Expense,TXN1161
+08-06-2017,Cash,Discretionary,Movie,760,Expense,TXN1162
+08-06-2017,Cash,Transportation,auto,30,Expense,TXN1163
+08-06-2017,Cash,Transportation,auto,30,Expense,TXN1164
+10-06-2017,Saving Bank account 1,Healthcare,Medicine,386,Expense,TXN1165
+10-06-2017,Saving Bank account 1,Transportation,train,501,Expense,TXN1166
+10-06-2017,Saving Bank account 1,Communication,Newspaper,170,Expense,TXN1167
+11-06-2017,Saving Bank account 1,Groceries,Milk,64,Expense,TXN1168
+11-06-2017,Saving Bank account 1,Discretionary,grooming,100,Expense,TXN1169
+13-06-2017,Saving Bank account 1,Groceries,Milk,64,Expense,TXN1170
+15-06-2017,Saving Bank account 1,Education,Stationary,29,Expense,TXN1171
+16-06-2017,Saving Bank account 1,Groceries,Milk,64,Expense,TXN1173
+17-06-2017,Saving Bank account 1,Groceries,Milk,64,Expense,TXN1175
+18-06-2017,Cash,Transportation,Bus,15,Expense,TXN1176
+18-06-2017,Cash,Transportation,Bus,12,Expense,TXN1177
+19-06-2017,Saving Bank account 1,Groceries,Milk,64,Expense,TXN1178
+19-06-2017,Saving Bank account 1,Groceries,breakfast,18,Expense,TXN1179
+19-06-2017,Saving Bank account 1,Groceries,Grocery,80,Expense,TXN1180
+19-06-2017,Cash,Groceries,flour mill,141,Expense,TXN1181
+19-06-2017,Saving Bank account 1,Groceries,Grocery,60,Expense,TXN1182
+22-06-2017,Saving Bank account 1,Groceries,Milk,64,Expense,TXN1187
+22-06-2017,Cash,Transportation,auto,30,Expense,TXN1188
+22-06-2017,Cash,Transportation,train,20,Expense,TXN1184
+22-06-2017,Saving Bank account 1,Groceries,Eating out,261,Expense,TXN1185
+23-06-2017,Saving Bank account 1,Groceries,Grocery,35,Expense,TXN1190
+24-06-2017,Saving Bank account 1,Groceries,Milk,64,Expense,TXN1191
+25-06-2017,Cash,Transportation,Train,10,Expense,TXN1192
+26-06-2017,Saving Bank account 1,Groceries,Grocery,20,Expense,TXN1193
+26-06-2017,Saving Bank account 1,Groceries,Milk,64,Expense,TXN1194
+26-06-2017,Saving Bank account 1,Groceries,snacks,24,Expense,TXN1195
+27-06-2017,Cash,Healthcare,Medicine,12,Expense,TXN1196
+28-06-2017,Cash,Transportation,Train,30,Expense,TXN1197
+28-06-2017,Cash,Transportation,auto,30,Expense,TXN1198
+28-06-2017,Saving Bank account 1,Groceries,Lunch,186.5,Expense,TXN1201
+28-06-2017,Saving Bank account 1,Healthcare,Pocket money,1500,Expense,TXN1202
+28-06-2017,Saving Bank account 1,Groceries,Grocery,15,Expense,TXN1200
+29-06-2017,Cash,Transportation,auto,50,Expense,TXN1203
+29-06-2017,Saving Bank account 1,Discretionary,grooming,60,Expense,TXN1204
+01-07-2017,Saving Bank account 1,Miscellaneous,Home,10000,Expense,TXN1208
+01-07-2017,Saving Bank account 1,Transportation,Travels,1711,Expense,TXN1209
+02-07-2017,Saving Bank account 1,Groceries,Ice cream,140,Expense,TXN1210
+03-07-2017,Saving Bank account 1,Communication,Newspaper,170,Expense,TXN1212
+04-07-2017,Saving Bank account 1,Groceries,Bread,35,Expense,TXN1213
+04-07-2017,Saving Bank account 1,Transportation,auto,60,Expense,TXN1214
+04-07-2017,Saving Bank account 1,Communication,Edtech Course,2700,Expense,TXN1215
+04-07-2017,Saving Bank account 1,Groceries,Grocery,25,Expense,TXN1216
+04-07-2017,Saving Bank account 1,Groceries,Milk,64,Expense,TXN1217
+05-07-2017,Saving Bank account 1,Groceries,Grocery,100,Expense,TXN1220
+05-07-2017,Saving Bank account 1,Groceries,Dinner,115,Expense,TXN1221
+05-07-2017,Saving Bank account 1,Groceries,Lunch,45,Expense,TXN1218
+05-07-2017,Saving Bank account 1,Groceries,Dinner,180,Expense,TXN1219
+08-07-2017,Saving Bank account 1,Groceries,Grocery,30,Expense,TXN1222
+08-07-2017,Saving Bank account 1,Groceries,Eggs,26,Expense,TXN1223
+08-07-2017,Saving Bank account 1,Groceries,Milk,64,Expense,TXN1224
+09-07-2017,Saving Bank account 1,Groceries,beverage,20,Expense,TXN1226
+09-07-2017,Saving Bank account 1,Transportation,Bus,12,Expense,TXN1228
+09-07-2017,Saving Bank account 1,Groceries,snacks,20,Expense,TXN1230
+09-07-2017,Credit Card,Utilities,Kirana,2923,Expense,TXN1225
+09-07-2017,Saving Bank account 1,Transportation,Train,80,Expense,TXN1227
+09-07-2017,Saving Bank account 1,Transportation,auto,30,Expense,TXN1229
+10-07-2017,Saving Bank account 1,Groceries,Rajgira ladu,50,Expense,TXN1231
+11-07-2017,Saving Bank account 1,Healthcare,Pocket money,5000,Expense,TXN1233
+11-07-2017,Saving Bank account 1,Education,Stationary,10,Expense,TXN1234
+11-07-2017,Saving Bank account 1,Groceries,Ice cream,15,Expense,TXN1235
+11-07-2017,Cash,Healthcare,Pocket money,1500,Expense,TXN1236
+12-07-2017,Saving Bank account 1,Groceries,Milk,64,Expense,TXN1238
+14-07-2017,Saving Bank account 1,Groceries,Ice cream,15,Expense,TXN1240
+15-07-2017,Saving Bank account 1,Groceries,snacks,25,Expense,TXN1241
+15-07-2017,Saving Bank account 1,Groceries,Milk,32,Expense,TXN1242
+17-07-2017,Saving Bank account 1,Transportation,Train,40,Expense,TXN1243
+17-07-2017,Saving Bank account 1,Groceries,beverage,60,Expense,TXN1245
+17-07-2017,Saving Bank account 1,Discretionary,Laundry,63,Expense,TXN1246
+17-07-2017,Credit Card,Groceries,Lunch,540,Expense,TXN1244
+17-07-2017,Cash,Transportation,auto,30,Expense,TXN1247
+18-07-2017,Saving Bank account 1,Groceries,beverage,20,Expense,TXN1248
+18-07-2017,Saving Bank account 1,Groceries,Water,70,Expense,TXN1249
+18-07-2017,Cash,Groceries,flour mill,43,Expense,TXN1250
+18-07-2017,Saving Bank account 1,Utilities,Hardware,540,Expense,TXN1251
+18-07-2017,Saving Bank account 1,Utilities,Hardware,240,Expense,TXN1252
+18-07-2017,Cash,Groceries,Grocery,55,Expense,TXN1254
+18-07-2017,Saving Bank account 1,Groceries,Grocery,35,Expense,TXN1255
+19-07-2017,Saving Bank account 1,Groceries,Milk,32,Expense,TXN1256
+19-07-2017,Saving Bank account 1,Groceries,Eggs,22,Expense,TXN1257
+20-07-2017,Saving Bank account 1,Groceries,Milk,32,Expense,TXN1260
+20-07-2017,Credit Card,Communication,Mobile Service Provider,2545,Expense,TXN1261
+20-07-2017,Saving Bank account 1,Groceries,Grocery,88,Expense,TXN1258
+20-07-2017,Cash,Groceries,snacks,50,Expense,TXN1259
+21-07-2017,Saving Bank account 1,Groceries,Milk,33,Expense,TXN1263
+22-07-2017,Saving Bank account 1,Groceries,Milk,64,Expense,TXN1264
+23-07-2017,Saving Bank account 1,Groceries,Grocery,52,Expense,TXN1265
+23-07-2017,Saving Bank account 1,Utilities,Appliances,2065,Expense,TXN1266
+23-07-2017,Cash,Utilities,Appliances,200,Expense,TXN1267
+24-07-2017,Saving Bank account 1,Groceries,Milk,64,Expense,TXN1268
+24-07-2017,Saving Bank account 1,Groceries,Eggs,22,Expense,TXN1269
+24-07-2017,Credit Card,Groceries,snacks,248,Expense,TXN1270
+25-07-2017,Saving Bank account 1,Discretionary,Trip,20000,Expense,TXN1271
+27-07-2017,Credit Card,Groceries,Lunch,203,Expense,TXN1273
+27-07-2017,Credit Card,Groceries,Dinner,215,Expense,TXN1274
+27-07-2017,Cash,Utilities,Appliances,200,Expense,TXN1276
+28-07-2017,Cash,Transportation,auto,30,Expense,TXN1280
+28-07-2017,Cash,Transportation,auto,30,Expense,TXN1278
+28-07-2017,Cash,Transportation,Train,20,Expense,TXN1281
+28-07-2017,Credit Card,Healthcare,Hospital,3050,Expense,TXN1282
+28-07-2017,Credit Card,Healthcare,Medicine,167,Expense,TXN1279
+29-07-2017,Saving Bank account 1,Transportation,auto,97,Expense,TXN1283
+29-07-2017,Credit Card,Healthcare,Medicine,556,Expense,TXN1284
+29-07-2017,Saving Bank account 1,Groceries,Milk,64,Expense,TXN1285
+30-07-2017,Saving Bank account 1,Utilities,Appliances,3000,Expense,TXN1290
+30-07-2017,Cash,Groceries,snacks,100,Expense,TXN1289
+30-07-2017,Cash,Utilities,Appliances,1000,Expense,TXN1291
+30-07-2017,Saving Bank account 1,Transportation,Travels,895,Expense,TXN1292
+30-07-2017,Cash,Groceries,Grocery,20,Expense,TXN1293
+30-07-2017,Cash,Transportation,Train,20,Expense,TXN1288
+31-07-2017,Saving Bank account 1,Groceries,Dinner,100,Expense,TXN1294
+31-07-2017,Saving Bank account 1,Groceries,Eggs,22,Expense,TXN1295
+31-07-2017,Cash,Transportation,auto,65,Expense,TXN1296
+01-08-2017,Cash,Healthcare,Medicine,10,Expense,TXN1298
+01-08-2017,Saving Bank account 1,Discretionary,Clothing,399,Expense,TXN1299
+01-08-2017,Saving Bank account 1,Miscellaneous,Home,10000,Expense,TXN1297
+02-08-2017,Saving Bank account 1,Communication,Edtech Course,2700,Expense,TXN1301
+02-08-2017,Saving Bank account 1,Groceries,snacks,14,Expense,TXN1302
+02-08-2017,Saving Bank account 1,Groceries,Milk,66,Expense,TXN1300
+03-08-2017,Saving Bank account 1,Communication,Newspaper,170,Expense,TXN1303
+04-08-2017,Saving Bank account 1,Groceries,Milk,68,Expense,TXN1304
+04-08-2017,Saving Bank account 1,Communication,Mobile Service Provider,2999,Expense,TXN1305
+05-08-2017,Credit Card,Discretionary,Clothing,989,Expense,TXN1309
+05-08-2017,Cash,Healthcare,Pocket money,100,Expense,TXN1310
+05-08-2017,Saving Bank account 1,Healthcare,Hospital,6190,Expense,TXN1311
+05-08-2017,Saving Bank account 1,Healthcare,Medicine,27,Expense,TXN1312
+06-08-2017,Cash,Utilities,Kirana,302,Expense,TXN1315
+06-08-2017,Saving Bank account 1,Groceries,breakfast,5,Expense,TXN1314
+06-08-2017,Saving Bank account 1,Groceries,Lunch,25,Expense,TXN1313
+06-08-2017,Saving Bank account 1,Communication,Newspaper,170,Expense,TXN1316
+06-08-2017,Cash,Healthcare,Medicine,22,Expense,TXN1317
+07-08-2017,Saving Bank account 1,Groceries,Milk,33,Expense,TXN1320
+07-08-2017,Saving Bank account 1,Healthcare,Pocket money,5000,Expense,TXN1321
+08-08-2017,Saving Bank account 1,Groceries,Milk,66,Expense,TXN1322
+08-08-2017,Saving Bank account 1,Discretionary,Trip,43000,Expense,TXN1323
+09-08-2017,Saving Bank account 1,Healthcare,Medicine,125,Expense,TXN1324
+09-08-2017,Saving Bank account 1,Utilities,Toiletries,218,Expense,TXN1325
+10-08-2017,Saving Bank account 1,Utilities,Kirana,76,Expense,TXN1327
+10-08-2017,Saving Bank account 1,Groceries,Milk,66,Expense,TXN1329
+11-08-2017,Cash,Transportation,auto,60,Expense,TXN1332
+11-08-2017,Cash,Transportation,Bus,330,Expense,TXN1330
+11-08-2017,Cash,Transportation,Bus,470,Expense,TXN1334
+11-08-2017,Cash,Transportation,auto,100,Expense,TXN1333
+12-08-2017,Saving Bank account 1,Transportation,Travels,1665,Expense,TXN1335
+12-08-2017,Cash,Discretionary,Navratri,800,Expense,TXN1336
+14-08-2017,Credit Card,Utilities,Kirana,112,Expense,TXN1337
+14-08-2017,Credit Card,Utilities,Appliances,320,Expense,TXN1338
+15-08-2017,Saving Bank account 1,Groceries,Milk,99,Expense,TXN1339
+15-08-2017,Credit Card,Utilities,Appliances,1400,Expense,TXN1340
+17-08-2017,Cash,Groceries,snacks,45,Expense,TXN1341
+17-08-2017,Cash,Utilities,Kirana,88,Expense,TXN1342
+18-08-2017,Cash,Healthcare,Pocket money,100,Expense,TXN1344
+19-08-2017,Saving Bank account 1,Communication,Tata Sky,217,Expense,TXN1347
+19-08-2017,Cash,Utilities,Kirana,45,Expense,TXN1348
+19-08-2017,Cash,Utilities,Kirana,20,Expense,TXN1345
+19-08-2017,Cash,Utilities,Appliances,60,Expense,TXN1346
+20-08-2017,Credit Card,Groceries,Ice cream,166,Expense,TXN1350
+20-08-2017,Credit Card,Groceries,Lunch,504,Expense,TXN1351
+20-08-2017,Cash,Transportation,Train,60,Expense,TXN1354
+20-08-2017,Cash,Transportation,auto,60,Expense,TXN1349
+20-08-2017,Credit Card,Utilities,Furniture,569,Expense,TXN1353
+20-08-2017,Cash,Discretionary,Laundry,48,Expense,TXN1356
+20-08-2017,Cash,Transportation,Taxi,25,Expense,TXN1358
+20-08-2017,Cash,Transportation,auto,30,Expense,TXN1355
+20-08-2017,Saving Bank account 1,Transportation,Taxi,361,Expense,TXN1352
+21-08-2017,Saving Bank account 1,Education,Stationary,27,Expense,TXN1359
+21-08-2017,Saving Bank account 1,Discretionary,Accessories,80,Expense,TXN1360
+21-08-2017,Saving Bank account 1,Groceries,Grocery,33,Expense,TXN1361
+21-08-2017,Saving Bank account 1,Discretionary,grooming,50,Expense,TXN1362
+21-08-2017,Saving Bank account 1,Utilities,Appliances,280,Expense,TXN1363
+22-08-2017,Cash,Healthcare,Pocket money,5000,Expense,TXN1364
+22-08-2017,Cash,Utilities,Kitchen,300,Expense,TXN1365
+23-08-2017,Cash,Groceries,Lunch,300,Expense,TXN1366
+23-08-2017,Cash,Transportation,Taxi,850,Expense,TXN1367
+24-08-2017,Credit Card,Utilities,home decor,3000,Expense,TXN1369
+24-08-2017,Credit Card,Discretionary,Clothing,5200,Expense,TXN1368
+24-08-2017,Cash,Transportation,auto,40,Expense,TXN1371
+24-08-2017,Credit Card,Groceries,Eating out,325,Expense,TXN1370
+25-08-2017,Cash,Healthcare,Medicine,39,Expense,TXN1372
+26-08-2017,Cash,Groceries,breakfast,5,Expense,TXN1374
+27-08-2017,Cash,Transportation,auto,200,Expense,TXN1375
+27-08-2017,Cash,Healthcare,Medicine,59,Expense,TXN1376
+27-08-2017,Cash,Discretionary,Trip,100,Expense,TXN1377
+28-08-2017,Cash,Groceries,snacks,20,Expense,TXN1378
+28-08-2017,Cash,Discretionary,Trip,200,Expense,TXN1379
+29-08-2017,Cash,Transportation,Taxi,640,Expense,TXN1380
+30-08-2017,Saving Bank account 1,Healthcare,Medicine,22,Expense,TXN1381
+31-08-2017,Cash,Utilities,Toiletries,60,Expense,TXN1384
+31-08-2017,Cash,Utilities,Kirana,10,Expense,TXN1385
+31-08-2017,Saving Bank account 1,Groceries,Milk,99,Expense,TXN1386
+31-08-2017,Cash,Utilities,Kirana,25,Expense,TXN1387
+31-08-2017,Cash,Utilities,Kirana,5,Expense,TXN1390
+01-09-2017,Saving Bank account 1,Groceries,Milk,66,Expense,TXN1391
+01-09-2017,Saving Bank account 1,Miscellaneous,Home,10000,Expense,TXN1393
+03-09-2017,Saving Bank account 1,Communication,Newspaper,170,Expense,TXN1394
+04-09-2017,Saving Bank account 1,Groceries,Ice cream,40,Expense,TXN1396
+05-09-2017,Saving Bank account 1,Communication,Edtech Course,2700,Expense,TXN1397
+05-09-2017,Cash,Education,Stationary,50,Expense,TXN1398
+06-09-2017,Cash,Healthcare,Pocket money,500,Expense,TXN1400
+06-09-2017,Saving Bank account 1,Groceries,snacks,140,Expense,TXN1401
+08-09-2017,Cash,Groceries,flour mill,196,Expense,TXN1402
+08-09-2017,Saving Bank account 1,Transportation,Travels,1440,Expense,TXN1403
+09-09-2017,Cash,Healthcare,Medicine,45,Expense,TXN1404
+10-09-2017,Saving Bank account 1,Utilities,Kirana,514,Expense,TXN1405
+11-09-2017,Cash,Transportation,train,100,Expense,TXN1407
+11-09-2017,Saving Bank account 1,Healthcare,Pocket money,2500,Expense,TXN1410
+11-09-2017,Saving Bank account 1,Groceries,Grocery,285,Expense,TXN1408
+11-09-2017,Cash,Transportation,auto,60,Expense,TXN1412
+11-09-2017,Cash,Transportation,auto,30,Expense,TXN1406
+11-09-2017,Saving Bank account 1,Transportation,Travels,2598,Expense,TXN1411
+11-09-2017,Saving Bank account 1,Groceries,snacks,93,Expense,TXN1413
+12-09-2017,Saving Bank account 1,Groceries,Milk,66,Expense,TXN1415
+13-09-2017,Saving Bank account 1,Groceries,Dinner,110,Expense,TXN1416
+14-09-2017,Saving Bank account 1,Communication,Tata Sky,100,Expense,TXN1417
+14-09-2017,Credit Card,Groceries,Lunch,282,Expense,TXN1418
+15-09-2017,Saving Bank account 1,Transportation,Travels,1400,Expense,TXN1423
+15-09-2017,Saving Bank account 1,Groceries,Lunch,130,Expense,TXN1420
+15-09-2017,Saving Bank account 1,Healthcare,Medicine,373,Expense,TXN1421
+15-09-2017,Cash,Groceries,Dinner,60,Expense,TXN1419
+15-09-2017,Saving Bank account 1,Groceries,Milk,66,Expense,TXN1426
+15-09-2017,Saving Bank account 1,Groceries,Tea,24,Expense,TXN1424
+15-09-2017,Saving Bank account 1,Groceries,breakfast,50,Expense,TXN1425
+15-09-2017,Saving Bank account 1,Healthcare,Hospital,150,Expense,TXN1427
+15-09-2017,Cash,Groceries,fruits,55,Expense,TXN1422
+17-09-2017,Saving Bank account 1,Groceries,Milk,99,Expense,TXN1428
+17-09-2017,Credit Card,Utilities,Kirana,558,Expense,TXN1430
+17-09-2017,Saving Bank account 1,Utilities,Kirana,114,Expense,TXN1432
+17-09-2017,Saving Bank account 1,Healthcare,Medicine,151,Expense,TXN1431
+17-09-2017,Saving Bank account 1,Groceries,Bread,35,Expense,TXN1429
+18-09-2017,Saving Bank account 1,Healthcare,Medicine,55,Expense,TXN1433
+18-09-2017,Cash,Groceries,fruits,55,Expense,TXN1434
+18-09-2017,Cash,Groceries,fruits,60,Expense,TXN1435
+20-09-2017,Saving Bank account 1,Healthcare,Health,20,Expense,TXN1436
+20-09-2017,Cash,Healthcare,Pocket money,20,Expense,TXN1437
+21-09-2017,Cash,Transportation,Train,30,Expense,TXN1440
+21-09-2017,Cash,Groceries,snacks,15,Expense,TXN1442
+21-09-2017,Cash,Groceries,Tea,10,Expense,TXN1441
+21-09-2017,Cash,Healthcare,Pocket money,70,Expense,TXN1439
+21-09-2017,Cash,Transportation,auto,15,Expense,TXN1443
+23-09-2017,Saving Bank account 1,Groceries,Dinner,100,Expense,TXN1445
+24-09-2017,Cash,Transportation,Train,10,Expense,TXN1450
+24-09-2017,Credit Card,Discretionary,Movie,560,Expense,TXN1449
+24-09-2017,Saving Bank account 1,Discretionary,grooming,100,Expense,TXN1447
+24-09-2017,Cash,Transportation,auto,30,Expense,TXN1446
+24-09-2017,Cash,Groceries,Sweets,280,Expense,TXN1448
+25-09-2017,Saving Bank account 1,Groceries,fruits,30,Expense,TXN1451
+25-09-2017,Saving Bank account 1,Groceries,fruits,300,Expense,TXN1452
+27-09-2017,Cash,Utilities,Kirana,312,Expense,TXN1455
+28-09-2017,Saving Bank account 1,Transportation,Travels,2388,Expense,TXN1456
+28-09-2017,Saving Bank account 1,Communication,Tata Sky,215,Expense,TXN1457
+29-09-2017,Cash,Groceries,snacks,25,Expense,TXN1458
+29-09-2017,Cash,Discretionary,Laundry,60,Expense,TXN1459
+29-09-2017,Saving Bank account 1,Healthcare,Medicine,21,Expense,TXN1460
+29-09-2017,Cash,Groceries,Ice cream,10,Expense,TXN1461
+30-09-2017,Cash,Groceries,Grocery,30,Expense,TXN1465
+30-09-2017,Saving Bank account 1,Groceries,Grocery,135,Expense,TXN1466
+30-09-2017,Saving Bank account 1,Utilities,Kirana,155,Expense,TXN1467
+30-09-2017,Cash,Utilities,Kitchen,600,Expense,TXN1464
+30-09-2017,Saving Bank account 1,Healthcare,Medicine,59,Expense,TXN1468
+01-10-2017,Saving Bank account 1,Communication,Hotstar,149,Expense,TXN1469
+01-10-2017,Saving Bank account 1,Miscellaneous,Home,10000,Expense,TXN1470
+02-10-2017,Credit Card,Utilities,Kirana,3055,Expense,TXN1472
+04-10-2017,Cash,Healthcare,Pocket money,400,Expense,TXN1473
+04-10-2017,Saving Bank account 1,Healthcare,Medicine,50,Expense,TXN1474
+04-10-2017,Saving Bank account 1,Communication,Edtech Course,2700,Expense,TXN1475
+06-10-2017,Saving Bank account 1,Healthcare,Medicine,468,Expense,TXN1477
+08-10-2017,Credit Card,Healthcare,clothes,3198,Expense,TXN1478
+09-10-2017,Cash,Groceries,Grocery,280,Expense,TXN1481
+09-10-2017,Cash,Groceries,fruits,230,Expense,TXN1482
+09-10-2017,Saving Bank account 1,Communication,Wifi Internet Service,5640,Expense,TXN1480
+10-10-2017,Cash,Utilities,Kitchen,14,Expense,TXN1483
+11-10-2017,Saving Bank account 1,Transportation,train,658.6,Expense,TXN1484
+13-10-2017,Cash,Healthcare,Pocket money,70,Expense,TXN1485
+18-10-2017,Credit Card,Transportation,train,1231,Expense,TXN1487
+18-10-2017,Credit Card,Transportation,train,1333,Expense,TXN1488
+19-10-2017,Cash,Groceries,snacks,25,Expense,TXN1489
+20-10-2017,Cash,Discretionary,Diwali,20,Expense,TXN1490
+21-10-2017,Cash,Groceries,Grocery,33,Expense,TXN1493
+22-10-2017,Cash,Transportation,auto,50,Expense,TXN1495
+23-10-2017,Cash,Utilities,Kitchen,27,Expense,TXN1500
+23-10-2017,Cash,Discretionary,Footwear,220,Expense,TXN1501
+23-10-2017,Saving Bank account 1,Communication,Tata Sky,191,Expense,TXN1502
+23-10-2017,Cash,Discretionary,Diwali,200,Expense,TXN1496
+23-10-2017,Cash,Utilities,Toiletries,99,Expense,TXN1497
+23-10-2017,Cash,Utilities,Toiletries,9,Expense,TXN1498
+23-10-2017,Cash,Utilities,Kirana,50,Expense,TXN1499
+24-10-2017,Cash,Groceries,snacks,10,Expense,TXN1503
+24-10-2017,Saving Bank account 1,Communication,Mobile Service Provider,296,Expense,TXN1504
+26-10-2017,Cash,Discretionary,Diwali,500,Expense,TXN1506
+26-10-2017,Cash,Discretionary,Diwali,10,Expense,TXN1507
+26-10-2017,Cash,Discretionary,Diwali,50,Expense,TXN1508
+26-10-2017,Cash,Transportation,auto,50,Expense,TXN1509
+27-10-2017,Cash,Transportation,auto,40,Expense,TXN1510
+29-10-2017,Credit Card,Communication,Mobile Service Provider,296,Expense,TXN1511
+29-10-2017,Saving Bank account 1,Communication,Mobile Service Provider,296,Expense,TXN1512
+29-10-2017,Credit Card,Communication,Hotstar,795.49,Expense,TXN1513
+01-11-2017,Saving Bank account 1,Miscellaneous,Home,10000,Expense,TXN1515
+01-11-2017,Saving Bank account 1,Communication,Mobile Service Provider,296,Expense,TXN1514
+02-11-2017,Cash,Groceries,snacks,20,Expense,TXN1517
+03-11-2017,Saving Bank account 1,Communication,Edtech Course,2700,Expense,TXN1519
+05-11-2017,Saving Bank account 1,Communication,Tata Sky,200,Expense,TXN1520
+05-11-2017,Cash,Transportation,auto,15,Expense,TXN1521
+06-11-2017,Cash,Groceries,Eggs,39,Expense,TXN1522
+07-11-2017,Saving Bank account 1,Groceries,Milk,70,Expense,TXN1523
+08-11-2017,Credit Card,Utilities,Kirana,539,Expense,TXN1524
+08-11-2017,Saving Bank account 1,Groceries,fruits,130,Expense,TXN1525
+09-11-2017,Saving Bank account 1,Groceries,Milk,70,Expense,TXN1527
+09-11-2017,Credit Card,Utilities,Kirana,67,Expense,TXN1530
+09-11-2017,Saving Bank account 1,Healthcare,Medicine,100,Expense,TXN1529
+09-11-2017,Cash,Discretionary,Laundry,72,Expense,TXN1532
+09-11-2017,Cash,Utilities,Toiletries,20,Expense,TXN1531
+09-11-2017,Saving Bank account 1,Groceries,Lunch,40,Expense,TXN1528
+11-11-2017,Saving Bank account 1,Groceries,Eggs,39,Expense,TXN1533
+11-11-2017,Saving Bank account 1,Groceries,Milk,26,Expense,TXN1534
+12-11-2017,Cash,Transportation,auto,30,Expense,TXN1535
+12-11-2017,Credit Card,Groceries,Dinner,1525,Expense,TXN1536
+12-11-2017,Cash,Groceries,Tea,12,Expense,TXN1537
+12-11-2017,Credit Card,Utilities,Appliances,130,Expense,TXN1538
+12-11-2017,Cash,Transportation,Train,40,Expense,TXN1539
+12-11-2017,Cash,Transportation,auto,34,Expense,TXN1541
+12-11-2017,Cash,Transportation,Train,30,Expense,TXN1542
+12-11-2017,Cash,Utilities,Appliances,120,Expense,TXN1543
+13-11-2017,Saving Bank account 1,Groceries,Grocery,60,Expense,TXN1544
+13-11-2017,Saving Bank account 1,Groceries,Grocery,50,Expense,TXN1546
+13-11-2017,Saving Bank account 1,Utilities,Kirana,180,Expense,TXN1548
+13-11-2017,Saving Bank account 1,Groceries,Milk,70,Expense,TXN1547
+13-11-2017,Credit Card,Utilities,Kirana,268,Expense,TXN1545
+14-11-2017,Saving Bank account 1,Groceries,Grocery,160,Expense,TXN1549
+14-11-2017,Cash,Healthcare,Pocket money,770,Expense,TXN1550
+14-11-2017,Cash,Groceries,fruits,125,Expense,TXN1551
+15-11-2017,Credit Card,Groceries,Dinner,524,Expense,TXN1552
+15-11-2017,Saving Bank account 1,Utilities,Kirana,209,Expense,TXN1553
+15-11-2017,Saving Bank account 1,Education,Stationary,45,Expense,TXN1554
+15-11-2017,Saving Bank account 1,Groceries,Bread,25,Expense,TXN1555
+15-11-2017,Credit Card,Utilities,Kirana,95,Expense,TXN1556
+16-11-2017,Saving Bank account 1,Groceries,Milk,70,Expense,TXN1557
+17-11-2017,Saving Bank account 1,Utilities,Kirana,80,Expense,TXN1558
+17-11-2017,Saving Bank account 1,Groceries,Ice cream,105,Expense,TXN1559
+17-11-2017,Saving Bank account 1,Groceries,flour mill,28,Expense,TXN1560
+18-11-2017,Saving Bank account 1,Groceries,Milk,104,Expense,TXN1561
+18-11-2017,Saving Bank account 1,Communication,Mahanagar Gas,147,Expense,TXN1563
+18-11-2017,Saving Bank account 1,Groceries,Eggs,39,Expense,TXN1565
+18-11-2017,Credit Card,Utilities,Kirana,242,Expense,TXN1564
+19-11-2017,Credit Card,Discretionary,Movie,436,Expense,TXN1566
+19-11-2017,Cash,Transportation,auto,30,Expense,TXN1567
+19-11-2017,Cash,Transportation,Train,20,Expense,TXN1568
+19-11-2017,Cash,Transportation,auto,30,Expense,TXN1569
+19-11-2017,Saving Bank account 1,Groceries,snacks,20,Expense,TXN1570
+20-11-2017,Saving Bank account 1,Groceries,Milk,70,Expense,TXN1571
+23-11-2017,Cash,Groceries,Grocery,17,Expense,TXN1575
+23-11-2017,Cash,Groceries,Bread,23,Expense,TXN1576
+23-11-2017,Saving Bank account 1,Groceries,Milk,69,Expense,TXN1573
+23-11-2017,Cash,Groceries,flour mill,21,Expense,TXN1574
+24-11-2017,Credit Card,Discretionary,Movie,314,Expense,TXN1577
+25-11-2017,Saving Bank account 1,Groceries,Milk,69,Expense,TXN1578
+25-11-2017,Credit Card,Communication,Tata Sky,156,Expense,TXN1579
+25-11-2017,Cash,Groceries,vegetables,10,Expense,TXN1580
+25-11-2017,Cash,Discretionary,Laundry,90,Expense,TXN1581
+26-11-2017,Saving Bank account 1,Healthcare,Hospital,400,Expense,TXN1583
+26-11-2017,Cash,Transportation,auto,40,Expense,TXN1584
+26-11-2017,Cash,Transportation,Train,10,Expense,TXN1582
+26-11-2017,Credit Card,Healthcare,Medicine,159,Expense,TXN1585
+26-11-2017,Cash,Transportation,auto,40,Expense,TXN1586
+27-11-2017,Saving Bank account 1,Healthcare,Health,1000,Expense,TXN1588
+27-11-2017,Cash,Transportation,auto,30,Expense,TXN1589
+27-11-2017,Credit Card,Discretionary,Footwear,2699,Expense,TXN1591
+27-11-2017,Cash,Transportation,Train,5,Expense,TXN1592
+27-11-2017,Cash,Transportation,auto,30,Expense,TXN1593
+28-11-2017,Saving Bank account 1,Groceries,Milk,69,Expense,TXN1594
+28-11-2017,Saving Bank account 1,Groceries,vegetables,140,Expense,TXN1595
+28-11-2017,Credit Card,Utilities,Kirana,115,Expense,TXN1596
+28-11-2017,Saving Bank account 1,Groceries,Bread,18,Expense,TXN1597
+28-11-2017,Saving Bank account 1,Groceries,Eggs,42,Expense,TXN1598
+28-11-2017,Saving Bank account 1,Groceries,Bread,90,Expense,TXN1599
+30-11-2017,Credit Card,Healthcare,Health,22700,Expense,TXN1602
+30-11-2017,Saving Bank account 1,Healthcare,Medicine,22,Expense,TXN1600
+30-11-2017,Saving Bank account 1,Healthcare,Health,800,Expense,TXN1601
+30-11-2017,Saving Bank account 1,Miscellaneous,Home,10000,Expense,TXN1604
+30-11-2017,Cash,Healthcare,Pocket money,50,Expense,TXN1603
+01-12-2017,Saving Bank account 1,Groceries,Milk,69,Expense,TXN1607
+01-12-2017,Saving Bank account 1,Groceries,Lunch,125,Expense,TXN1608
+02-12-2017,Saving Bank account 1,Groceries,Milk,69,Expense,TXN1610
+02-12-2017,Saving Bank account 1,Groceries,Ice cream,35,Expense,TXN1611
+03-12-2017,Cash,Discretionary,grooming,160,Expense,TXN1612
+03-12-2017,Saving Bank account 1,Groceries,Lunch,290,Expense,TXN1614
+03-12-2017,Cash,Groceries,snacks,30,Expense,TXN1615
+04-12-2017,Saving Bank account 1,Groceries,Milk,69,Expense,TXN1617
+04-12-2017,Cash,Groceries,snacks,50,Expense,TXN1618
+04-12-2017,Saving Bank account 1,Communication,Newspaper,110,Expense,TXN1616
+04-12-2017,Saving Bank account 1,Groceries,fruits,120,Expense,TXN1622
+04-12-2017,Credit Card,Utilities,Kirana,937,Expense,TXN1624
+04-12-2017,Saving Bank account 1,Groceries,Bread,35,Expense,TXN1619
+04-12-2017,Credit Card,Utilities,Kirana,990,Expense,TXN1623
+05-12-2017,Saving Bank account 1,Communication,Tata Sky,100,Expense,TXN1625
+05-12-2017,Saving Bank account 1,Communication,Edtech Course,2700,Expense,TXN1626
+06-12-2017,Saving Bank account 1,Groceries,Lunch,125,Expense,TXN1627
+07-12-2017,Saving Bank account 1,Groceries,Milk,69,Expense,TXN1628
+08-12-2017,Saving Bank account 1,Groceries,Dinner,408,Expense,TXN1629
+09-12-2017,Cash,Groceries,Lunch,85,Expense,TXN1630
+10-12-2017,Cash,Groceries,vegetables,90,Expense,TXN1631
+10-12-2017,Cash,Groceries,fruits,310,Expense,TXN1632
+10-12-2017,Saving Bank account 1,Groceries,Lunch,65,Expense,TXN1633
+10-12-2017,Cash,Groceries,snacks,25,Expense,TXN1634
+12-12-2017,Cash,Groceries,Lunch,80,Expense,TXN1635
+12-12-2017,Credit Card,Groceries,snacks,100,Expense,TXN1636
+12-12-2017,Cash,Groceries,Eggs,40,Expense,TXN1637
+13-12-2017,Cash,Healthcare,Pocket money,20,Expense,TXN1639
+13-12-2017,Cash,Discretionary,Laundry,98,Expense,TXN1640
+13-12-2017,Saving Bank account 1,Groceries,Milk,69,Expense,TXN1638
+14-12-2017,Cash,Groceries,Grocery,145,Expense,TXN1642
+15-12-2017,Cash,Groceries,Ice cream,15,Expense,TXN1643
+16-12-2017,Saving Bank account 1,Groceries,Milk,69,Expense,TXN1645
+17-12-2017,Cash,Groceries,Tea,20,Expense,TXN1649
+17-12-2017,Cash,Transportation,auto,15,Expense,TXN1646
+17-12-2017,Cash,Transportation,Train,20,Expense,TXN1647
+17-12-2017,Credit Card,Utilities,Kirana,878,Expense,TXN1650
+17-12-2017,Cash,Transportation,auto,30,Expense,TXN1651
+17-12-2017,Credit Card,Groceries,Dinner,505,Expense,TXN1652
+17-12-2017,Cash,Transportation,auto,25,Expense,TXN1648
+18-12-2017,Credit Card,Discretionary,Clothing,312,Expense,TXN1653
+19-12-2017,Cash,Transportation,Train,10,Expense,TXN1655
+19-12-2017,Saving Bank account 1,Groceries,Milk,69,Expense,TXN1654
+19-12-2017,Cash,Groceries,snacks,45,Expense,TXN1656
+19-12-2017,Cash,Healthcare,Pocket money,500,Expense,TXN1657
+20-12-2017,Cash,Groceries,Lunch,95,Expense,TXN1659
+20-12-2017,Credit Card,Communication,Edtech Course,28400,Expense,TXN1660
+21-12-2017,Saving Bank account 1,Groceries,snacks,15,Expense,TXN1661
+21-12-2017,Cash,Groceries,Milk,70,Expense,TXN1662
+21-12-2017,Cash,Groceries,Lunch,65,Expense,TXN1663
+21-12-2017,Cash,Utilities,Kirana,118,Expense,TXN1664
+22-12-2017,Saving Bank account 1,Groceries,Lunch,380,Expense,TXN1665
+24-12-2017,Saving Bank account 1,Groceries,Milk,35,Expense,TXN1667
+24-12-2017,Cash,Groceries,snacks,25,Expense,TXN1668
+24-12-2017,Saving Bank account 1,Transportation,auto,30,Expense,TXN1670
+24-12-2017,Cash,Utilities,Toiletries,100,Expense,TXN1671
+25-12-2017,Cash,Transportation,auto,80,Expense,TXN1672
+25-12-2017,Saving Bank account 1,Communication,Mobile Service Provider,181,Expense,TXN1673
+25-12-2017,Credit Card,Communication,Tata Sky,156,Expense,TXN1674
+26-12-2017,Credit Card,Communication,Newspaper,1749,Expense,TXN1675
+27-12-2017,Cash,Groceries,Grocery,70,Expense,TXN1676
+28-12-2017,Cash,Groceries,vegetables,10,Expense,TXN1677
+29-12-2017,Saving Bank account 1,Communication,Mobile Service Provider,181,Expense,TXN1678
+29-12-2017,Cash,Groceries,flour mill,5,Expense,TXN1679
+29-12-2017,Cash,Utilities,Kirana,182,Expense,TXN1680
+29-12-2017,Cash,Groceries,snacks,30,Expense,TXN1681
+29-12-2017,Saving Bank account 1,Healthcare,misc,450,Expense,TXN1682
+30-12-2017,Cash,Groceries,vegetables,25,Expense,TXN1683
+31-12-2017,Cash,Groceries,Bread,30,Expense,TXN1686
+01-01-2018,Cash,Groceries,Milk,69,Expense,TXN1689
+01-01-2018,Credit Card,Utilities,gadgets,599,Expense,TXN1688
+01-01-2018,Cash,Groceries,Ice cream,15,Expense,TXN1687
+01-01-2018,Credit Card,Communication,Amazon Prime,482,Expense,TXN1690
+01-01-2018,Saving Bank account 1,Miscellaneous,Home,30000,Expense,TXN1692
+02-01-2018,Cash,Healthcare,Medicine,158,Expense,TXN1693
+02-01-2018,Credit Card,Utilities,Kirana,1140,Expense,TXN1694
+03-01-2018,Saving Bank account 1,Groceries,Milk,69,Expense,TXN1695
+03-01-2018,Saving Bank account 1,Groceries,Eggs,40,Expense,TXN1696
+03-01-2018,Saving Bank account 1,Transportation,Bike,1000,Expense,TXN1697
+03-01-2018,Credit Card,Groceries,Dinner,681,Expense,TXN1698
+04-01-2018,Cash,Groceries,Lunch,70,Expense,TXN1701
+04-01-2018,Cash,Utilities,Kirana,130,Expense,TXN1702
+04-01-2018,Cash,Utilities,Kirana,270,Expense,TXN1703
+04-01-2018,Saving Bank account 1,Education,Updation,50,Expense,TXN1700
+06-01-2018,Saving Bank account 1,Utilities,Appliances,100,Expense,TXN1708
+06-01-2018,Cash,Utilities,Kirana,38,Expense,TXN1706
+06-01-2018,Cash,Groceries,Milk,69,Expense,TXN1709
+06-01-2018,Cash,Groceries,curd,20,Expense,TXN1710
+06-01-2018,Saving Bank account 1,Communication,Mahanagar Gas,810,Expense,TXN1707
+07-01-2018,Cash,Transportation,Train,20,Expense,TXN1711
+07-01-2018,Cash,Groceries,Tea,20,Expense,TXN1712
+08-01-2018,Cash,Utilities,Kirana,165,Expense,TXN1713
+08-01-2018,Saving Bank account 1,Groceries,flour mill,104,Expense,TXN1714
+08-01-2018,Credit Card,Utilities,Hardware,1399,Expense,TXN1715
+08-01-2018,Cash,Groceries,snacks,20,Expense,TXN1717
+09-01-2018,Saving Bank account 1,Groceries,Milk,69,Expense,TXN1718
+09-01-2018,Cash,Groceries,Bread,34,Expense,TXN1719
+10-01-2018,Saving Bank account 1,Groceries,Rajgira ladu,40,Expense,TXN1720
+11-01-2018,Saving Bank account 1,Groceries,Milk,69,Expense,TXN1721
+11-01-2018,Saving Bank account 1,Groceries,Eggs,42,Expense,TXN1722
+12-01-2018,Cash,Healthcare,Lab Tests,500,Expense,TXN1723
+12-01-2018,Credit Card,Utilities,Kirana,226,Expense,TXN1724
+13-01-2018,Saving Bank account 1,Discretionary,Laundry,80,Expense,TXN1725
+13-01-2018,Cash,Healthcare,Medicine,740,Expense,TXN1726
+14-01-2018,Cash,Transportation,auto,23,Expense,TXN1731
+14-01-2018,Cash,Transportation,auto,20,Expense,TXN1729
+14-01-2018,Credit Card,Utilities,Hardware,798,Expense,TXN1728
+14-01-2018,Cash,Transportation,auto,15,Expense,TXN1733
+14-01-2018,Cash,Transportation,Train,40,Expense,TXN1727
+14-01-2018,Credit Card,Discretionary,Clothing,199,Expense,TXN1734
+14-01-2018,Cash,Transportation,auto,25,Expense,TXN1730
+14-01-2018,Cash,Transportation,auto,40,Expense,TXN1732
+15-01-2018,Cash,Groceries,Grocery,38,Expense,TXN1737
+15-01-2018,Credit Card,Groceries,Sweets,284,Expense,TXN1738
+15-01-2018,Saving Bank account 1,Transportation,auto,266,Expense,TXN1735
+15-01-2018,Cash,Transportation,Train,40,Expense,TXN1736
+16-01-2018,Cash,Utilities,Kirana,165,Expense,TXN1739
+16-01-2018,Credit Card,Discretionary,Leisure,298,Expense,TXN1740
+16-01-2018,Saving Bank account 1,Groceries,Milk,69,Expense,TXN1741
+18-01-2018,Saving Bank account 1,Transportation,Bike,50000,Expense,TXN1742
+18-01-2018,Saving Bank account 1,Groceries,Milk,69,Expense,TXN1743
+18-01-2018,Saving Bank account 1,Groceries,Eggs,42,Expense,TXN1744
+18-01-2018,Credit Card,Groceries,Lunch,219,Expense,TXN1745
+19-01-2018,Cash,Groceries,Bread,20,Expense,TXN1746
+19-01-2018,Saving Bank account 1,Utilities,Kirana,53,Expense,TXN1747
+19-01-2018,Saving Bank account 1,Groceries,Bread,17,Expense,TXN1748
+19-01-2018,Cash,Utilities,Kirana,46,Expense,TXN1749
+20-01-2018,Credit Card,Communication,Tata Sky,179,Expense,TXN1750
+20-01-2018,Saving Bank account 1,Groceries,Bread,45,Expense,TXN1751
+20-01-2018,Saving Bank account 1,Groceries,Biscuits,10,Expense,TXN1752
+21-01-2018,Credit Card,Groceries,Dinner,384,Expense,TXN1754
+22-01-2018,Saving Bank account 1,Groceries,Milk,69,Expense,TXN1755
+22-01-2018,Saving Bank account 1,Healthcare,Medicine,30,Expense,TXN1756
+22-01-2018,Cash,Groceries,flour mill,162,Expense,TXN1757
+22-01-2018,Saving Bank account 1,Groceries,flour mill,14,Expense,TXN1758
+23-01-2018,Credit Card,Utilities,Kirana,273,Expense,TXN1759
+24-01-2018,Cash,Groceries,Milk,35,Expense,TXN1760
+25-01-2018,Cash,Groceries,Lunch,70,Expense,TXN1761
+26-01-2018,Cash,Groceries,Potato,25,Expense,TXN1762
+26-01-2018,Saving Bank account 1,Groceries,Milk,69,Expense,TXN1763
+26-01-2018,Saving Bank account 1,Groceries,Rajgira ladu,20,Expense,TXN1764
+26-01-2018,Credit Card,Discretionary,Clothing,1009,Expense,TXN1765
+26-01-2018,Cash,Transportation,Train,20,Expense,TXN1766
+26-01-2018,Cash,Transportation,auto,15,Expense,TXN1767
+26-01-2018,Cash,Utilities,Kirana,38,Expense,TXN1768
+27-01-2018,Saving Bank account 1,Transportation,Bike,43000,Expense,TXN1769
+28-01-2018,Credit Card,Utilities,Kirana,976.9,Expense,TXN1771
+28-01-2018,Saving Bank account 1,Groceries,snacks,24,Expense,TXN1772
+28-01-2018,Credit Card,Utilities,Kirana,764,Expense,TXN1770
+29-01-2018,Saving Bank account 1,Groceries,Biscuits,45,Expense,TXN1775
+29-01-2018,Saving Bank account 1,Groceries,Milk,69,Expense,TXN1773
+29-01-2018,Saving Bank account 1,Groceries,Eggs,42,Expense,TXN1774
+30-01-2018,Saving Bank account 1,Utilities,Kitchen,10,Expense,TXN1776
+30-01-2018,Saving Bank account 1,Groceries,Grocery,20,Expense,TXN1777
+30-01-2018,Cash,Healthcare,Pocket money,100,Expense,TXN1778
+31-01-2018,Saving Bank account 1,Transportation,Bike,50,Expense,TXN1780
+31-01-2018,Cash,Groceries,Dinner,320,Expense,TXN1781
+31-01-2018,Saving Bank account 1,Groceries,Milk,69,Expense,TXN1782
+01-02-2018,Saving Bank account 1,Miscellaneous,Home,10000,Expense,TXN1783
+01-02-2018,Saving Bank account 1,Groceries,vegetables,15,Expense,TXN1785
+01-02-2018,Saving Bank account 1,Groceries,fruits,30,Expense,TXN1786
+02-02-2018,Saving Bank account 1,Groceries,Lunch,82,Expense,TXN1789
+02-02-2018,Cash,Healthcare,Pocket money,170,Expense,TXN1787
+03-02-2018,Saving Bank account 1,Groceries,Ice cream,10,Expense,TXN1790
+03-02-2018,Credit Card,Transportation,Travels,945,Expense,TXN1791
+04-02-2018,Saving Bank account 1,Groceries,Milk,35,Expense,TXN1793
+04-02-2018,Saving Bank account 1,Groceries,Lunch,50,Expense,TXN1794
+04-02-2018,Credit Card,Groceries,Dinner,452,Expense,TXN1795
+05-02-2018,Saving Bank account 1,Groceries,Milk,69,Expense,TXN1796
+05-02-2018,Saving Bank account 1,Groceries,Biscuits,45,Expense,TXN1797
+05-02-2018,Saving Bank account 1,Groceries,Grocery,220,Expense,TXN1798
+05-02-2018,Cash,Healthcare,Pocket money,500,Expense,TXN1799
+06-02-2018,Credit Card,Discretionary,Movie,312,Expense,TXN1800
+08-02-2018,Saving Bank account 1,Groceries,Onions,25,Expense,TXN1801
+08-02-2018,Saving Bank account 1,Groceries,snacks,35,Expense,TXN1802
+08-02-2018,Saving Bank account 1,Groceries,Milk,69,Expense,TXN1803
+09-02-2018,Saving Bank account 1,Discretionary,Laundry,98,Expense,TXN1804
+10-02-2018,Saving Bank account 1,Groceries,Milk,69,Expense,TXN1805
+11-02-2018,Cash,Transportation,auto,15,Expense,TXN1808
+11-02-2018,Cash,Groceries,Dinner,235,Expense,TXN1807
+11-02-2018,Cash,Transportation,Train,40,Expense,TXN1810
+11-02-2018,Cash,Groceries,snacks,15,Expense,TXN1809
+11-02-2018,Cash,Transportation,auto,30,Expense,TXN1806
+12-02-2018,Cash,Groceries,flour mill,162,Expense,TXN1811
+12-02-2018,Saving Bank account 1,Groceries,curd,30,Expense,TXN1812
+12-02-2018,Saving Bank account 1,Groceries,Eggs,36,Expense,TXN1813
+13-02-2018,Saving Bank account 1,Groceries,Milk,72,Expense,TXN1814
+13-02-2018,Saving Bank account 1,Groceries,Grocery,72,Expense,TXN1815
+13-02-2018,Saving Bank account 1,Groceries,Bread,35,Expense,TXN1816
+13-02-2018,Credit Card,Groceries,Potato,25,Expense,TXN1817
+14-02-2018,Saving Bank account 1,Groceries,snacks,60,Expense,TXN1818
+15-02-2018,Credit Card,Utilities,Kirana,117,Expense,TXN1819
+15-02-2018,Saving Bank account 1,Groceries,Grocery,30,Expense,TXN1820
+15-02-2018,Saving Bank account 1,Groceries,Ice cream,35,Expense,TXN1821
+16-02-2018,Saving Bank account 1,Groceries,Milk,72,Expense,TXN1823
+16-02-2018,Saving Bank account 1,Groceries,Biscuits,45,Expense,TXN1824
+16-02-2018,Saving Bank account 1,Groceries,snacks,45,Expense,TXN1822
+17-02-2018,Cash,Groceries,Lunch,30,Expense,TXN1825
+17-02-2018,Cash,Transportation,Bike,20,Expense,TXN1826
+17-02-2018,Credit Card,Healthcare,clothes,3598,Expense,TXN1827
+17-02-2018,Credit Card,Groceries,Dinner,1783,Expense,TXN1828
+19-02-2018,Saving Bank account 1,Groceries,snacks,24,Expense,TXN1829
+19-02-2018,Saving Bank account 1,Groceries,Milk,72,Expense,TXN1830
+19-02-2018,Saving Bank account 1,Discretionary,grooming,170,Expense,TXN1831
+20-02-2018,Saving Bank account 1,Utilities,Appliances,2600,Expense,TXN1833
+22-02-2018,Saving Bank account 1,Groceries,Lunch,192,Expense,TXN1834
+22-02-2018,Saving Bank account 1,Groceries,Onions,20,Expense,TXN1835
+22-02-2018,Saving Bank account 1,Groceries,beverage,20,Expense,TXN1836
+22-02-2018,Saving Bank account 1,Communication,Tata Sky,157,Expense,TXN1837
+23-02-2018,Saving Bank account 1,Groceries,Milk,72,Expense,TXN1838
+23-02-2018,Saving Bank account 1,Groceries,Rajgira ladu,20,Expense,TXN1839
+23-02-2018,Cash,Healthcare,Medicine,128,Expense,TXN1840
+24-02-2018,Saving Bank account 1,Groceries,Bread,40,Expense,TXN1841
+26-02-2018,Saving Bank account 1,Groceries,beverage,17,Expense,TXN1844
+26-02-2018,Saving Bank account 1,Utilities,Toiletries,140,Expense,TXN1845
+26-02-2018,Credit Card,Transportation,Bike,443,Expense,TXN1842
+26-02-2018,Saving Bank account 1,Groceries,Milk,73,Expense,TXN1843
+27-02-2018,Cash,Groceries,Lunch,30,Expense,TXN1846
+27-02-2018,Credit Card,Utilities,Kirana,38,Expense,TXN1847
+28-02-2018,Credit Card,Groceries,Potato,18,Expense,TXN1849
+28-02-2018,Credit Card,Groceries,Onions,30,Expense,TXN1850
+28-02-2018,Saving Bank account 1,Groceries,Milk,36,Expense,TXN1851
+28-02-2018,Saving Bank account 1,Groceries,Biscuits,45,Expense,TXN1852
+01-03-2018,Saving Bank account 1,Miscellaneous,Home,10000,Expense,TXN1853
+01-03-2018,Cash,Groceries,Eggs,36,Expense,TXN1854
+01-03-2018,Credit Card,Groceries,Dinner,189,Expense,TXN1855
+02-03-2018,Saving Bank account 1,Groceries,Ice cream,15,Expense,TXN1856
+03-03-2018,Saving Bank account 1,Groceries,Milk,36,Expense,TXN1858
+04-03-2018,Cash,Groceries,Lunch,130,Expense,TXN1859
+04-03-2018,Cash,Healthcare,Pocket money,450,Expense,TXN1860
+05-03-2018,Credit Card,Utilities,Kirana,972,Expense,TXN1862
+05-03-2018,Credit Card,Utilities,Kirana,1357,Expense,TXN1863
+05-03-2018,Saving Bank account 1,Groceries,flour mill,162,Expense,TXN1864
+05-03-2018,Cash,Groceries,Ice cream,20,Expense,TXN1865
+06-03-2018,Cash,Healthcare,Pocket money,50,Expense,TXN1866
+06-03-2018,Cash,Groceries,Milk,36,Expense,TXN1867
+06-03-2018,Saving Bank account 1,Education,Stationary,4,Expense,TXN1869
+06-03-2018,Cash,Healthcare,Medicine,22,Expense,TXN1870
+06-03-2018,Cash,Healthcare,Medicine,172,Expense,TXN1871
+06-03-2018,Credit Card,Education,Courier,50,Expense,TXN1872
+07-03-2018,Saving Bank account 1,Discretionary,Holi,20,Expense,TXN1873
+07-03-2018,Saving Bank account 1,Groceries,snacks,30,Expense,TXN1874
+08-03-2018,Saving Bank account 1,Discretionary,Laundry,91,Expense,TXN1875
+08-03-2018,Cash,Groceries,Eggs,36,Expense,TXN1878
+08-03-2018,Cash,Groceries,Bread,40,Expense,TXN1877
+08-03-2018,Cash,Groceries,Milk,36,Expense,TXN1880
+08-03-2018,Saving Bank account 1,Communication,Mahanagar Gas,540,Expense,TXN1879
+10-03-2018,Cash,Groceries,Milk,72,Expense,TXN1883
+10-03-2018,Cash,Healthcare,Health,77,Expense,TXN1884
+10-03-2018,Cash,Utilities,Hardware,300,Expense,TXN1881
+10-03-2018,Cash,Groceries,Milk,36,Expense,TXN1882
+12-03-2018,Saving Bank account 1,Transportation,train,1293,Expense,TXN1885
+13-03-2018,Saving Bank account 1,Groceries,Milk,36,Expense,TXN1886
+13-03-2018,Cash,Healthcare,Pocket money,480,Expense,TXN1887
+14-03-2018,Cash,Utilities,Kirana,140,Expense,TXN1888
+14-03-2018,Cash,Groceries,Onions,40,Expense,TXN1889
+14-03-2018,Credit Card,Groceries,Dinner,578,Expense,TXN1890
+15-03-2018,Saving Bank account 1,Groceries,Milk,36,Expense,TXN1891
+15-03-2018,Cash,Groceries,Lunch,60,Expense,TXN1892
+17-03-2018,Saving Bank account 1,Groceries,Milk,37,Expense,TXN1893
+17-03-2018,Cash,Groceries,Lunch,30,Expense,TXN1894
+18-03-2018,Credit Card,Healthcare,clothes,799,Expense,TXN1897
+18-03-2018,Cash,Groceries,snacks,50,Expense,TXN1898
+18-03-2018,Cash,Groceries,snacks,30,Expense,TXN1899
+18-03-2018,Cash,Groceries,Tea,10,Expense,TXN1900
+18-03-2018,Cash,Transportation,Train,20,Expense,TXN1901
+18-03-2018,Credit Card,Healthcare,clothes,498,Expense,TXN1902
+18-03-2018,Cash,Transportation,Bike,10,Expense,TXN1895
+18-03-2018,Cash,Groceries,snacks,15,Expense,TXN1896
+20-03-2018,Cash,Groceries,Milk,36,Expense,TXN1903
+20-03-2018,Cash,Groceries,Eggs,36,Expense,TXN1904
+20-03-2018,Cash,Groceries,breakfast,18,Expense,TXN1905
+20-03-2018,Credit Card,Groceries,snacks,215.75,Expense,TXN1906
+20-03-2018,Credit Card,Groceries,Dinner,246,Expense,TXN1908
+21-03-2018,Credit Card,Utilities,Kirana,38,Expense,TXN1910
+21-03-2018,Saving Bank account 1,Groceries,snacks,24,Expense,TXN1911
+21-03-2018,Cash,Healthcare,Pocket money,50,Expense,TXN1909
+22-03-2018,Cash,Groceries,vegetables,15,Expense,TXN1912
+22-03-2018,Saving Bank account 1,Groceries,flour mill,7,Expense,TXN1913
+22-03-2018,Saving Bank account 1,Utilities,Kirana,153,Expense,TXN1914
+22-03-2018,Saving Bank account 1,Groceries,snacks,150,Expense,TXN1915
+22-03-2018,Cash,Groceries,snacks,150,Expense,TXN1916
+22-03-2018,Cash,Groceries,Rajgira ladu,20,Expense,TXN1917
+22-03-2018,Cash,Groceries,Milk,72,Expense,TXN1918
+23-03-2018,Cash,Discretionary,Books,100,Expense,TXN1919
+25-03-2018,Cash,Groceries,Tea,20,Expense,TXN1923
+25-03-2018,Credit Card,Groceries,snacks,80,Expense,TXN1921
+25-03-2018,Credit Card,Groceries,Tea,240,Expense,TXN1920
+25-03-2018,Cash,Groceries,snacks,25,Expense,TXN1924
+25-03-2018,Cash,Groceries,snacks,160,Expense,TXN1922
+25-03-2018,Cash,Transportation,Bike,10,Expense,TXN1925
+26-03-2018,Credit Card,Communication,Tata Sky,157,Expense,TXN1927
+26-03-2018,Saving Bank account 1,Groceries,Milk,72,Expense,TXN1928
+27-03-2018,Cash,Groceries,breakfast,35,Expense,TXN1929
+29-03-2018,Credit Card,Groceries,Dinner,1234,Expense,TXN1930
+30-03-2018,Cash,Groceries,snacks,25,Expense,TXN1931
+30-03-2018,Cash,Groceries,vegetables,20,Expense,TXN1932
+30-03-2018,Cash,Groceries,Milk,72,Expense,TXN1933
+31-03-2018,Credit Card,Groceries,Dinner,244,Expense,TXN1939
+31-03-2018,Saving Bank account 1,Groceries,Ice cream,45,Expense,TXN1940
+31-03-2018,Cash,Transportation,Train,30,Expense,TXN1934
+31-03-2018,Saving Bank account 1,Transportation,Bike,10,Expense,TXN1936
+31-03-2018,Credit Card,Groceries,Lunch,419,Expense,TXN1937
+01-04-2018,Cash,Groceries,Milk,72,Expense,TXN1942
+01-04-2018,Saving Bank account 1,Miscellaneous,Home,10005.9,Expense,TXN1941
+02-04-2018,Cash,Groceries,Onions,36,Expense,TXN1950
+02-04-2018,Credit Card,Utilities,Hardware,149,Expense,TXN1947
+02-04-2018,Cash,Groceries,curd,20,Expense,TXN1951
+02-04-2018,Cash,Groceries,Grocery,24,Expense,TXN1948
+02-04-2018,Cash,Transportation,Bike,20,Expense,TXN1949
+05-04-2018,Cash,Utilities,Kirana,38,Expense,TXN1953
+05-04-2018,Cash,Groceries,Lunch,130,Expense,TXN1954
+05-04-2018,Cash,Groceries,Milk,72,Expense,TXN1955
+05-04-2018,Cash,Groceries,Eggs,36,Expense,TXN1956
+06-04-2018,Saving Bank account 1,Miscellaneous,Home,24500,Expense,TXN1957
+07-04-2018,Cash,Groceries,Milk,36,Expense,TXN1958
+07-04-2018,Cash,Utilities,Kirana,24,Expense,TXN1959
+07-04-2018,Credit Card,Utilities,Kirana,1857,Expense,TXN1960
+09-04-2018,Cash,Groceries,Milk,72,Expense,TXN1961
+09-04-2018,Cash,Groceries,Grocery,10,Expense,TXN1962
+10-04-2018,Cash,Groceries,breakfast,18,Expense,TXN1963
+10-04-2018,Cash,Groceries,Lunch,70,Expense,TXN1965
+12-04-2018,Cash,Groceries,Lunch,130,Expense,TXN1966
+12-04-2018,Cash,Groceries,snacks,20,Expense,TXN1967
+12-04-2018,Cash,Utilities,Kirana,112,Expense,TXN1968
+12-04-2018,Credit Card,Communication,Netflix,199,Expense,TXN1969
+13-04-2018,Cash,Healthcare,Lab Tests,700,Expense,TXN1970
+14-04-2018,Saving Bank account 1,Groceries,Milk,72,Expense,TXN1971
+14-04-2018,Saving Bank account 1,Groceries,Biscuits,45,Expense,TXN1972
+14-04-2018,Saving Bank account 1,Groceries,Grocery,40,Expense,TXN1973
+14-04-2018,Saving Bank account 1,Utilities,Kirana,107,Expense,TXN1974
+15-04-2018,Credit Card,Healthcare,makeup,525,Expense,TXN1978
+15-04-2018,Cash,Transportation,Train,20,Expense,TXN1976
+15-04-2018,Cash,Groceries,Lunch,70,Expense,TXN1975
+15-04-2018,Cash,Groceries,snacks,70,Expense,TXN1981
+15-04-2018,Credit Card,Utilities,Kitchen,799,Expense,TXN1979
+15-04-2018,Cash,Transportation,Bike,10,Expense,TXN1977
+15-04-2018,Cash,Groceries,Tea,20,Expense,TXN1980
+16-04-2018,Saving Bank account 1,Discretionary,Laundry,63,Expense,TXN1983
+16-04-2018,Saving Bank account 1,Education,Stationary,21,Expense,TXN1982
+16-04-2018,Saving Bank account 1,Utilities,Kirana,270,Expense,TXN1984
+16-04-2018,Credit Card,Utilities,Kirana,450,Expense,TXN1986
+16-04-2018,Saving Bank account 1,Utilities,Kirana,265,Expense,TXN1985
+17-04-2018,Cash,Groceries,Milk,72,Expense,TXN1987
+19-04-2018,Cash,Utilities,Kitchen,14,Expense,TXN1988
+19-04-2018,Saving Bank account 1,Groceries,Milk,72,Expense,TXN1989
+19-04-2018,Saving Bank account 1,Groceries,Eggs,36,Expense,TXN1990
+20-04-2018,Saving Bank account 1,Groceries,Dinner,70,Expense,TXN1991
+21-04-2018,Cash,Groceries,curd,20,Expense,TXN1992
+21-04-2018,Cash,Groceries,Ice cream,160,Expense,TXN1993
+22-04-2018,Cash,Utilities,Kirana,190,Expense,TXN1994
+22-04-2018,Cash,Groceries,vegetables,10,Expense,TXN1995
+22-04-2018,Saving Bank account 1,Groceries,Milk,72,Expense,TXN1996
+23-04-2018,Saving Bank account 1,Utilities,Kirana,38,Expense,TXN1998
+24-04-2018,Credit Card,Communication,Tata Sky,157,Expense,TXN1999
+25-04-2018,Cash,Groceries,Lunch,70,Expense,TXN2000
+26-04-2018,Cash,Healthcare,Pocket money,1000,Expense,TXN2002
+26-04-2018,Saving Bank account 1,Groceries,Milk,72,Expense,TXN2003
+26-04-2018,Cash,Groceries,snacks,30,Expense,TXN2001
+27-04-2018,Cash,Utilities,Kirana,295,Expense,TXN2004
+28-04-2018,Credit Card,Groceries,Dinner,413,Expense,TXN2005
+28-04-2018,Cash,Healthcare,Pocket money,500,Expense,TXN2006
+29-04-2018,Saving Bank account 1,Groceries,beverage,40,Expense,TXN2008
+30-04-2018,Cash,Groceries,Milk,72,Expense,TXN2010
+30-04-2018,Cash,Groceries,Biscuits,45,Expense,TXN2011
+30-04-2018,Credit Card,Communication,Tata Sky,176,Expense,TXN2012
+30-04-2018,Cash,Utilities,Kirana,165,Expense,TXN2013
+30-04-2018,Cash,Groceries,snacks,72,Expense,TXN2014
+01-05-2018,Cash,Groceries,Milk,72,Expense,TXN2015
+01-05-2018,Saving Bank account 1,Healthcare,Medicine,43,Expense,TXN2016
+01-05-2018,Saving Bank account 1,Healthcare,Medicine,122,Expense,TXN2017
+01-05-2018,Saving Bank account 1,Miscellaneous,Home,10000,Expense,TXN2018
+01-05-2018,Cash,Healthcare,Pocket money,260,Expense,TXN2019
+02-05-2018,Saving Bank account 1,Groceries,fruits,280,Expense,TXN2020
+03-05-2018,Saving Bank account 1,Groceries,snacks,40,Expense,TXN2021
+04-05-2018,Cash,Utilities,Kirana,37,Expense,TXN2022
+04-05-2018,Saving Bank account 1,Groceries,Milk,72,Expense,TXN2023
+05-05-2018,Cash,Healthcare,Pocket money,600,Expense,TXN2024
+07-05-2018,Saving Bank account 1,Groceries,Lunch,430,Expense,TXN2028
+07-05-2018,Credit Card,Utilities,Toiletries,1086,Expense,TXN2026
+07-05-2018,Cash,Groceries,Milk,72,Expense,TXN2029
+07-05-2018,Saving Bank account 1,Communication,Mahanagar Gas,515,Expense,TXN2030
+07-05-2018,Cash,Transportation,Bike,20,Expense,TXN2027
+08-05-2018,Cash,Discretionary,grooming,50,Expense,TXN2031
+08-05-2018,Saving Bank account 1,Groceries,Milk,72,Expense,TXN2032
+08-05-2018,Cash,Groceries,Sweets,500,Expense,TXN2033
+09-05-2018,Cash,Groceries,Biscuits,45,Expense,TXN2036
+09-05-2018,Cash,Groceries,Milk,36,Expense,TXN2035
+09-05-2018,Cash,Communication,Newspaper,12,Expense,TXN2037
+09-05-2018,Credit Card,Communication,Netflix,199,Expense,TXN2034
+10-05-2018,Saving Bank account 1,Groceries,Ice cream,80,Expense,TXN2039
+11-05-2018,Cash,Groceries,Rajgira ladu,20,Expense,TXN2040
+12-05-2018,Credit Card,Groceries,Dinner,437,Expense,TXN2041
+12-05-2018,Cash,Groceries,snacks,48,Expense,TXN2042
+12-05-2018,Saving Bank account 1,Groceries,Milk,72,Expense,TXN2043
+12-05-2018,Cash,Groceries,Lunch,70,Expense,TXN2044
+13-05-2018,Cash,Education,Stationary,12,Expense,TXN2046
+13-05-2018,Cash,Discretionary,Laundry,77,Expense,TXN2047
+14-05-2018,Cash,Transportation,Train,40,Expense,TXN2049
+14-05-2018,Cash,Transportation,auto,40,Expense,TXN2048
+14-05-2018,Saving Bank account 1,Groceries,fruits,1250,Expense,TXN2050
+14-05-2018,Cash,Groceries,snacks,15,Expense,TXN2051
+14-05-2018,Cash,Transportation,auto,50,Expense,TXN2052
+14-05-2018,Saving Bank account 1,Communication,Mobile Service Provider,301,Expense,TXN2054
+15-05-2018,Cash,Transportation,auto,30,Expense,TXN2056
+15-05-2018,Saving Bank account 1,Groceries,Ice cream,135,Expense,TXN2057
+15-05-2018,Saving Bank account 1,Utilities,Appliances,21500,Expense,TXN2058
+15-05-2018,Cash,Transportation,auto,50,Expense,TXN2059
+18-05-2018,Saving Bank account 1,Communication,Mobile Service Provider,301,Expense,TXN2060
+19-05-2018,Cash,Utilities,Kitchen,25,Expense,TXN2061
+19-05-2018,Saving Bank account 1,Communication,Mobile Service Provider,15,Expense,TXN2062
+20-05-2018,Saving Bank account 1,Healthcare,misc,122,Expense,TXN2063
+21-05-2018,Cash,Healthcare,Pocket money,140,Expense,TXN2064
+22-05-2018,Cash,Healthcare,Health,154,Expense,TXN2065
+23-05-2018,Credit Card,Communication,Tata Sky,166,Expense,TXN2066
+24-05-2018,Saving Bank account 1,Communication,Mobile Service Provider,667,Expense,TXN2067
+26-05-2018,Cash,Transportation,auto,50,Expense,TXN2068
+27-05-2018,Cash,Utilities,Kirana,75,Expense,TXN2070
+28-05-2018,Cash,Discretionary,grooming,100,Expense,TXN2071
+28-05-2018,Credit Card,Communication,Mobile Service Provider,25,Expense,TXN2072
+09-06-2018,Credit Card,Communication,Mobile Service Provider,667,Expense,TXN2075
+10-06-2018,Saving Bank account 1,Utilities,home decor,3000,Expense,TXN2076
+11-06-2018,Cash,Groceries,Eggs,84,Expense,TXN2078
+15-06-2018,Saving Bank account 1,Transportation,train,1213.6,Expense,TXN2079
+15-06-2018,Saving Bank account 1,Communication,Mobile Service Provider,15,Expense,TXN2080
+18-06-2018,Saving Bank account 1,Communication,Mobile Service Provider,15,Expense,TXN2081
+19-06-2018,Saving Bank account 1,Healthcare,Pocket money,2000,Expense,TXN2082
+19-06-2018,Saving Bank account 1,Communication,Mobile Service Provider,25,Expense,TXN2083
+22-06-2018,Saving Bank account 1,Communication,Mobile Service Provider,181,Expense,TXN2084
+23-06-2018,Cash,Transportation,auto,30,Expense,TXN2085
+23-06-2018,Credit Card,Communication,Mobile Service Provider,2545,Expense,TXN2086
+24-06-2018,Credit Card,Healthcare,Health,211.75,Expense,TXN2090
+24-06-2018,Cash,Transportation,auto,40,Expense,TXN2087
+24-06-2018,Saving Bank account 1,Groceries,Milk,72,Expense,TXN2089
+24-06-2018,Cash,Groceries,snacks,60,Expense,TXN2092
+24-06-2018,Credit Card,Communication,Tata Sky,157,Expense,TXN2091
+24-06-2018,Cash,Transportation,Train,30,Expense,TXN2093
+24-06-2018,Saving Bank account 1,Groceries,breakfast,18,Expense,TXN2088
+25-06-2018,Credit Card,Utilities,Kirana,2074,Expense,TXN2094
+25-06-2018,Saving Bank account 1,Groceries,Lunch,320,Expense,TXN2095
+26-06-2018,Cash,Transportation,Train,20,Expense,TXN2099
+26-06-2018,Cash,Transportation,auto,30,Expense,TXN2096
+26-06-2018,Credit Card,Utilities,Kirana,1990,Expense,TXN2097
+26-06-2018,Cash,Groceries,Tea,20,Expense,TXN2100
+26-06-2018,Cash,Groceries,snacks,30,Expense,TXN2101
+26-06-2018,Saving Bank account 1,Utilities,Hardware,70,Expense,TXN2102
+26-06-2018,Saving Bank account 1,Utilities,Appliances,13050,Expense,TXN2098
+27-06-2018,Cash,Utilities,gadgets,100,Expense,TXN2108
+27-06-2018,Credit Card,Discretionary,Entry Fees,308.85,Expense,TXN2104
+27-06-2018,Cash,Groceries,Tea,14,Expense,TXN2106
+27-06-2018,Credit Card,Discretionary,Footwear,550,Expense,TXN2109
+27-06-2018,Cash,Transportation,auto,25,Expense,TXN2110
+27-06-2018,Cash,Transportation,Train,80,Expense,TXN2111
+27-06-2018,Cash,Transportation,auto,30,Expense,TXN2112
+27-06-2018,Credit Card,Discretionary,Accessories,450,Expense,TXN2113
+27-06-2018,Cash,Utilities,gadgets,100,Expense,TXN2107
+28-06-2018,Credit Card,Discretionary,Footwear,64.82,Expense,TXN2114
+28-06-2018,Cash,Transportation,Taxi,228,Expense,TXN2115
+28-06-2018,Cash,Groceries,snacks,70,Expense,TXN2116
+28-06-2018,Credit Card,Groceries,Dinner,455,Expense,TXN2117
+29-06-2018,Cash,Utilities,Kitchen,50,Expense,TXN2119
+29-06-2018,Cash,Utilities,Appliances,270,Expense,TXN2120
+29-06-2018,Cash,Utilities,Hardware,70,Expense,TXN2121
+30-06-2018,Saving Bank account 1,Utilities,Appliances,1200,Expense,TXN2125
+01-07-2018,Debit Card,Discretionary,Movie,461,Expense,TXN2126
+01-07-2018,Credit Card,Transportation,Travels,1890,Expense,TXN2127
+01-07-2018,Saving Bank account 1,Groceries,snacks,15,Expense,TXN2128
+01-07-2018,Saving Bank account 1,Groceries,Milk,72,Expense,TXN2129
+01-07-2018,Cash,Discretionary,Laundry,98,Expense,TXN2130
+01-07-2018,Saving Bank account 1,Miscellaneous,Home,10000,Expense,TXN2131
+01-07-2018,Saving Bank account 1,Discretionary,Clothing,430,Expense,TXN2132
+02-07-2018,Cash,Transportation,auto,40,Expense,TXN2133
+02-07-2018,Cash,Transportation,Bus,26,Expense,TXN2134
+02-07-2018,Credit Card,Utilities,home decor,626,Expense,TXN2135
+02-07-2018,Cash,Transportation,Bus,20,Expense,TXN2136
+02-07-2018,Cash,Transportation,auto,50,Expense,TXN2137
+02-07-2018,Saving Bank account 1,Utilities,Kirana,1595,Expense,TXN2138
+03-07-2018,Credit Card,Communication,Tata Sky,154,Expense,TXN2140
+03-07-2018,Saving Bank account 1,Groceries,Milk,36,Expense,TXN2141
+04-07-2018,Cash,Discretionary,grooming,50,Expense,TXN2143
+04-07-2018,Cash,Healthcare,Hospital,100,Expense,TXN2144
+04-07-2018,Saving Bank account 1,Healthcare,Lab Tests,1440,Expense,TXN2145
+04-07-2018,Cash,Healthcare,Pocket money,350,Expense,TXN2146
+05-07-2018,Cash,Transportation,Train,20,Expense,TXN2147
+05-07-2018,Cash,Transportation,auto,15,Expense,TXN2148
+05-07-2018,Cash,Groceries,Tea,7,Expense,TXN2149
+05-07-2018,Cash,Transportation,auto,83,Expense,TXN2150
+06-07-2018,Cash,Transportation,Taxi,100,Expense,TXN2151
+06-07-2018,Cash,Groceries,Dinner,760,Expense,TXN2152
+07-07-2018,Cash,Transportation,Train,10,Expense,TXN2153
+07-07-2018,Credit Card,Groceries,Lunch,2,Expense,TXN2154
+07-07-2018,Saving Bank account 1,Communication,Mahanagar Gas,196,Expense,TXN2155
+08-07-2018,Saving Bank account 1,Transportation,Taxi,675,Expense,TXN2156
+08-07-2018,Cash,Transportation,Taxi,130,Expense,TXN2157
+08-07-2018,Cash,Healthcare,Hospital,500,Expense,TXN2158
+08-07-2018,Credit Card,Healthcare,Medicine,153,Expense,TXN2159
+08-07-2018,Saving Bank account 1,Groceries,Tea,30,Expense,TXN2160
+08-07-2018,Cash,Transportation,Taxi,185,Expense,TXN2161
+09-07-2018,Cash,Groceries,Grocery,60,Expense,TXN2163
+09-07-2018,Cash,Groceries,Biscuits,20,Expense,TXN2164
+09-07-2018,Cash,Transportation,Petrol,360,Expense,TXN2162
+11-07-2018,Cash,Groceries,Bread,57,Expense,TXN2166
+12-07-2018,Cash,Groceries,Eggs,35,Expense,TXN2167
+13-07-2018,Credit Card,Healthcare,Medicine,1358,Expense,TXN2168
+13-07-2018,Saving Bank account 1,Transportation,Taxi,188,Expense,TXN2169
+15-07-2018,Cash,Groceries,fruits,30,Expense,TXN2171
+15-07-2018,Cash,Groceries,vegetables,500,Expense,TXN2172
+15-07-2018,Cash,Groceries,snacks,48,Expense,TXN2173
+16-07-2018,Cash,Groceries,snacks,84,Expense,TXN2174
+16-07-2018,Credit Card,Utilities,Hardware,1190,Expense,TXN2175
+16-07-2018,Cash,Discretionary,Laundry,84,Expense,TXN2176
+18-07-2018,Cash,Groceries,flour mill,216,Expense,TXN2177
+19-07-2018,Cash,Groceries,curd,40,Expense,TXN2178
+20-07-2018,Cash,Groceries,Onions,25,Expense,TXN2183
+20-07-2018,Credit Card,Healthcare,Medicine,1048,Expense,TXN2184
+20-07-2018,Cash,Groceries,Ice cream,20,Expense,TXN2179
+20-07-2018,Cash,Groceries,Potato,25,Expense,TXN2180
+20-07-2018,Saving Bank account 1,Transportation,Taxi,155,Expense,TXN2181
+20-07-2018,Cash,Healthcare,Medicine,87,Expense,TXN2182
+21-07-2018,Cash,Groceries,Biscuits,45,Expense,TXN2185
+21-07-2018,Saving Bank account 1,Groceries,snacks,60,Expense,TXN2186
+21-07-2018,Cash,Groceries,fruits,30,Expense,TXN2187
+21-07-2018,Cash,Utilities,Kirana,368,Expense,TXN2188
+23-07-2018,Cash,Groceries,breakfast,100,Expense,TXN2189
+23-07-2018,Credit Card,Communication,Tata Sky,154,Expense,TXN2190
+26-07-2018,Cash,Groceries,Biscuits,40,Expense,TXN2192
+28-07-2018,Cash,Groceries,vegetables,195,Expense,TXN2195
+28-07-2018,Credit Card,Utilities,Kirana,3750,Expense,TXN2194
+28-07-2018,Cash,Healthcare,Pocket money,200,Expense,TXN2197
+28-07-2018,Debit Card,Discretionary,Movie,481.36,Expense,TXN2196
+29-07-2018,Saving Bank account 1,Transportation,Train,40,Expense,TXN2200
+29-07-2018,Cash,Groceries,breakfast,105,Expense,TXN2201
+29-07-2018,Cash,Transportation,auto,15,Expense,TXN2202
+29-07-2018,Saving Bank account 1,Groceries,Eating out,260,Expense,TXN2198
+29-07-2018,Cash,Transportation,auto,50,Expense,TXN2199
+30-07-2018,Cash,Groceries,breakfast,25,Expense,TXN2203
+30-07-2018,Saving Bank account 1,Groceries,Lunch,212,Expense,TXN2204
+30-07-2018,Cash,Healthcare,Medicine,132,Expense,TXN2205
+30-07-2018,Cash,Healthcare,Medicine,100,Expense,TXN2206
+31-07-2018,Cash,Groceries,chocolate,10,Expense,TXN2208
+31-07-2018,Saving Bank account 1,Miscellaneous,Home,30000,Expense,TXN2210
+31-07-2018,Cash,Discretionary,Laundry,91,Expense,TXN2211
+01-08-2018,Cash,Healthcare,Pocket money,40,Expense,TXN2212
+02-08-2018,Cash,Healthcare,Health,1000,Expense,TXN2214
+02-08-2018,Cash,Groceries,flour mill,216,Expense,TXN2215
+02-08-2018,Cash,Utilities,Kirana,18,Expense,TXN2213
+03-08-2018,Cash,Healthcare,Pocket money,2000,Expense,TXN2216
+05-08-2018,Credit Card,Healthcare,clothes,398,Expense,TXN2219
+05-08-2018,Cash,Transportation,auto,15,Expense,TXN2220
+05-08-2018,Cash,Transportation,Train,20,Expense,TXN2221
+05-08-2018,Credit Card,Discretionary,Clothing,3410,Expense,TXN2222
+05-08-2018,Cash,Healthcare,Pocket money,100,Expense,TXN2225
+05-08-2018,Credit Card,Healthcare,Health,4300,Expense,TXN2223
+05-08-2018,Cash,Groceries,Tea,10,Expense,TXN2224
+06-08-2018,Cash,Discretionary,grooming,100,Expense,TXN2226
+10-08-2018,Cash,Healthcare,Pocket money,35,Expense,TXN2227
+11-08-2018,Cash,Groceries,snacks,96,Expense,TXN2228
+13-08-2018,Cash,Utilities,home decor,220,Expense,TXN2232
+13-08-2018,Cash,Groceries,Grocery,45,Expense,TXN2229
+13-08-2018,Cash,Utilities,Kirana,594,Expense,TXN2231
+13-08-2018,Cash,Groceries,Ice cream,10,Expense,TXN2234
+13-08-2018,Cash,Utilities,Appliances,100,Expense,TXN2230
+13-08-2018,Cash,Groceries,Ice cream,20,Expense,TXN2233
+14-08-2018,Cash,Groceries,Ice cream,115,Expense,TXN2235
+14-08-2018,Cash,Discretionary,Laundry,56,Expense,TXN2236
+14-08-2018,Cash,Utilities,Kirana,160,Expense,TXN2237
+14-08-2018,Cash,Groceries,snacks,32,Expense,TXN2238
+14-08-2018,Cash,Healthcare,Pocket money,30,Expense,TXN2239
+15-08-2018,Cash,Groceries,flour mill,216,Expense,TXN2241
+15-08-2018,Cash,Groceries,Sweets,290,Expense,TXN2242
+16-08-2018,Credit Card,Communication,Tata Sky,157,Expense,TXN2243
+17-08-2018,Cash,Groceries,Milk,36,Expense,TXN2245
+17-08-2018,Saving Bank account 1,Groceries,curd,20,Expense,TXN2246
+19-08-2018,Saving Bank account 1,Communication,Netflix,199,Expense,TXN2247
+21-08-2018,Cash,Groceries,Milk,36,Expense,TXN2248
+21-08-2018,Cash,Groceries,Tea,12,Expense,TXN2249
+22-08-2018,Cash,Groceries,Milk,37,Expense,TXN2250
+23-08-2018,Credit Card,Transportation,train,1205.4,Expense,TXN2253
+23-08-2018,Credit Card,Transportation,train,1305.4,Expense,TXN2251
+23-08-2018,Saving Bank account 1,Groceries,Lunch,60,Expense,TXN2252
+24-08-2018,Cash,Discretionary,Navratri,1000,Expense,TXN2254
+24-08-2018,Cash,Groceries,Milk,36,Expense,TXN2255
+24-08-2018,Cash,Groceries,Rajgira ladu,20,Expense,TXN2256
+24-08-2018,Credit Card,Groceries,Dinner,1120,Expense,TXN2258
+25-08-2018,Cash,Discretionary,Laundry,91,Expense,TXN2259
+27-08-2018,Cash,Groceries,breakfast,60,Expense,TXN2263
+27-08-2018,Cash,Groceries,curd,20,Expense,TXN2264
+27-08-2018,Cash,Groceries,Milk,36,Expense,TXN2261
+27-08-2018,Cash,Groceries,Biscuits,45,Expense,TXN2262
+29-08-2018,Cash,Groceries,Milk,36,Expense,TXN2268
+29-08-2018,Cash,Groceries,Ice cream,15,Expense,TXN2269
+29-08-2018,Cash,Groceries,Grocery,27,Expense,TXN2267
+30-08-2018,Cash,Groceries,Sweets,78,Expense,TXN2270
+30-08-2018,Cash,Utilities,Kirana,343,Expense,TXN2271
+31-08-2018,Cash,Groceries,Milk,36,Expense,TXN2272
+31-08-2018,Credit Card,Groceries,Dinner,510.85,Expense,TXN2274
+31-08-2018,Cash,Healthcare,Pocket money,1000,Expense,TXN2276
+03-09-2018,Cash,Healthcare,Pocket money,2000,Expense,TXN2277
+05-09-2018,Cash,Groceries,snacks,24,Expense,TXN2280
+05-09-2018,Cash,Groceries,snacks,40,Expense,TXN2281
+05-09-2018,Cash,Groceries,snacks,30,Expense,TXN2282
+05-09-2018,Cash,Discretionary,Laundry,77,Expense,TXN2283
+05-09-2018,Saving Bank account 1,Groceries,breakfast,18,Expense,TXN2278
+05-09-2018,Saving Bank account 1,Groceries,Milk,36,Expense,TXN2279
+06-09-2018,Cash,Groceries,snacks,55,Expense,TXN2284
+07-09-2018,Cash,Groceries,Milk,37,Expense,TXN2285
+08-09-2018,Cash,Healthcare,Pocket money,40,Expense,TXN2286
+10-09-2018,Cash,Groceries,Milk,36,Expense,TXN2287
+11-09-2018,Cash,Groceries,Milk,36,Expense,TXN2288
+11-09-2018,Saving Bank account 1,Groceries,Lunch,650,Expense,TXN2290
+12-09-2018,Credit Card,Communication,Mobile Service Provider,667,Expense,TXN2291
+13-09-2018,Saving Bank account 1,Transportation,Train,40,Expense,TXN2292
+13-09-2018,Cash,Groceries,Grocery,46,Expense,TXN2294
+14-09-2018,Cash,Transportation,auto,50,Expense,TXN2295
+15-09-2018,Credit Card,Communication,Tata Sky,200,Expense,TXN2296
+16-09-2018,Cash,Discretionary,Ganesh Pujan,251,Expense,TXN2297
+17-09-2018,Saving Bank account 1,Communication,Mobile Service Provider,19,Expense,TXN2298
+19-09-2018,Saving Bank account 1,Communication,Netflix,199,Expense,TXN2299
+20-09-2018,Cash,Groceries,snacks,60,Expense,TXN2300
+20-09-2018,Cash,Transportation,Train,30,Expense,TXN2301

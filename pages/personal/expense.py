@@ -93,26 +93,26 @@ def expense():
     }
 
     category_images = {
-        "Rent": get_base64_image(r"C:\Users\USER\Desktop\capstone_project\static\icons\rent.png"),
-        "Groceries":  get_base64_image(r"C:\Users\USER\Desktop\capstone_project\static\icons\grocery.png"),
-        "Education":  get_base64_image(r"C:\Users\USER\Desktop\capstone_project\static\icons\edu.png"),
-        "Healthcare":  get_base64_image(r"C:\Users\USER\Desktop\capstone_project\static\icons\health.png"),
-        "Transportation":  get_base64_image(r"C:\Users\USER\Desktop\capstone_project\static\icons\transport.png"),
-        "Utilities":  get_base64_image(r"C:\Users\USER\Desktop\capstone_project\static\icons\utility.png"),
-        "Communication":  get_base64_image(r"C:\Users\USER\Desktop\capstone_project\static\icons\comm.png"),
-        "Financial_Dues":  get_base64_image(r"C:\Users\USER\Desktop\capstone_project\static\icons\obligation.png"),
-        "Discretionary":  get_base64_image(r"C:\Users\USER\Desktop\capstone_project\static\icons\discretionary.png"),
-        "Domestic_Help":  get_base64_image(r"C:\Users\USER\Desktop\capstone_project\static\icons\maid.png"),
-        "Care_Essentials":  get_base64_image(r"C:\Users\USER\Desktop\capstone_project\static\icons\care.png"),
-        "Salary":  get_base64_image(r"C:\Users\USER\Desktop\capstone_project\static\icons\salary.png"),
-        "Rewards":  get_base64_image(r"C:\Users\USER\Desktop\capstone_project\static\icons\reward.png"),
-        "Pension":  get_base64_image(r"C:\Users\USER\Desktop\capstone_project\static\icons\pension.png"),
-        "Interest":  get_base64_image(r"C:\Users\USER\Desktop\capstone_project\static\icons\interest.png"),
-        "Stocks":  get_base64_image(r"C:\Users\USER\Desktop\capstone_project\static\icons\stock.png"),
-        "Side_Hustle":  get_base64_image(r"C:\Users\USER\Desktop\capstone_project\static\icons\side.png"),
-        "Enrichment":  get_base64_image(r"C:\Users\USER\Desktop\capstone_project\static\icons\skill.png"),
-        "Gifts":  get_base64_image(r"C:\Users\USER\Desktop\capstone_project\static\icons\gift.png"),
-        "Miscellaneous":  get_base64_image(r"C:\Users\USER\Desktop\capstone_project\static\icons\misc.png")
+        "Rent": get_base64_image("static/icons/rent.png"),
+        "Groceries":  get_base64_image("static/icons/grocery.png"),
+        "Education":  get_base64_image("static/icons/edu.png"),
+        "Healthcare":  get_base64_image("static/icons/health.png"),
+        "Transportation":  get_base64_image("static/icons/transport.png"),
+        "Utilities":  get_base64_image("static/icons/utility.png"),
+        "Communication":  get_base64_image("static/icons/comm.png"),
+        "Financial_Dues":  get_base64_image("static/icons/obligation.png"),
+        "Discretionary":  get_base64_image("static/icons/discretionary.png"),
+        "Domestic_Help":  get_base64_image("static/icons/maid.png"),
+        "Care_Essentials":  get_base64_image("static/icons/care.png"),
+        "Salary":  get_base64_image("static/icons/salary.png"),
+        "Rewards":  get_base64_image("static/icons/reward.png"),
+        "Pension":  get_base64_image("static/icons/pension.png"),
+        "Interest":  get_base64_image("static/icons/interest.png"),
+        "Stocks":  get_base64_image("static/icons/stock.png"),
+        "Side_Hustle":  get_base64_image("static/icons/side.png"),
+        "Enrichment":  get_base64_image("static/icons/skill.png"),
+        "Gifts":  get_base64_image("static/icons/gift.png"),
+        "Miscellaneous":  get_base64_image("static/icons/misc.png")
     }
 
     category_types = {
