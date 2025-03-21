@@ -130,10 +130,10 @@ def bot_page():
             prompt = create_prompt_template()
             st.session_state.chain = create_retrieval_chain(model, db, prompt)
 
-    # Add a button to clear the chat history
-    if st.button("Clear Chat History"):
-        st.session_state.messages = []  # Clear the messages list
-        st.rerun()  # Force Streamlit to rerun the app
+    # # Add a button to clear the chat history
+    # if st.button("Clear Chat History"):
+    #     st.session_state.messages = []  # Clear the messages list
+    #     st.rerun()  # Force Streamlit to rerun the app
 
     # Display existing chat messages
     for message in st.session_state.messages:

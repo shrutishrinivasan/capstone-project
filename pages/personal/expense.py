@@ -14,7 +14,7 @@ def expense():
     st.markdown("""
     <style>
         * {
-        font-family: Verdana, sans-serif !important;
+            font-family: Verdana, sans-serif !important;
         }
         div.stButton > button {
             background-color: #ffd166; 
@@ -40,21 +40,21 @@ def expense():
             background-color: #191a1c;  
         }
         div[data-testid="stForm"] > div > div > button[kind="primary"] {
-            background-color: #834da3;    /* Purple background */
-            color: #ffffff;               /* White text */
-            border: none;                 /* No border */
-            border-radius: 8px;           /* Rounded corners */
-            padding: 8px 20px;            /* Button padding */
-            font-weight: bold;            /* Bold text */
-            width: 100%;                  /* Full width */
-            cursor: pointer;              /* Pointer cursor */
+            background-color: #834da3;    
+            color: #ffffff;              
+            border: none;               
+            border-radius: 8px;         
+            padding: 8px 20px;           
+            font-weight: bold;           
+            width: 100%;         
+            cursor: pointer;    
             transition: background-color 0.3s ease;
         }
         div[data-testid="stForm"] > div > div > button[kind="primary"]:hover {
-            background-color: #5e358a;    /* Darker purple on hover */
+            background-color: #5e358a;   
         }
         div[data-testid="stForm"] > div > div > button[kind="primary"]:focus {
-            background-color: #5e358a;    /* Same color for click */
+            background-color: #5e358a;  
             outline: none;
         }        
     </style>
@@ -63,10 +63,11 @@ def expense():
     st.write("## 💳 Record Your Income/Expense")
     
     # Initialize session state for finance dataframe if not exists
-    if 'finance_df' not in st.session_state:
-        st.session_state.finance_df = pd.DataFrame(columns=[
-            'Date', 'Mode', 'Category', 'Remark', 'Amount', 'Income_Expense', 'Transaction_id'
-        ])
+    # if 'finance_df' not in st.session_state:
+    #     st.info("Please upload a CSV file to get started or load the sample data instead!")
+        # st.session_state.finance_df = pd.DataFrame(columns=[
+        #     'Date', 'Mode', 'Category', 'Remark', 'Amount', 'Income_Expense', 'Transaction_id'
+        # ])
     
     # Category descriptions for information
     category_descriptions = {
@@ -78,12 +79,12 @@ def expense():
         "Communication": "Phone, internet, cable, and other communication-related expenses.",
         "Education": "Educational expenses including tuition, books, courses, and learning materials.",
         "Enrichment": "Expenses for activities that enhance skills, fitness, or personal growth, including dance, music, art classes, sports coaching, entrance exam preparation, gym memberships, yoga, etc.",
-        "Domestic_Help": "Payments for household staff including maids, cooks, chauffeurs, gardeners, and nannies.",
-        "Care_Essentials": "Expenses on personal care, hygiene products, nursery needs, makeup, pet care, and related essentials.",
-        "Financial_Dues": "Debt payments, loan installments, credit card payments, emergency fund, retirement savingsand financial fees.",
+        "Domestic Help": "Payments for household staff including maids, cooks, chauffeurs, gardeners, and nannies.",
+        "Care Essentials": "Expenses on personal care, hygiene products, nursery needs, makeup, pet care, and related essentials.",
+        "Financial Dues": "Debt payments, loan installments, credit card payments, emergency fund, retirement savingsand financial fees.",
         "Discretionary": "Non-essential expenses like entertainment, dining out, hobbies, and leisure activities.",
         "Salary": "Primary income earned through employment, including wages, bonuses, and incentives.",
-        "Side_Hustle": "Supplementary income from freelancing, consulting, small businesses, or part-time work.",
+        "Side Hustle": "Supplementary income from freelancing, consulting, small businesses, or part-time work.",
         "Pension": "Retirement income from pension plans, provident funds, or other post-retirement benefits.",
         "Interest": "Earnings from savings accounts, fixed deposits, recurring deposits, and similar investments.",
         "Rewards": "Cashback, loyalty points, vouchers, and other reward-based earnings from purchases or promotions.",
@@ -100,16 +101,16 @@ def expense():
         "Transportation":  get_base64_image("static/icons/transport.png"),
         "Utilities":  get_base64_image("static/icons/utility.png"),
         "Communication":  get_base64_image("static/icons/comm.png"),
-        "Financial_Dues":  get_base64_image("static/icons/obligation.png"),
+        "Financial Dues":  get_base64_image("static/icons/obligation.png"),
         "Discretionary":  get_base64_image("static/icons/discretionary.png"),
-        "Domestic_Help":  get_base64_image("static/icons/maid.png"),
-        "Care_Essentials":  get_base64_image("static/icons/care.png"),
+        "Domestic Help":  get_base64_image("static/icons/maid.png"),
+        "Care Essentials":  get_base64_image("static/icons/care.png"),
         "Salary":  get_base64_image("static/icons/salary.png"),
         "Rewards":  get_base64_image("static/icons/reward.png"),
         "Pension":  get_base64_image("static/icons/pension.png"),
         "Interest":  get_base64_image("static/icons/interest.png"),
         "Stocks":  get_base64_image("static/icons/stock.png"),
-        "Side_Hustle":  get_base64_image("static/icons/side.png"),
+        "Side Hustle":  get_base64_image("static/icons/side.png"),
         "Enrichment":  get_base64_image("static/icons/skill.png"),
         "Gifts":  get_base64_image("static/icons/gift.png"),
         "Miscellaneous":  get_base64_image("static/icons/misc.png")
@@ -124,9 +125,9 @@ def expense():
         "Utilities": "expense",
         "Communication": "expense",
         "Enrichment": "expense",
-        "Domestic_Help": "expense",
-        "Care_Essentials": "expense",
-        "Financial_Dues": "expense",
+        "Domestic Help": "expense",
+        "Care Essentials": "expense",
+        "Financial Dues": "expense",
         "Discretionary": "expense",
         
         # Income categories 
@@ -135,17 +136,21 @@ def expense():
         "Rewards": "income",
         "Stocks": "income",
         "Interest": "income",
-        "Side_Hustle": "income",
+        "Side Hustle": "income",
         "Gifts": "income",
         
         # Dual-purpose categories 
         "Rent": "dual",
         "Miscellaneous": "dual",
     }
+ 
+    # Initialize session state to store the dataframe
+    if 'finance_df' not in st.session_state:
+        st.session_state.finance_df = None
 
     # Function to generate next transaction ID
     def generate_transaction_id():
-        if st.session_state.finance_df.empty:
+        if st.session_state.finance_df is None:
             return "TXN1"
         else:
             # Extract existing transaction IDs
@@ -199,7 +204,7 @@ def expense():
             if submitted:
                 # Create new transaction
                 new_transaction = pd.DataFrame({
-                    'Date': [date.strftime('%Y-%m-%d')],
+                    'Date': [date.strftime('%d-%m-%Y')],
                     'Mode': [mode],
                     'Category': [category],
                     'Remark': [remark],
@@ -212,9 +217,9 @@ def expense():
                 st.session_state.finance_df = pd.concat([st.session_state.finance_df, new_transaction], ignore_index=True)
                 
                 # Success message
-                st.success(f"Transaction {transaction_id} recorded successfully!")
+                st.success(f"Transaction recorded successfully!")
                 st.info("Please check upload data section to see the manually entered data")
-                st.rerun()
+                # st.rerun()
     
     st.markdown("""
         ##### Select a category to record your transaction
@@ -256,12 +261,7 @@ def expense():
                     </div>
                     """, unsafe_allow_html=True)
 
-                    if '_' in category:
-                        temp = category.replace('_',' ')
-                    else:
-                        temp = category
-
-                    if st.button(f"{temp}"):
+                    if st.button(f"{category}"):
                         st.session_state.selected_category = category
 
     # Display transaction form for selected category
@@ -269,13 +269,11 @@ def expense():
         add_transaction(st.session_state.selected_category)
         
     # Recent transactions display
-    if not st.session_state.finance_df.empty:
+    if st.session_state.finance_df is not None:
         st.write("### Recent Transactions")
         
         # # Sort by date (most recent first) and display last 5
-        # recent_df = st.session_state.finance_df.sort_values(by='Date', ascending=False).head(5)
-
-        st.session_state.finance_df['Date'] = pd.to_datetime(st.session_state.finance_df['Date'], errors='coerce')
+        st.session_state.finance_df['Date'] = pd.to_datetime(st.session_state.finance_df['Date'], errors='coerce').dt.date
         recent_df = st.session_state.finance_df.sort_values(by='Date', ascending=False).head(5)
         
         # Display with custom formatting

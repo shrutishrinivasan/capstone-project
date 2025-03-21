@@ -15,7 +15,7 @@ def learn_page():
 
     st.markdown("""
     <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 10px; margin-top: -10px">
-      <h2 style="margin: 0;">📚 Financial Education Hub</h2>
+      <h2 style="margin: 0;">📚 Knowledge Hub</h2>
     </div>
     """, unsafe_allow_html=True)
 
