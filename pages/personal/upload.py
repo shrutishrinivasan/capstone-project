@@ -6,6 +6,7 @@ from st_aggrid.grid_options_builder import GridOptionsBuilder
 def upload_data():
     """Upload Data page with data preview and editing capabilities"""
 
+    # CSS
     st.markdown("""
     <style>
     * {
@@ -110,12 +111,6 @@ def upload_data():
             st.write("To edit any of the existing cell values, directly make changes on the screen.\
             Select one or more columns to remove them using the 'Delete Rows' button at the bottom.\
             Don't forget to save your changes!")
-            
-            # # Add row functionality
-            # if st.button("Add New Row"):
-            #     new_row = pd.DataFrame({col: [""] for col in df.columns}, index=[0])
-            #     st.session_state.finance_df = pd.concat([df, new_row], ignore_index=True)
-            #     st.rerun()
             
             # Create an editable grid
             gb = GridOptionsBuilder.from_dataframe(df)

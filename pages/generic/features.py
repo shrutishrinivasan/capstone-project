@@ -3,7 +3,7 @@ import streamlit as st
 def features_page():
     """Features section highlighting the app's unique capabilities"""
     
-    # Set the font for the entire page
+    # CSS
     st.markdown("""
     <style>
     * {
@@ -12,14 +12,13 @@ def features_page():
     </style>
     """, unsafe_allow_html=True)
     
-    # Section header with inline horizontal line
     st.markdown("""
     <div style="display: flex; align-items: center; gap: 15px; margin-bottom: -20px; margin-top: -10px">
       <h3 style="margin: 0;">What new do we offer?</h3>
     </div>
     """, unsafe_allow_html=True)
     
-    # Introduction text
+    # Introduction
     st.markdown("""
     <p style="font-size: 18px; margin-bottom: 30px;">
       Explore how PaisaVault helps you in personal finance management with these innovative features.
@@ -44,8 +43,7 @@ def features_page():
     </div>
     """, unsafe_allow_html=True)
     
-    # Image placeholder for Feature 1
-    st.image("static/chat.JPG", caption="AI Assistant Dashboard", use_container_width=True)
+    st.image("static/chat.PNG", caption="AI Assistant Dashboard", use_container_width=True)
     
     # Feature 2: Butterfly Effect Model
     st.markdown("""
@@ -65,7 +63,6 @@ def features_page():
     </div>
     """, unsafe_allow_html=True)
     
-    # Image placeholder for Feature 2
     st.image("static/butterfly.JPG", caption="Butterfly Effect Dashboard", use_container_width=True)
     
     # Feature 3: Scenario Testing Model
@@ -86,5 +83,4 @@ def features_page():
     </div>
     """, unsafe_allow_html=True)
     
-    # Image placeholder for Feature 3
     st.image("static/car.JPG", caption="Scenario Testing Dashboard", use_container_width=True)

@@ -3,6 +3,7 @@ import plotly.graph_objects as go
 from streamlit_extras.stylable_container import stylable_container
 
 def calculate_compound_interest(principal, rate, time, compounds_per_year):
+    """Function to calculate compound interest"""
     if principal == 0 or rate == 0 or time == 0 or compounds_per_year == 0:
         return "Please enter valid values for all fields."
     else:
@@ -12,27 +13,23 @@ def calculate_compound_interest(principal, rate, time, compounds_per_year):
         return round(compound_interest, 2)
   
 def calculate_simple_interest(principal, rate, time):
+    """Function to calculate simple interest"""
     return (principal * rate * time) / 100
 
 def calculate_total_amount(principal, interest):
+    """Function to calculate total amount"""
     return principal + interest
 
 def tools_page():
     """Tools section of the landing page"""
 
-    st.markdown("""
-    <style>
-    * {
-        font-family: Verdana, sans-serif !important;
-    }
-    </style>
-    """, unsafe_allow_html=True)
-
-    st.markdown("<h3 style='margin-bottom: -10px;'>Try out some of our handy tools...</h3>", unsafe_allow_html=True)
-
+    # CSS
     st.markdown(
         """
         <style>
+        * {
+            font-family: Verdana, sans-serif !important;
+        }
         .result-container {
             padding: 5px;
             border-radius: 5px;
@@ -49,7 +46,9 @@ def tools_page():
         unsafe_allow_html=True,
     )
 
-    st.markdown("<h4>EMI Calculator</h4>", unsafe_allow_html=True)  # Reduced heading size
+    st.markdown("<h3 style='margin-bottom: -10px;'>Try out some of our handy tools...</h3>", unsafe_allow_html=True)
+
+    st.markdown("<h4>EMI Calculator</h4>", unsafe_allow_html=True)  
 
     col3, col1, col2 = st.columns([0.2, 1.5, 2])
 
@@ -212,7 +211,6 @@ def tools_page():
             with st.columns([0.3, 2.5, 0.3])[1]: 
                 compounds_per_year = st.number_input("Compounds per Year", min_value=1, key="ci_year")
 
-
             with stylable_container(
                 key="ci_button",
                 css_styles="""
@@ -228,6 +226,3 @@ def tools_page():
                 if st.button("Calculate", key="ci_button"):
                     result = calculate_compound_interest(principal, rate, time, compounds_per_year)
                     ci_result_container.write(f"₹{result}  \nTotal Compound Interest")
-
-            
-

@@ -2,16 +2,16 @@ import streamlit as st
 import base64
 
 def get_base64_image(image_path):
+    """ To return base64 encoding of the image to be inserted"""
     with open(image_path, "rb") as img_file:
         return base64.b64encode(img_file.read()).decode()
 
 encoded_logo = get_base64_image("static/logo.png")
 
-
 def about_page():
     """About section of the landing page"""
     
-    # Set the font for the entire page
+    # CSS
     st.markdown("""
     <style>
     * {
@@ -20,7 +20,6 @@ def about_page():
     </style>
     """, unsafe_allow_html=True)
     
-    # Container with light background for the title and logo - made smaller with less padding
     with st.container():
         st.markdown(f"""
         <div style="background-color: #fffdd0; padding: 0px 100px; border-radius: 20px; width: 90%; margin-left: 70px; margin-bottom: 30px">
@@ -82,7 +81,6 @@ def about_page():
         </div>
         """, unsafe_allow_html=True)
     
-    # Additional features
     st.markdown("""
     <div style="display: flex; align-items: center; margin-top: 30px">
         <h3 style="margin: 0;">More than Just Budgeting</h3>
@@ -116,7 +114,6 @@ def about_page():
         </div>
         """, unsafe_allow_html=True)
     
-    # Call to action with darker text and nicer background
     st.markdown("""
     <div style="background-color: #e6f2ff; padding: 10px; border-radius: 20px; margin-top: 30px; text-align: center;">
         <h2 style="color: #003366;">Ready to take control of your finances?</h2>

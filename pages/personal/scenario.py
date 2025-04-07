@@ -56,7 +56,6 @@ def scenario():
 
     # Sidebar
     with st.sidebar:
-        ##st.image("https://s3-us-west-2.amazonaws.com/comparing-yourself/wp-content/uploads/2018/12/22182416/Money-Rupee-Icon.png", width=100)
         st.header("Your Financial Profile")
         
         # Personal Information
@@ -204,7 +203,7 @@ def scenario():
             values='Value',
             names='Asset',
             title='Asset Allocation',
-            color_discrete_sequence=px.colors.sequential.Teal,
+            color_discrete_sequence=px.colors.sequential.Agsunset_r,
             hole=0.4
         )
         
@@ -236,7 +235,7 @@ def scenario():
             
             # Calculate scenario metrics
             adjusted_monthly_expenses = total_monthly_expenses * (1 - reduced_expenses/100)
-            total_unemployment_cost = adjusted_monthly_expenses * unemployment_duration
+            # total_unemployment_cost = adjusted_monthly_expenses * unemployment_duration
             available_funds = emergency_fund + severance_pay + (stocks_value * 0.8)  # Assuming 20% loss on liquidating stocks
             
             survival_duration = available_funds / adjusted_monthly_expenses if adjusted_monthly_expenses > 0 else float('inf')
@@ -880,14 +879,8 @@ def scenario():
             monthly_interest_rate = interest_rate / 12 / 100
             loan_term_months = loan_term_years * 12
             emi = loan_amount * monthly_interest_rate * (1 + monthly_interest_rate)**loan_term_months / ((1 + monthly_interest_rate)**loan_term_months - 1)
-            
-            st.metric("Down Payment Required", f"₹{down_payment_amount:,.0f}")
-            st.metric("Monthly EMI", f"₹{emi:,.0f}")
-            st.metric("Loan Amount", f"₹{loan_amount:,.0f}")
-
-        st.markdown("</div>", unsafe_allow_html=True)
                 
-                # Calculate EMI
+        # Calculate EMI
         monthly_interest_rate = interest_rate / 12 / 100
         loan_term_months = loan_term_years * 12
         emi = loan_amount * monthly_interest_rate * (1 + monthly_interest_rate)**loan_term_months / ((1 + monthly_interest_rate)**loan_term_months - 1)
@@ -1043,7 +1036,7 @@ def scenario():
             
             with col1:
                 st.markdown("<h3>Higher Education Goal</h3>", unsafe_allow_html=True)
-                education_type = st.selectbox("Education Type", ["Self Higher Education", "Child's Education"])
+                # education_type = st.selectbox("Education Type", ["Self Higher Education", "Child's Education"])
                 
                 course_fee = st.number_input("Total Course Fee (₹)", 100000, 5000000, 1200000)
                 living_expenses = st.number_input("Annual Living Expenses (₹)", 0, 2000000, 300000)
@@ -1094,7 +1087,7 @@ def scenario():
                     names=filtered_labels,
                     values=filtered_values,
                     title="Education Cost Breakdown",
-                    color_discrete_sequence=px.colors.sequential.Teal,
+                    color_discrete_sequence=px.colors.sequential.Agsunset_r,
                     hole=0.4
                 )
                 
@@ -1244,7 +1237,7 @@ def scenario():
                 life_expectancy = st.slider("Life Expectancy", retirement_age + 1, 100, 85)
                 expected_inflation = st.slider("Expected Inflation Rate (%)", 4.0, 10.0, 6.0, 0.1)
                 expected_return = st.slider("Expected Investment Return (%)", 6.0, 15.0, 12.0, 0.1)
-                replacement_ratio = st.slider("Income Replacement Ratio (%)", 40, 100, 70)
+                # replacement_ratio = st.slider("Income Replacement Ratio (%)", 40, 100, 70)
                 
                 # Calculate retirement metrics
                 years_to_retirement = retirement_age - age
@@ -1398,7 +1391,7 @@ def scenario():
                 target_gold_value = st.number_input("Target Gold Investment Value (₹)", 50000, 10000000, 500000)
                 investment_horizon = st.slider("Investment Horizon (Years)", 1, 20, 5)
                 gold_return_rate = st.slider("Expected Gold Return Rate (%)", 5.0, 15.0, 8.0, 0.1)
-                investment_mode = st.selectbox("Preferred Investment Mode", ["Physical Gold", "Gold ETF", "Sovereign Gold Bonds", "Digital Gold"])
+                # investment_mode = st.selectbox("Preferred Investment Mode", ["Physical Gold", "Gold ETF", "Sovereign Gold Bonds", "Digital Gold"])
                 
                 # Calculate required monthly investment
                 monthly_investment_needed = (target_gold_value * (gold_return_rate/100/12)) / (((1 + gold_return_rate/100/12) ** (investment_horizon * 12)) - 1)

@@ -6,6 +6,7 @@ pyyaml==6.0.1
 pillow==10.1.0
 langchain
 langchain_community
+langchain_groq
 mysql-connector
 chromadb
 

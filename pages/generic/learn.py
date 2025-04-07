@@ -3,37 +3,14 @@ from PIL import Image
 import base64
 
 def learn_page():
-
-    # Set the font for the entire page
+    """Learn section for browsing educational resources"""
+    
+    # CSS
     st.markdown("""
     <style>
-    * {
-        font-family: Verdana, sans-serif !important;
-    }
-    </style>
-    """, unsafe_allow_html=True)
-
-    st.markdown("""
-    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 10px; margin-top: -10px">
-      <h2 style="margin: 0;">📚 Knowledge Hub</h2>
-    </div>
-    """, unsafe_allow_html=True)
-
-    
-    # Introduction section
-    st.markdown("""
-    <div style="background-color: #b16fbd; padding: 15px; border-radius: 30px; margin-bottom: 20px;">
-        <h4 style="color: #3b2140;">Welcome to our Learning Center</h4>
-        <p style="color: white;">
-            Explore our handpicked collection of educational resources to enhance your financial literacy.
-            These carefully selected articles and videos will help you get started in your saving journey and let you make informed financial decisions.
-        </p>
-    </div>
-    """, unsafe_allow_html=True)
-    
-    # Add CSS for card styling
-    st.markdown("""
-    <style>
+        * {
+            font-family: Verdana, sans-serif !important;
+        }
         .resource-card {
             background-color: #9fe0df;
             border-radius: 10px;
@@ -124,6 +101,23 @@ def learn_page():
         }
     </style>
     """, unsafe_allow_html=True)
+
+    st.markdown("""
+    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 10px; margin-top: -10px">
+      <h2 style="margin: 0;">📚 Knowledge Hub</h2>
+    </div>
+    """, unsafe_allow_html=True)
+
+    # Introduction 
+    st.markdown("""
+    <div style="background-color: #b16fbd; padding: 15px; border-radius: 30px; margin-bottom: 20px;">
+        <h4 style="color: #3b2140;">Welcome to our Learning Center</h4>
+        <p style="color: white;">
+            Explore our handpicked collection of educational resources to enhance your financial literacy.
+            These carefully selected articles and videos will help you get started in your saving journey and let you make informed financial decisions.
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
     
     # Create tabs for different financial topics
     tabs = st.tabs([
@@ -196,7 +190,7 @@ def learn_page():
                     "Video", 
                     "Advanced", 
                     "https://www.youtube.com/watch?v=example2",
-                    "https://images.unsplash.com/photo-1554224155-8d04cb21cd64?auto=format&fit=crop&q=80&w=300&h=200"
+                    "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=300&h=200"
                 ),
     
     # Investing Resources
@@ -240,7 +234,7 @@ def learn_page():
                     "Video", 
                     "Advanced", 
                     "https://www.youtube.com/watch?v=example4",
-                    "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=300&h=200"
+                    "https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&q=80&w=300&h=200"
                 )
     
     # Real Estate Resources
@@ -265,7 +259,7 @@ def learn_page():
                     "Video", 
                     "Beginner", 
                     "https://www.youtube.com/watch?v=example5",
-                    "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=300&h=200"
+                    "https://images.unsplash.com/flagged/photo-1564767609342-620cb19b2357?auto=format&fit=crop&q=80&w=300&h=200"
                 )
         
         with col2:
@@ -319,7 +313,7 @@ def learn_page():
                     "Article", 
                     "Advanced", 
                     "https://www.fidelity.com/viewpoints/retirement/how-much-money-do-i-need-to-retire",
-                    "https://images.unsplash.com/photo-1586021280718-53fbadde8d5c?auto=format&fit=crop&q=80&w=300&h=200"
+                    "https://images.unsplash.com/photo-1634474588707-de99f09285c0?auto=format&fit=crop&q=80&w=300&h=200"
                 )
             
             create_resource_card(
@@ -328,7 +322,7 @@ def learn_page():
                     "Video", 
                     "Advanced", 
                     "https://www.youtube.com/watch?v=example8",
-                    "https://images.unsplash.com/photo-1565514020179-026b92b2d35b?auto=format&fit=crop&q=80&w=300&h=200"
+                    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=300&h=200"
                 ),
             
     # Tax Planning Resources
@@ -363,7 +357,7 @@ def learn_page():
                     "Article", 
                     "Advanced", 
                     "https://www.kiplinger.com/taxes/tax-planning/602464/tax-planning-strategies-for-your-golden-years",
-                    "https://images.unsplash.com/photo-1586534313000-9a139c430974?auto=format&fit=crop&q=80&w=300&h=200"
+                    "https://plus.unsplash.com/premium_photo-1678567671227-fc52dc1e307f?auto=format&fit=crop&q=80&w=300&h=200"
                 )
             
             create_resource_card(
@@ -376,7 +370,7 @@ def learn_page():
                 )
     
         
-    # Add footer with additional information
+    # Footer
     st.markdown("""
     <div style="background-color: #f0b6c6; padding: 10px; border-radius: 30px; margin-top: 30px; text-align: center;">
         <p style="color: #360714; font-size: 14px;">

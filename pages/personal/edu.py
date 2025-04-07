@@ -3,6 +3,8 @@ from streamlit_extras.stylable_container import stylable_container
 import base64
 
 def education():
+
+   # CSS
    st.markdown("""
    <style>
    * {
@@ -78,7 +80,6 @@ def education():
                st.write(f"{label} button clicked!")
                del st.session_state[key]
 
-   # ... (rest of your code, including colors and columns)
    one, two, left, middle, right, six, seven = st.columns([1, 1, 7, 7, 7, 1, 1])
 
    button_data = {
@@ -103,7 +104,3 @@ def education():
       with col:
          for i, (label, image_path, link, key) in enumerate(data):
                centered_link_button(col, label, image_path, link, key)
-
-   st.markdown("<br><br>", unsafe_allow_html=True)
-
-   st.markdown("<br><br>", unsafe_allow_html=True)

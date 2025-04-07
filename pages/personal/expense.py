@@ -11,6 +11,7 @@ def get_base64_image(image_path):
 def expense():
     """Expense tracking page with category buttons and transaction entry popup"""
     
+    # CSS
     st.markdown("""
     <style>
         * {
@@ -61,13 +62,6 @@ def expense():
     """, unsafe_allow_html=True)
     
     st.write("## 💳 Record Your Income/Expense")
-    
-    # Initialize session state for finance dataframe if not exists
-    # if 'finance_df' not in st.session_state:
-    #     st.info("Please upload a CSV file to get started or load the sample data instead!")
-        # st.session_state.finance_df = pd.DataFrame(columns=[
-        #     'Date', 'Mode', 'Category', 'Remark', 'Amount', 'Income_Expense', 'Transaction_id'
-        # ])
     
     # Category descriptions for information
     category_descriptions = {

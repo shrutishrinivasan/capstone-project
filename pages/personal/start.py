@@ -10,7 +10,7 @@ def get_base64_image(image_path):
 def getting_started():
     """Getting Started page"""
 
-    # Custom CSS for styling
+    # CSS
     st.markdown("""
     <style>
     * {
@@ -196,6 +196,14 @@ def getting_started():
         </p></center>
     </div>
     """, unsafe_allow_html=True)
+
+    gsflow = get_base64_image("static/gsflow.PNG")
+    st.markdown(f"""
+    <div class="screenshot-container">
+        <img src="data:image/png;base64,{gsflow}" alt="Upload Data Section" width="90%">
+    </div>
+    """, unsafe_allow_html=True)
+
     
     # Section 1: Upload Data
     st.markdown('<h3 class="section-header">1. Upload Data</h3>', unsafe_allow_html=True)
@@ -479,46 +487,46 @@ def getting_started():
         financial_scenario_description()
 
     
-    # Section 5: Trend Analysis
-    st.markdown('<h3 class="section-header">5. Trend Analysis</h3>', unsafe_allow_html=True)
+    # # Section 5: Trend Analysis
+    # st.markdown('<h3 class="section-header">5. Trend Analysis</h3>', unsafe_allow_html=True)
     
-    st.markdown("""
-    <p class="text-content">
-        This section provides deeper insights into your financial behavior with detailed visualizations.
-    </p>
-    """, unsafe_allow_html=True)
+    # st.markdown("""
+    # <p class="text-content">
+    #     This section provides deeper insights into your financial behavior with detailed visualizations.
+    # </p>
+    # """, unsafe_allow_html=True)
     
-    trend = get_base64_image("static/trend.PNG")
+    # trend = get_base64_image("static/trend.PNG")
 
-    st.markdown(f"""
-    <div class="screenshot-container">
-        <img src="data:image/png;base64,{trend}" alt="Trend Analysis Dashboard" width="95%">
-        <p class="screenshot-caption">Trend Analysis Dashboard</p>
-    </div>
-    """, unsafe_allow_html=True)
+    # st.markdown(f"""
+    # <div class="screenshot-container">
+    #     <img src="data:image/png;base64,{trend}" alt="Trend Analysis Dashboard" width="95%">
+    #     <p class="screenshot-caption">Trend Analysis Dashboard</p>
+    # </div>
+    # """, unsafe_allow_html=True)
     
-    st.markdown("""
-    <p class="text-content">
-        It is designed to help you in the following ways:
-    </p>
-    <ul>
-        <li>Identify long-term financial patterns and trends</li>
-        <li>Compare income-expense distribution across different time periods</li>
-        <li>Discover spending habits you might not be aware of</li>
-        <li>Recognize seasonal variations in your financial activity</li>
-        <li>Track progress toward your financial goals</li>
-    </ul>
+    # st.markdown("""
+    # <p class="text-content">
+    #     It is designed to help you in the following ways:
+    # </p>
+    # <ul>
+    #     <li>Identify long-term financial patterns and trends</li>
+    #     <li>Compare income-expense distribution across different time periods</li>
+    #     <li>Discover spending habits you might not be aware of</li>
+    #     <li>Recognize seasonal variations in your financial activity</li>
+    #     <li>Track progress toward your financial goals</li>
+    # </ul>
     
-    <div class="highlight-box">
-        <center><p class="text-content" style="margin-bottom: 0; color: black">
-            Use these insights to make informed decisions about your financial future and identify areas 
-            where you can optimize your spending and saving habits.
-        </p></center>
-    </div>
-    """, unsafe_allow_html=True)
+    # <div class="highlight-box">
+    #     <center><p class="text-content" style="margin-bottom: 0; color: black">
+    #         Use these insights to make informed decisions about your financial future and identify areas 
+    #         where you can optimize your spending and saving habits.
+    #     </p></center>
+    # </div>
+    # """, unsafe_allow_html=True)
     
     # Section 6: Custom Bot
-    st.markdown('<h3 class="section-header">6. Custom Bot</h3>', unsafe_allow_html=True)
+    st.markdown('<h3 class="section-header">5. Custom Bot</h3>', unsafe_allow_html=True)
     
     st.markdown("""
     <p class="text-content">
@@ -527,10 +535,10 @@ def getting_started():
     </p>
     """, unsafe_allow_html=True)
     
-    custom = get_base64_image("static/custom.PNG")
+    custom = get_base64_image("static/chat.PNG")
     st.markdown(f"""
     <div class="screenshot-container">
-        <img src="data:image/png;base64,{custom}" alt="Custom Bot Interface" width="80%">
+        <img src="data:image/png;base64,{custom}" alt="Custom Bot Interface" width="100%">
         <p class="screenshot-caption">Custom Bot: Your personal financial assistant</p>
     </div>
     """, unsafe_allow_html=True)
@@ -572,7 +580,7 @@ def getting_started():
     """, unsafe_allow_html=True)
     
     # Section 7: Explore Resources
-    st.markdown('<h3 class="section-header">7. Explore Resources</h3>', unsafe_allow_html=True)
+    st.markdown('<h3 class="section-header">6. Explore Resources</h3>', unsafe_allow_html=True)
     
     st.markdown("""
     <p class="text-content">
@@ -593,7 +601,7 @@ def getting_started():
     """, unsafe_allow_html=True)
     
     # Section 8: Log Out
-    st.markdown('<h3 class="section-header">8. Log Out</h3>', unsafe_allow_html=True)
+    st.markdown('<h3 class="section-header">7. Log Out</h3>', unsafe_allow_html=True)
     
     st.markdown("""
     <p class="text-content">

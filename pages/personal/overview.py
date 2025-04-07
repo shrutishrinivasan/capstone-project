@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import plotly.graph_objects as go
+from datetime import timedelta
 
 # Function to format numbers in Indian system
 def indian_metric(num):
@@ -11,6 +13,108 @@ def indian_metric(num):
     else:
         return f"₹{num:,.0f}"  # Standard format for smaller numbers
 
+
+def prep_data(df, freq):
+    """
+    Aggregates income and expenses based on the selected time frequency.
+    :param freq: Resampling frequency ('ME' - Monthly, 'QE' - Quarterly, 'YE' - Yearly).
+    """
+    df['Date'] = pd.to_datetime(df['Date'])
+    df['Amount'] = df['Amount'].astype(float)
+
+    # Group by selected frequency
+    grouped = df.groupby([pd.Grouper(key='Date', freq=freq), 'Income_Expense'])['Amount'].sum().unstack().fillna(0)
+    grouped = grouped.rename(columns={'Income': 'Total Income', 'Expense': 'Total Expense'}).reset_index()
+
+    return grouped
+
+def plot_trend(df, show_income=True, show_expense=True):
+    """
+    Plots  line chart for income and expenses.
+    :param show_income: Boolean to toggle income display.
+    :param show_expense: Boolean to toggle expense display.
+=    """
+    fig = go.Figure()
+
+    # Add Income trend line
+    if show_income and 'Total Income' in df.columns:
+        fig.add_trace(go.Scatter(
+            x=df['Date'], y=df['Total Income'],
+            mode='lines+markers',
+            name='Income',
+            line=dict(color='green', width=2, shape='spline'),
+            marker=dict(size=5)
+        ))
+
+    # Add Expense trend line
+    if show_expense and 'Total Expense' in df.columns:
+        fig.add_trace(go.Scatter(
+            x=df['Date'], y=df['Total Expense'],
+            mode='lines+markers',
+            name='Expense',
+            line=dict(color='red', width=2, shape='spline'),
+            marker=dict(size=5)
+        ))
+
+    # Layout settings
+    fig.update_layout(
+        xaxis=dict(
+            showspikes=True,  
+            spikemode='across', 
+            spikethickness=0.02,
+        ),
+        title='Income vs. Expense Trend',
+        xaxis_title='Date',
+        yaxis_title='Amount',
+        hovermode='x unified',
+        legend=dict(title='Legend', orientation='v', yanchor='top', y=4, xanchor='right', x=4),
+        plot_bgcolor='rgba(0,0,0,0)',
+        paper_bgcolor='rgba(0,0,0,0)',
+    )
+
+    return fig
+
+def filter_expenses(df, duration, budget_data):
+    """Filter the expenses dataframe based on selected duration and prepare data for plotting."""
+    
+    # Get the end date as the maximum date in the dataset
+    end_date = df['Date'].max()
+    
+    # Determine the start date based on the selected duration
+    if duration == "Current Month":
+        start_date = end_date.replace(day=1)
+    elif duration == "Previous Month":
+        start_date = (end_date.replace(day=1) - timedelta(days=1)).replace(day=1)
+        end_date = start_date.replace(day=1) + pd.DateOffset(months=1) - timedelta(days=1)
+    elif duration == "Last 3 Months":
+        start_date = end_date - pd.DateOffset(months=3)
+    elif duration == "Last 6 Months":
+        start_date = end_date - pd.DateOffset(months=6)
+    else:  # Default to "Last 1 Year"
+        start_date = end_date - pd.DateOffset(years=1)
+
+    # Filter the DataFrame for expenses within the specified date range
+    filtered_df = df[(df['Date'] >= start_date) & (df['Date'] <= end_date)]
+    
+    # Group by category and aggregate transactions and amounts
+    expense_summary = filtered_df.groupby('Category').agg(
+        Transactions=('Transaction_id', 'count'),
+        Amount=('Amount', 'sum')
+    ).reset_index()
+    
+    # Merge with budget data
+    budget_df = pd.DataFrame(budget_data)
+    
+    # Adjust budget based on duration
+    if duration in ["Current Month", "Previous Month"]:
+        expense_summary = expense_summary.merge(budget_df, on='Category', how='left')
+    else:
+        expense_summary = expense_summary.merge(budget_df, on='Category', how='left')
+        expense_summary['Budget'] *= (3 if duration == "Last 3 Months" else 
+                                    6 if duration == "Last 6 Months" else 
+                                    12)  # For Last 1 Year
+    
+    return expense_summary
 
 def overview():
     """ Financial Snapshot Page"""
@@ -291,3 +395,121 @@ def overview():
                     color = 'orange' if change < 0 else '#368ec9'
                 symbol = '+' if change > 0 else ''
                 st.markdown(f"<span style='color:{color}; font-weight:bold;'>{symbol}{change:.2f}%</span> {category}", unsafe_allow_html=True)
+
+        # base budget data
+        budget_data = {
+            "Category":  ["Rent", "Groceries","Healthcare","Transportation","Utilities","Communication",
+                        "Education","Enrichment","Domestic Help","Care Essentials","Financial Dues",
+                        "Discretionary","Miscellaneous"],
+            "Budget": [20000, 15000, 8000, 5000, 4000, 5000, 18000, 8000, 5000, 3000, 25000, 4000, 5000],
+            "Icons": ["🏠", "🛒", "💊", "🚗", "💡", "📞", "📚", "🎨", "👩‍🍳", "🧴", "💳", "🎭","🔄"]
+        }
+
+        st.write(" ")
+        st.write(" ")
+        st.write(" ")
+        st.write("## 📈 Detailed Trend Analysis")
+        
+        # Dropdown for time selection
+        time_options = {"Monthly": "ME", "Quarterly": "QE", "Yearly": "YE"}
+        time_freq = st.selectbox("Select Time Frequency:", list(time_options.keys()))
+        selected_freq = time_options[time_freq]
+        
+        # Checkboxes for income/expense
+        show_income = st.checkbox("Show Income", value=True)
+        show_expense = st.checkbox("Show Expense", value=True)
+        
+        # Process Data
+        df_grouped = prep_data(df, selected_freq)
+        
+        # Generate Plot
+        fig = plot_trend(df_grouped, show_income, show_expense)
+        
+        if fig:
+            st.plotly_chart(fig)
+
+        # Expense Distribution Heading
+        st.write("### Expense Distribution")
+
+        # Time duration selection
+        time_filter = st.selectbox("Select Duration", [
+            "Current Month", "Previous Month", "Last 3 Months", "Last 6 Months", "Last 1 Year"
+        ])
+
+        if df is None:
+            st.warning("Please upload your transaction data first from the 'Upload Data' tab.")
+        else:
+            filtered_df = filter_expenses(df[df['Income_Expense'] == 'Expense'], duration=time_filter, budget_data=budget_data)
+
+            # Custom Order for Consistent Category Display
+            custom_order = [
+                "Rent", "Groceries", "Healthcare", "Transportation", "Utilities", 
+                "Communication", "Education", "Enrichment", "Domestic Help", 
+                "Care Essentials", "Financial Dues", "Discretionary", "Miscellaneous"
+            ]
+
+            # Create Custom Color Mapping
+            color_palette = px.colors.qualitative.Prism + ['#f2aace', '#66b8c4']
+            color_map = dict(zip(custom_order, color_palette[:len(custom_order)]))
+
+            fig = px.pie(
+                filtered_df, 
+                values='Amount', 
+                names='Category', 
+                hole=0.4,
+                category_orders={"Category": custom_order},
+                color='Category',
+                color_discrete_map=color_map  # Coordinated Colors
+            )
+
+            # Custom hover template to include 'Transactions'
+            fig.update_traces(
+                textinfo='none',
+                hovertemplate='<b>%{label}</b><br>Amount: ₹%{value}'
+            )
+
+            fig.update_layout(
+                plot_bgcolor='rgba(0,0,0,0)',
+                paper_bgcolor='rgba(0,0,0,0)'
+            )
+
+
+            # Display Pie Chart
+            st.plotly_chart(fig, use_container_width=True)
+
+            # Ensure 'Category' column follows custom order
+            filtered_df['Category'] = pd.Categorical(
+                filtered_df['Category'],
+                categories=custom_order,
+                ordered=True
+            )
+
+            # Sort DataFrame by the custom order
+            filtered_df = filtered_df.sort_values('Category')
+
+            # Category-wise Expenditure Bars
+            st.subheader("Category-wise Breakdown")
+            for index, row in filtered_df.iterrows():
+                percentage_spent = row["Amount"] / row["Budget"]
+
+                # Coordinated Color Mapping for Bars
+                bar_color = color_map.get(row['Category'], '#FFFFFF')
+
+                st.markdown(
+                    f"""
+                    <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                        <span style="font-size: 24px; margin-right: 10px;">{row['Icons']}</span>
+                        <div style="flex-grow: 1;">
+                            <div style="display: flex; justify-content: space-between; font-size: 14px; margin-top: 5px;">
+                                <span><b>{row['Category']}</b></span>
+                                <span>{row['Transactions']} transactions</span>
+                                <span>₹{row['Amount']}</span>
+                            </div>
+                            <div style="background-color: #34373b; border-radius: 5px; overflow: hidden;">
+                                <div style="width: {percentage_spent * 100}%; background-color: {bar_color}; height: 20px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    """,
+                    unsafe_allow_html=True
+                )

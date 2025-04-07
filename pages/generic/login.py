@@ -3,10 +3,15 @@ from utils.auth import register_user, login_user
 
 def login_page():
     """Login section of the landing page"""
-    st.title("Account Access")
+    st.write("## Account Access")
+
+    # CSS
     st.markdown(
     """
         <style>
+            * {
+                font-family: Verdana, sans-serif !important;
+            }
             label {
                 font-size: 18px !important;
                 font-weight: bold !important;
