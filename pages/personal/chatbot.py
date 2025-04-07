@@ -518,138 +518,7 @@ def data_digger():
                     st.dataframe(st.session_state.dataframes[check])
 
 # FinMentor Function (formerly QnA4.py)
-    """History Based Bot that analyzes transaction data using SQL"""
-    # Create a container for the chat history that will take most of the screen
-    chat_container = st.container()
-    
-    # Create a container at the bottom for the input
-    input_container = st.container()
-    
-    # Initialize the database when the tab is selected
-    initialize_database()
-    
-    # Set up session state for chat history if not already done
-    if "digger_messages" not in st.session_state:
-        st.session_state.digger_messages = []
-    if "dataframes" not in st.session_state:
-        st.session_state.dataframes = {}
-    if "query_counter" not in st.session_state:
-        st.session_state.query_counter = 0
-    
-    # Use the input container for the chat input (will be at the bottom)
-    with input_container:
-        prompt = st.chat_input("Ask questions about your transaction history...")
-        id = st.session_state.query_counter
-
-        if prompt:
-            # Add user message to chat history
-            st.session_state.digger_messages.append({"query_id": id, "role": "user", "content": prompt})
-            
-            with st.spinner("Generating SQL query..."):
-                # Get SQL query from Mistral
-                result = get_mistral_response(prompt, data_digger_prompt_template)
-                sql_query = result['query']
-                timing_info = result['timing']
-            
-            # Execute the SQL query
-            try:
-                with st.spinner("Executing query..."):
-                    result, columns = read_sql_query(sql_query, mysql_config)
-                
-                # Format the response using natural language interpretation
-                if isinstance(result, list) and result and isinstance(result[0], str) and result[0].startswith("Error:"):
-                    formatted_response = f"**SQL Query:**\n```sql\n{sql_query}\n```\n\n**Error:**\n{result[0]}"
-                    st.session_state.digger_messages.append({"query_id": id, "role": "assistant", "content": formatted_response})
-                    st.session_state.query_counter += 1 # Increment the counter for the next query
-                else:
-                    # Call natural language interpretation
-                    natural_language_response = natural_language_interpretation(
-                        prompt, 
-                        sql_query, 
-                        columns, 
-                        result
-                    )
-                    
-                    # Format the response with SQL query and natural language explanation
-                    formatted_response = f"**SQL Query:**\n```sql\n{sql_query}\n```\n\n**Insights:**\n{natural_language_response}"
-                    
-                    # Add assistant response to chat history
-                    st.session_state.digger_messages.append({"query_id": id, "role": "assistant", "content": formatted_response})
-                    st.session_state.query_counter += 1 # Increment the counter for the next query
-    
-                    # If result has rows, create and display a DataFrame
-                    if result and len(result) > 0:
-                        # Create DataFrame
-                        df = pd.DataFrame(result, columns=columns)
-                        
-                        # Store the dataframe in session state, associated with the current query_id
-                        st.session_state.dataframes[id] = df
-            
-            except Exception as e:
-                formatted_response = f"**SQL Query:**\n```sql\n{sql_query}\n```\n\n**Error:**\n{str(e)}"
-                st.session_state.digger_messages.append({"query_id": id, "role": "assistant", "content": formatted_response})
-    
-    # Use the chat container to display all messages
-    with chat_container:
-        for i, message in enumerate(st.session_state.digger_messages):
-
-            check = message["query_id"]
-            with st.chat_message(message["role"]):
-                st.markdown(message["content"])
-                
-                # If this is an assistant message, display its associated dataframe
-                if message["role"] == "assistant" and "dataframes" in st.session_state:
-                    # Check if there is a dataframe for this query_id
-                    st.dataframe(st.session_state.dataframes[check])
-
-# FinMentor Function (formerly QnA4.py)
 def fin_mentor():
-    """Intelligence-Based Bot that provides financial advice from documents"""
-    # Create a container for the chat history that will take most of the screen
-    chat_container = st.container()
-    
-    # Create a container at the bottom for the input
-    input_container = st.container()
-    
-    # Set up session state for chat history if not already done
-    if "mentor_messages" not in st.session_state:
-        st.session_state.mentor_messages = []
-    
-    # Only load and process documents once for FinMentor with a separate persistence directory
-    if "mentor_chain" not in st.session_state:
-        with st.spinner("Loading model and data (this will only happen once)..."):
-            file_path = "data\custom2.csv"
-            docs = docs_preprocessing_helper(file_path)
-            
-            # Use a separate persistence directory for FinMentor
-            mentor_persist_dir = "./chroma_fin_mentor"
-            db = setup_chroma_db(docs, embedding_function, mentor_persist_dir)
-            
-            prompt = create_prompt_template()
-            st.session_state.mentor_chain = create_retrieval_chain(model, db, prompt)
-    
-    # Use the input container for the chat input (will be at the bottom)
-    with input_container:
-        prompt = st.chat_input("What is your finance question?")
-        
-        if prompt:
-            # Add user message to chat history
-            st.session_state.mentor_messages.append({"role": "user", "content": prompt})
-            
-            # Implement streaming response feel
-            with st.spinner("Thinking..."):
-                response = query_chain(st.session_state.mentor_chain, prompt)
-                
-            # Add assistant response to chat history
-            st.session_state.mentor_messages.append({"role": "assistant", "content": response})
-    
-    # Use the chat container to display all messages
-    with chat_container:
-        for message in st.session_state.mentor_messages:
-            with st.chat_message(message["role"]):
-                st.markdown(message["content"])
-
-# Main function for the custom bot with tabs
     """Intelligence-Based Bot that provides financial advice from documents"""
     # Create a container for the chat history that will take most of the screen
     chat_container = st.container()
@@ -742,18 +611,15 @@ def custom_bot():
     
     # Create tabs for bot versions in the top navigation
     tab1, tab2 = st.tabs(["DataDigger📈: History-Based", "FinMentor🧠: Intelligence-Based"])
-    tab1, tab2 = st.tabs(["DataDigger📈: History-Based", "FinMentor🧠: Intelligence-Based"])
     
     # Content for Bot Version 1
     with tab1:
         st.write("#### Welcome to DataDigger!")
-        st.write("Your financial history, decoded with precision.")
         st.write("Your financial history, decoded with precision.")
         data_digger()
     
     # Content for Bot Version 2
     with tab2:
         st.write("#### Welcome to FinMentor!")
-        st.write("Smart financial advice, simplified.")
         st.write("Smart financial advice, simplified.")
         fin_mentor()

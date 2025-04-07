@@ -145,7 +145,7 @@ def bot_page():
     if "chain" not in st.session_state:
         with st.spinner("Loading model and data (this will only happen once)..."):
             # Replace with your CSV file path
-            file_path = "data/generic2.csv"
+            file_path = "data/generic.csv"
             
             # Initialize Groq model
             model = initialize_groq_model()
