@@ -1,0 +1,21 @@
+question,relevancy,faithfulness,conciseness,role_adherence,similarity,response_time,context_match,cpu_percent,memory_mb
+I'm worried about unexpected job loss. How can PaisaVault help me prepare?,9.0,9.0,9.0,9.0,N/A,22.093430042266846,True,2.0,513.73828125
+I received a suspicious email asking for my bank details. What should I do?,10.0,9.0,9.0,9.0,N/A,11.536474466323853,True,0.0,515.3984375
+My spending always seems to increase with my salary. What can I do to break this cycle?,9.0,10.0,8.5,9.0,N/A,14.13976263999939,True,0.0,515.41796875
+I want to buy a house in 10 years. How can this app assist me in achieving this goal?,9.0,3.0,9.0,9.0,N/A,19.291640043258667,False,4.1,515.421875
+I'm new to investing and overwhelmed. Where should I begin using PaisaVault?,9.0,10.0,8.5,9.0,N/A,17.12547993659973,True,0.0,515.4296875
+How does PaisaVault maintain my privacy while analyzing my financial data?,10.0,9.0,9.0,9.0,N/A,15.151045560836792,True,0.0,515.4375
+My credit score is low. Can PaisaVault provide recommendations for improvement?,9.0,9.0,8.5,9.0,N/A,20.505770683288574,True,2.0,513.03515625
+I'm curious about the future value of my investments. How can I simulate this in PaisaVault?,9.0,2.0,9.0,8.5,N/A,14.667922019958496,True,0.0,513.09765625
+Can PaisaVault track different types of income besides my salary?,10.0,10.0,9.0,8.5,N/A,8.38663101196289,True,1.8,513.1015625
+How is PaisaVault different from linking my bank accounts to a budgeting app?,9.0,9.0,9.0,8.5,N/A,12.143174171447754,True,0.0,218.0546875
+I'm new to budgeting. What's a good starting point?,9.0,9.0,8.5,8.5,9.0,16.22943353652954,True,9.1,218.203125
+I've heard of the 50/30/20 budget. How does that actually work?,10.0,10.0,9.0,9.0,9.5,17.362586975097656,True,0.0,218.3671875
+What if I can't save 20% of my salary? What's a realistic savings goal?,9.0,9.0,8.5,8.5,9.0,12.45240044593811,True,2.0,218.4453125
+Any tips for keeping track of my spending effectively?,9.0,9.0,8.5,8.5,9.0,11.923573970794678,True,0.0,218.609375
+What are some typical budgeting pitfalls to watch out for?,9.0,9.0,9.0,9.0,8.5,13.76028847694397,True,0.0,219.01171875
+I'm trying to cut back on my spending. Where should I start?,9.0,8.0,8.5,8.5,7.5,15.835080862045288,False,0.0,219.1171875
+What exactly does 'discretionary spending' mean?,10.0,10.0,9.0,9.0,9.5,13.641364336013794,True,0.0,219.3125
+I'm curious about zero-based budgeting. How does that work?,10.0,10.0,9.0,9.0,9.0,11.010450839996338,True,0.0,219.42578125
+How much money should I aim to keep in my emergency fund?,9.0,10.0,8.0,8.5,9.0,13.146777629852295,True,0.0,219.5625
+What's the best place to keep the money for my emergency fund?,9.0,10.0,9.0,9.0,9.5,12.428823471069336,True,0.0,219.66796875

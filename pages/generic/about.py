@@ -5,7 +5,7 @@ def get_base64_image(image_path):
     with open(image_path, "rb") as img_file:
         return base64.b64encode(img_file.read()).decode()
 
-encoded_logo = get_base64_image(r"C:\Users\USER\Desktop\capstone_project\static\logo.png")
+encoded_logo = get_base64_image("static/logo.png")
 
 
 def about_page():

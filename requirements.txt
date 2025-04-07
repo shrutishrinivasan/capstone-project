@@ -8,5 +8,18 @@ langchain
 langchain_community
 mysql-connector
 chromadb
-
+nltk 
+rouge-score 
+rouge
+psutil 
+torch
+ragas
+sacrebleu
+os
+json
+time
+sentence-transformer
+langchain-huggingface
+asyncio
+re
 # to run: pip install -r requirements.txt

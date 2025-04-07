@@ -1,24 +1,41 @@
 import streamlit as st
-import json
-from transformers import AutoTokenizer
+import os
+from dotenv import load_dotenv
 from langchain.text_splitter import CharacterTextSplitter
 from langchain_community.document_loaders import CSVLoader
 from langchain_community.vectorstores import Chroma
 from langchain.chains import RetrievalQA
 from langchain.prompts import PromptTemplate
-from langchain_ollama.llms import OllamaLLM
+from langchain_groq import ChatGroq
 from langchain_huggingface import HuggingFaceEmbeddings
-import os
 
 # =================================================
-# 1. Initialize the Language Model with Ollama - Using Mistral 
+# 1. Initialize the Language Model with Groq API
 # =================================================
 
-model = OllamaLLM(
-    model="mistral", 
-    base_url="http://localhost:11434",
-    temperature=0.1  # Lower temperature for more focused responses
-)
+# Load environment variables from .env file
+load_dotenv()
+
+def initialize_groq_model():
+    """
+    Initialize the Groq language model.
+    """
+    # Retrieve API key from environment variable
+    groq_api_key = os.getenv("GROQ_API_KEY")
+    
+    # Raise error if API key is not found
+    if not groq_api_key:
+        st.error("Please set your Groq API key in the .env file")
+        st.stop()
+    
+    # Initialize Groq model
+    model = ChatGroq(
+        groq_api_key=groq_api_key,
+        #model_name="llama2-70b-4096",
+        model_name="mistral-saba-24b",
+        temperature=0.1
+    )
+    return model
 
 # ===================================================
 # 2. Document Preprocessing Function
@@ -55,7 +72,7 @@ def setup_chroma_db(docs, embedding_function):
     return db
 
 # =================================================================
-# 4. Define and Initialize the Prompt Template (IMPORTANT PART)
+# 4. Define and Initialize the Prompt Template
 # =================================================================
 
 def create_prompt_template():
@@ -124,16 +141,17 @@ def bot_page():
     # Only load and process documents once
     if "chain" not in st.session_state:
         with st.spinner("Loading model and data (this will only happen once)..."):
-            file_path = r"C:\Users\Rhea Pandita\Desktop\Capstone-Project\final_codes\capstone-project\data\generic2.csv"  # Fixed path with raw string
+            # Replace with your CSV file path
+            file_path = "data/generic2.csv"
+            
+            # Initialize Groq model
+            model = initialize_groq_model()
+            
+            # Preprocess documents
             docs = docs_preprocessing_helper(file_path)
             db = setup_chroma_db(docs, embedding_function)
             prompt = create_prompt_template()
             st.session_state.chain = create_retrieval_chain(model, db, prompt)
-
-    # # Add a button to clear the chat history
-    # if st.button("Clear Chat History"):
-    #     st.session_state.messages = []  # Clear the messages list
-    #     st.rerun()  # Force Streamlit to rerun the app
 
     # Display existing chat messages
     for message in st.session_state.messages:
@@ -161,3 +179,11 @@ def bot_page():
                 message_placeholder.markdown(f'<div style="color: white;">{response}</div>', unsafe_allow_html=True)
 
         st.session_state.messages.append({"role": "assistant", "content": response})
+
+# Main function to run the app
+def main():
+    st.title("Finance Consultant Chatbot")
+    bot_page()
+
+if __name__ == "__main__":
+    main()

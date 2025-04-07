@@ -1,0 +1,293 @@
+{
+  "average_scores": {
+    "response_relevancy": 0.7703919259358011,
+    "faithfulness": 0.9714285714285715,
+    "semantic_similarity": 0.8052010843646205,
+    "bleu_score": 0.21127922883313124,
+    "rouge_1": 0.42073403720670965,
+    "rouge_2": 0.0,
+    "rouge_l": 0.0,
+    "context_precision_without_reference": 0.9999999999,
+    "context_precision_with_reference": 0.9999999999,
+    "context_recall": 1.0,
+    "non_llm_context_recall": 0.0
+  },
+  "system_performance": {
+    "average_response_time": 14.369393134117127,
+    "average_cpu_usage": 64.64,
+    "average_memory_usage": 493.7326171875,
+    "average_gpu_memory_usage": null
+  },
+  "individual_results": [
+    {
+      "question": "I'm new to budgeting. What's a good starting point?",
+      "reference": "Begin by monitoring your income and expenses.  Note down all your income sources. Then, categorize your spending into essential (rent, bills) and non-essential (dining, entertainment).  Assign budget amounts to each category and regularly track your spending. PaisaVault can simplify this process for you.",
+      "response": " \"Start by tracking your income and expenses for at least one month. Categorize your expenses into fixed (rent, EMIs) and variable (groceries, entertainment). Use tools like PaisaVault to help you set up and maintain your budget. A good starting point for savings is 10% of your income, but adjust this based on your financial goals and current situation.\"",
+      "context": "How do I create a budget.: How much should I save from my salary?\n\"Creating a budget starts with tracking your income and expenses. List all sources of income, then categorize your expenses into fixed (rent, EMIs) and variable (groceries, entertainment). Allocate specific amounts to each category and monitor your spending regularly. PaisaVault can help you set up and maintain your budget with minimal effort.\": \"A good rule of thumb is to save at least 20% of your income. However, the ideal amount depends on your financial goals, current debts, and lifestyle. Start with whatever percentage you can manage consistently, even if it's just 5-10%, and gradually increase it as your income grows or expenses decrease.\"",
+      "metrics": {
+        "response_relevancy": 0.48329143128379526,
+        "faithfulness": 1.0,
+        "semantic_similarity": 0.7813642745128453,
+        "bleu_score": 0.21401603033752978,
+        "rouge_scores": {
+          "rouge_1": 0.29411764705882354,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0
+        },
+        "context_precision_without_reference": 0.9999999999,
+        "context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0,
+        "non_llm_context_recall": 0.0
+      },
+      "performance": {
+        "response_time_seconds": 16.213646411895752,
+        "cpu_percent": 57.35,
+        "memory_usage_mb": 714.197265625,
+        "gpu_memory_usage_mb": null
+      }
+    },
+    {
+      "question": "I've heard of the 50/30/20 budget. How does that actually work?",
+      "reference": "The 50/30/20 rule suggests dividing your income into three main categories: 50% for essential needs like rent and groceries, 30% for wants like entertainment and hobbies, and the remaining 20% for savings and paying off debt. It's a good framework for balancing your spending priorities.",
+      "response": " The 50/30/20 rule works by dividing your after-tax income into three categories: 50% for needs (essential expenses like housing, food, and transportation), 30% for wants (discretionary spending like dining out, entertainment, or travel), and 20% for savings and debt repayment. This rule helps you maintain a balanced budget while still allowing room for enjoyment and financial security.",
+      "context": "How do I create a budget.: What is the 50/30/20 rule?\n\"Creating a budget starts with tracking your income and expenses. List all sources of income, then categorize your expenses into fixed (rent, EMIs) and variable (groceries, entertainment). Allocate specific amounts to each category and monitor your spending regularly. PaisaVault can help you set up and maintain your budget with minimal effort.\": \"The 50/30/20 rule is a simple budgeting method where you allocate 50% of your income to needs (housing, food, utilities), 30% to wants (entertainment, dining out), and 20% to savings and debt repayment. This balanced approach ensures you cover essentials while still enjoying life and building financial security.\"",
+      "metrics": {
+        "response_relevancy": 0.7633983828769195,
+        "faithfulness": 1.0,
+        "semantic_similarity": 0.9331503484041365,
+        "bleu_score": 0.3309142920424813,
+        "rouge_scores": {
+          "rouge_1": 0.537037037037037,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0
+        },
+        "context_precision_without_reference": 0.9999999999,
+        "context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0,
+        "non_llm_context_recall": 0.0
+      },
+      "performance": {
+        "response_time_seconds": 20.033252716064453,
+        "cpu_percent": 86.0,
+        "memory_usage_mb": 586.390625,
+        "gpu_memory_usage_mb": null
+      }
+    },
+    {
+      "question": "What if I can't save 20% of my salary?  What's a realistic savings goal?",
+      "reference": "While 20% is a good target, the important thing is to save consistently, even if it's a smaller amount initially. Start with a percentage you can comfortably manage and gradually increase it as your income rises or expenses decrease.  Even 5-10% is a positive step.",
+      "response": " \"If saving 20% of your salary is challenging, start with a more achievable goal. A good starting point could be 5-10%. As you get comfortable with saving and see improvements in your financial situation, gradually increase the percentage over time. The key is consistency and progress.\"",
+      "context": "How do I create a budget.: How much should I save from my salary?\n\"Creating a budget starts with tracking your income and expenses. List all sources of income, then categorize your expenses into fixed (rent, EMIs) and variable (groceries, entertainment). Allocate specific amounts to each category and monitor your spending regularly. PaisaVault can help you set up and maintain your budget with minimal effort.\": \"A good rule of thumb is to save at least 20% of your income. However, the ideal amount depends on your financial goals, current debts, and lifestyle. Start with whatever percentage you can manage consistently, even if it's just 5-10%, and gradually increase it as your income grows or expenses decrease.\"",
+      "metrics": {
+        "response_relevancy": 0.8472696725338306,
+        "faithfulness": 1.0,
+        "semantic_similarity": 0.8411754831279155,
+        "bleu_score": 0.06614073153463217,
+        "rouge_scores": {
+          "rouge_1": 0.23404255319148937,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0
+        },
+        "context_precision_without_reference": 0.9999999999,
+        "context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0,
+        "non_llm_context_recall": 0.0
+      },
+      "performance": {
+        "response_time_seconds": 13.678129434585571,
+        "cpu_percent": 100.35,
+        "memory_usage_mb": 582.74609375,
+        "gpu_memory_usage_mb": null
+      }
+    },
+    {
+      "question": "Any tips for keeping track of my spending effectively?",
+      "reference": "Categorize all your expenses, regularly review your transactions, and look for patterns. PaisaVault's automated categorization tools can make this easier by sorting your spending, setting category limits, and alerting you when you approach your budget limits. This helps you understand where your money is going and identify potential areas for savings.",
+      "response": " \"To keep track of your spending effectively, regularly review your transactions, categorize them into fixed and variable expenses, and set budget limits for each category. Use tools like PaisaVault to automate this process and receive alerts when you're approaching your budget limits.\"",
+      "context": "How do I create a budget.: Tell me about tracking expenses effectively.\n\"Creating a budget starts with tracking your income and expenses. List all sources of income, then categorize your expenses into fixed (rent, EMIs) and variable (groceries, entertainment). Allocate specific amounts to each category and monitor your spending regularly. PaisaVault can help you set up and maintain your budget with minimal effort.\": \"Effective expense tracking involves categorizing all spending, reviewing transactions regularly, and identifying patterns. Use PaisaVault's automated categorization features to sort expenses, set category limits, and receive alerts when you're approaching your budget limits. Consistent tracking helps identify areas where you can cut back.\"",
+      "metrics": {
+        "response_relevancy": 0.960746896606253,
+        "faithfulness": 1.0,
+        "semantic_similarity": 0.8329019692073651,
+        "bleu_score": 0.2269418874127483,
+        "rouge_scores": {
+          "rouge_1": 0.37894736842105264,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0
+        },
+        "context_precision_without_reference": 0.9999999999,
+        "context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0,
+        "non_llm_context_recall": 0.0
+      },
+      "performance": {
+        "response_time_seconds": 13.163333654403687,
+        "cpu_percent": 86.0,
+        "memory_usage_mb": 518.642578125,
+        "gpu_memory_usage_mb": null
+      }
+    },
+    {
+      "question": "What are some typical budgeting pitfalls to watch out for?",
+      "reference": "Avoid setting unrealistic budget expectations, remember to include occasional expenses (like insurance premiums), adjust your budget as your situation changes, explore ways to increase income rather than just cutting expenses, and establish an emergency fund for unexpected events. PaisaVault's features can help you steer clear of these common errors.",
+      "response": " Some common budgeting pitfalls include underestimating expenses, overspending in certain categories, not accounting for irregular or infrequent expenses, failing to save for emergencies, and not regularly reviewing and adjusting the budget as needed. It's also important to avoid using credit cards excessively and accumulating debt.",
+      "context": "How do I create a budget.: Why do we make bad money decisions?\n\"Creating a budget starts with tracking your income and expenses. List all sources of income, then categorize your expenses into fixed (rent, EMIs) and variable (groceries, entertainment). Allocate specific amounts to each category and monitor your spending regularly. PaisaVault can help you set up and maintain your budget with minimal effort.\": \"We make bad money decisions due to psychological biases like impulsive behavior (making decisions based on emotions rather than logic), present bias (prioritizing immediate gratification over long-term benefits), overconfidence (believing we know more than we do), herd mentality (following what others are doing), and anchoring (fixating on certain numbers). Awareness of these biases can help improve decision-making.\"",
+      "metrics": {
+        "response_relevancy": 0.9061764328914471,
+        "faithfulness": 0.8571428571428571,
+        "semantic_similarity": 0.5099916275629911,
+        "bleu_score": 0.03465908056268393,
+        "rouge_scores": {
+          "rouge_1": 0.16666666666666666,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0
+        },
+        "context_precision_without_reference": 0.9999999999,
+        "context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0,
+        "non_llm_context_recall": 0.0
+      },
+      "performance": {
+        "response_time_seconds": 15.40359616279602,
+        "cpu_percent": 113.65,
+        "memory_usage_mb": 520.3984375,
+        "gpu_memory_usage_mb": null
+      }
+    },
+    {
+      "question": "I'm trying to cut back on my spending.  Where should I start?",
+      "reference": "Begin by separating essential needs from discretionary wants.  Review any subscriptions or memberships you rarely use, cut down on dining out, comparison shop for major purchases, and look for energy-saving measures at home.  PaisaVault can analyze your spending and offer personalized suggestions for areas to reduce.",
+      "response": " \"Start by identifying your fixed and variable expenses. Look for areas where you can reduce variable expenses such as entertainment, dining out, or shopping. Consider setting a budget for these categories and sticking to it. Additionally, try to avoid impulse purchases by implementing the 24-hour rule and using cash or prepaid cards with spending limits.\"",
+      "context": "How do I create a budget.: Why does impulse spending happen and how can I control it?\n\"Creating a budget starts with tracking your income and expenses. List all sources of income, then categorize your expenses into fixed (rent, EMIs) and variable (groceries, entertainment). Allocate specific amounts to each category and monitor your spending regularly. PaisaVault can help you set up and maintain your budget with minimal effort.\": \"Impulse spending happens due to emotional triggers, clever marketing, social pressure, and the dopamine rush from purchases. Control it by implementing a 24-hour rule for non-essential purchases, using cash or prepaid cards with spending limits, avoiding shopping when emotional, unsubscribing from retail emails, keeping a wish list to evaluate wants over time, and tracking expenses to increase awareness.\"",
+      "metrics": {
+        "response_relevancy": 0.40661135635264595,
+        "faithfulness": 0.8571428571428571,
+        "semantic_similarity": 0.6516861666219517,
+        "bleu_score": 0.06274655310994741,
+        "rouge_scores": {
+          "rouge_1": 0.17475728155339804,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0
+        },
+        "context_precision_without_reference": 0.9999999999,
+        "context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0,
+        "non_llm_context_recall": 0.0
+      },
+      "performance": {
+        "response_time_seconds": 13.593660593032837,
+        "cpu_percent": 49.7,
+        "memory_usage_mb": 450.662109375,
+        "gpu_memory_usage_mb": null
+      }
+    },
+    {
+      "question": "What exactly does 'discretionary spending' mean?",
+      "reference": "Discretionary spending refers to the non-essential expenses you can adjust based on your needs, like entertainment, restaurant meals, hobbies, or subscription services. These are distinct from fixed expenses like rent or utilities. They are typically the easiest expenses to reduce when looking to save money.",
+      "response": " Discretionary spending refers to non-essential expenses that you can adjust or eliminate if needed, such as entertainment, dining out, hobbies, or premium services. Unlike fixed expenses (rent, utilities), discretionary spending gives you flexibility in your budget and is typically the first area to reduce when trying to increase savings.",
+      "context": "How do I create a budget.: What is discretionary spending.\n\"Creating a budget starts with tracking your income and expenses. List all sources of income, then categorize your expenses into fixed (rent, EMIs) and variable (groceries, entertainment). Allocate specific amounts to each category and monitor your spending regularly. PaisaVault can help you set up and maintain your budget with minimal effort.\": \"Discretionary spending refers to non-essential expenses that you can adjust or eliminate if needed, such as entertainment, dining out, hobbies, or premium services. Unlike fixed expenses (rent, utilities), discretionary spending gives you flexibility in your budget and is typically the first area to reduce when trying to increase savings.\"",
+      "metrics": {
+        "response_relevancy": 0.8715457692041945,
+        "faithfulness": 1.0,
+        "semantic_similarity": 0.973899343161548,
+        "bleu_score": 0.2520519952745345,
+        "rouge_scores": {
+          "rouge_1": 0.5416666666666667,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0
+        },
+        "context_precision_without_reference": 0.9999999999,
+        "context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0,
+        "non_llm_context_recall": 0.0
+      },
+      "performance": {
+        "response_time_seconds": 14.289016723632812,
+        "cpu_percent": 0.0,
+        "memory_usage_mb": 386.357421875,
+        "gpu_memory_usage_mb": null
+      }
+    },
+    {
+      "question": "I\u2019m curious about zero-based budgeting.  How does that work?",
+      "reference": "In zero-based budgeting, you allocate every rupee of your income to a specific category (expenses, savings, investments) until your budget reaches zero. This approach forces you to be intentional about all your spending and helps eliminate waste.  PaisaVault's tools can help you implement this method.",
+      "response": " \"Zero-based budgeting is a method where you allocate every rupee of your income to specific categories (expenses, savings, investments) until you reach zero. This approach ensures all your money has a purpose and eliminates wasteful spending.\"",
+      "context": "How do I create a budget.: What is zero-based budgeting?\n\"Creating a budget starts with tracking your income and expenses. List all sources of income, then categorize your expenses into fixed (rent, EMIs) and variable (groceries, entertainment). Allocate specific amounts to each category and monitor your spending regularly. PaisaVault can help you set up and maintain your budget with minimal effort.\": \"Zero-based budgeting is a method where you allocate every rupee of your income to specific categories (expenses, savings, investments) until you reach zero. This approach ensures all your money has a purpose and eliminates wasteful spending. PaisaVault's budgeting tools can help you implement this disciplined approach to managing your finances.\"",
+      "metrics": {
+        "response_relevancy": 0.8589927186246725,
+        "faithfulness": 1.0,
+        "semantic_similarity": 0.8784856011859945,
+        "bleu_score": 0.5176346692628243,
+        "rouge_scores": {
+          "rouge_1": 0.6190476190476191,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0
+        },
+        "context_precision_without_reference": 0.9999999999,
+        "context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0,
+        "non_llm_context_recall": 0.0
+      },
+      "performance": {
+        "response_time_seconds": 11.572091817855835,
+        "cpu_percent": 24.95,
+        "memory_usage_mb": 392.42578125,
+        "gpu_memory_usage_mb": null
+      }
+    },
+    {
+      "question": "How much money should I aim to keep in my emergency fund?",
+      "reference": "A good target is 3 to 6 months of essential expenses.  If your income is unstable or you have dependents, aim for 6 to 12 months' worth. Don't feel pressured to save this amount immediately.  Start with a smaller, manageable goal (like \u20b925,000-\u20b950,000) and gradually build it up.",
+      "response": " Aim for an emergency fund that covers 3-6 months of essential expenses. For those with irregular income or dependents, consider saving for 6-12 months. Start with a smaller goal of \u00e2\u201a\u00b925,000-50,000 and gradually build it up.",
+      "context": "How do I create a budget.: How much emergency fund should I have?\n\"Creating a budget starts with tracking your income and expenses. List all sources of income, then categorize your expenses into fixed (rent, EMIs) and variable (groceries, entertainment). Allocate specific amounts to each category and monitor your spending regularly. PaisaVault can help you set up and maintain your budget with minimal effort.\": \"An ideal emergency fund should cover 3-6 months of essential expenses. For those with irregular income or dependents, aim for 6-12 months. Start with a smaller goal of \u00e2\u201a\u00b925,000-50,000, then build up gradually. Your emergency fund provides financial security during unexpected situations like job loss, medical emergencies, or major home repairs.\"",
+      "metrics": {
+        "response_relevancy": 0.8510066380432243,
+        "faithfulness": 1.0,
+        "semantic_similarity": 0.6975247747166409,
+        "bleu_score": 0.2989950354998137,
+        "rouge_scores": {
+          "rouge_1": 0.5806451612903226,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0
+        },
+        "context_precision_without_reference": 0.9999999999,
+        "context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0,
+        "non_llm_context_recall": 0.0
+      },
+      "performance": {
+        "response_time_seconds": 13.274613857269287,
+        "cpu_percent": 63.9,
+        "memory_usage_mb": 388.078125,
+        "gpu_memory_usage_mb": null
+      }
+    },
+    {
+      "question": "What's the best place to keep the money for my emergency fund?",
+      "reference": "Stash your emergency fund in an account that's easily accessible and has minimal risk, like a high-yield savings account or a short-term fixed deposit.  Avoid investments with fluctuating values or withdrawal penalties. The goal is to balance accessibility with earning some interest to offset inflation.",
+      "response": " Your emergency fund should be kept in easily accessible accounts with minimal risk, such as high-yield savings accounts or short-term fixed deposits. Avoid keeping it in investments that fluctuate in value or have withdrawal penalties. The key is balancing accessibility with some interest earnings to combat inflation.",
+      "context": "How do I create a budget.: Where should I keep my emergency fund.\n\"Creating a budget starts with tracking your income and expenses. List all sources of income, then categorize your expenses into fixed (rent, EMIs) and variable (groceries, entertainment). Allocate specific amounts to each category and monitor your spending regularly. PaisaVault can help you set up and maintain your budget with minimal effort.\": \"Your emergency fund should be kept in easily accessible accounts with minimal risk, such as high-yield savings accounts or short-term fixed deposits. Avoid keeping it in investments that fluctuate in value or have withdrawal penalties. The key is balancing accessibility with some interest earnings to combat inflation.\"",
+      "metrics": {
+        "response_relevancy": 0.7548799609410267,
+        "faithfulness": 1.0,
+        "semantic_similarity": 0.9518312551448159,
+        "bleu_score": 0.10869201329411707,
+        "rouge_scores": {
+          "rouge_1": 0.6804123711340205,
+          "rouge_2": 0.0,
+          "rouge_l": 0.0
+        },
+        "context_precision_without_reference": 0.9999999999,
+        "context_precision_with_reference": 0.9999999999,
+        "context_recall": 1.0,
+        "non_llm_context_recall": 0.0
+      },
+      "performance": {
+        "response_time_seconds": 12.47258996963501,
+        "cpu_percent": 64.5,
+        "memory_usage_mb": 397.427734375,
+        "gpu_memory_usage_mb": null
+      }
+    }
+  ]
+}
