@@ -124,6 +124,10 @@ def bot_page():
     [data-testid="stChatMessageContent"] {
         color: white !important;
     }
+    /* Make assistant responses white text */
+    [data-testid="stChatMessageContent"] {
+        color: white !important;
+    }
     </style>
     """, unsafe_allow_html=True)
     
@@ -140,7 +144,8 @@ def bot_page():
     # Only load and process documents once
     if "chain" not in st.session_state:
         with st.spinner("Loading model and data (this will only happen once)..."):
-            file_path = "data/generic.csv"
+            # Replace with your CSV file path
+            file_path = "data/generic2.csv"
             
             # Initialize Groq model
             model = initialize_groq_model()
