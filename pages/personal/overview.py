@@ -3,7 +3,6 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 from datetime import timedelta
-from plotly.subplots import make_subplots
 import numpy as np
 
 # Function for payment mode analysis

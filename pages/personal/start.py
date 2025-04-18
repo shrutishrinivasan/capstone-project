@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import base64
-from PIL import Image
 
 def get_base64_image(image_path):
     with open(image_path, "rb") as img_file:

@@ -2,7 +2,6 @@ import streamlit as st
 import os
 import mysql.connector as sql
 import pandas as pd
-from transformers import AutoTokenizer
 from langchain.text_splitter import CharacterTextSplitter
 from langchain_community.document_loaders import CSVLoader
 from langchain_community.vectorstores import Chroma
@@ -10,7 +9,6 @@ from langchain.chains import RetrievalQA
 from langchain.prompts import PromptTemplate
 from langchain_groq import ChatGroq
 from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_core.runnables import RunnableSequence
 from dotenv import load_dotenv
 
 load_dotenv()
