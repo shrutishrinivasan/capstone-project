@@ -31,7 +31,6 @@ def initialize_groq_model():
     # Initialize Groq model
     model = ChatGroq(
         groq_api_key=groq_api_key,
-        #model_name="llama2-70b-4096",
         model_name="mistral-saba-24b",
         temperature=0.1
     )
@@ -144,7 +143,6 @@ def bot_page():
     # Only load and process documents once
     if "chain" not in st.session_state:
         with st.spinner("Loading model and data (this will only happen once)..."):
-            # Replace with your CSV file path
             file_path = "data/generic.csv"
             
             # Initialize Groq model
@@ -159,7 +157,6 @@ def bot_page():
     # Display existing chat messages
     for message in st.session_state.messages:
         with st.chat_message(message["role"]):
-            # Wrap assistant messages in a div with white text color
             if message["role"] == "assistant":
                 st.markdown(f'<div style="color: white;">{message["content"]}</div>', unsafe_allow_html=True)
             else:
@@ -178,7 +175,6 @@ def bot_page():
             # Implement streaming response feel
             with st.spinner("Thinking..."):
                 response = query_chain(st.session_state.chain, prompt)
-                # Display response with white text                
                 message_placeholder.markdown(f'<div style="color: white;">{response}</div>', unsafe_allow_html=True)
 
         st.session_state.messages.append({"role": "assistant", "content": response})

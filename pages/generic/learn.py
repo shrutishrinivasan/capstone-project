@@ -170,7 +170,7 @@ def learn_page():
                     "A step-by-step guide to creating and sticking to a budget.", 
                     "Video", 
                     "Beginner", 
-                    "https://www.youtube.com/watch?v=example1",
+                    "https://youtu.be/K5UlgTkadV0?si=omF_ZrCEzQQZOEN9",
                     "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=300&h=200"
                 )
         
@@ -189,7 +189,7 @@ def learn_page():
                     "Advanced budgeting techniques for optimizing your finances.", 
                     "Video", 
                     "Advanced", 
-                    "https://www.youtube.com/watch?v=example2",
+                    "https://youtu.be/t0KLvsvShsk?si=nq6b6hsyq0ZKg2L5",
                     "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=300&h=200"
                 ),
     
@@ -214,7 +214,7 @@ def learn_page():
                     "A comprehensive guide to mutual funds for beginners.", 
                     "Video", 
                     "Beginner", 
-                    "https://www.youtube.com/watch?v=example3",
+                    "https://youtu.be/JUtes-k-VX4?si=zCLdX15D8ktYLvtG",
                     "https://images.unsplash.com/photo-1560520031-3a4dc4e9de0c?auto=format&fit=crop&q=80&w=300&h=200"
                 )
         
@@ -224,7 +224,7 @@ def learn_page():
                     "Advanced techniques for building a diversified investment portfolio.", 
                     "Article", 
                     "Advanced", 
-                    "https://www.morningstar.com/articles/1075188/why-diversification-matters",
+                    "https://www.fidelity.com/learning-center/investment-products/mutual-funds/diversification",
                     "https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&q=80&w=300&h=200"
                 )
             
@@ -233,7 +233,7 @@ def learn_page():
                     "Learn how to analyze stock charts and identify trading opportunities.", 
                     "Video", 
                     "Advanced", 
-                    "https://www.youtube.com/watch?v=example4",
+                    "https://youtu.be/X88BUkiQW8k?si=36W-bx1I6s8tvqL1",
                     "https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&q=80&w=300&h=200"
                 )
     
@@ -258,7 +258,7 @@ def learn_page():
                     "How to start investing in rental properties and generate passive income.", 
                     "Video", 
                     "Beginner", 
-                    "https://www.youtube.com/watch?v=example5",
+                    "https://youtu.be/sM_DcT9ejdY?si=jTku7X8hsXmt9huk",
                     "https://images.unsplash.com/flagged/photo-1564767609342-620cb19b2357?auto=format&fit=crop&q=80&w=300&h=200"
                 )
         
@@ -268,7 +268,7 @@ def learn_page():
                     "A comprehensive guide to investing in commercial real estate.", 
                     "Article", 
                     "Advanced", 
-                    "https://www.forbes.com/sites/forbesrealestatecouncil/2021/04/29/commercial-real-estate-101-how-to-invest-wisely/",
+                    "https://www.investopedia.com/terms/c/commercialrealestate.asp#:~:text=Commercial%20real%20estate%20has%20the,it%20can%20offer%20high%20returns.",
                     "https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?auto=format&fit=crop&q=80&w=300&h=200"
                 )
             
@@ -277,7 +277,7 @@ def learn_page():
                     "Understanding real estate market cycles and how to time your investments.", 
                     "Video", 
                     "Advanced", 
-                    "https://www.youtube.com/watch?v=example6",
+                    "https://youtu.be/33XR6_F2BlI?si=LfDXynwtVqNI_FCO",
                     "https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&q=80&w=300&h=200"
                 )
             
@@ -302,8 +302,8 @@ def learn_page():
                     "A visual explanation of how compound interest builds wealth over time.", 
                     "Video", 
                     "Beginner", 
-                    "https://www.youtube.com/watch?v=example7",
-                    "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=300&h=200"
+                    "https://youtu.be/lNK95khKvSk?si=Qh3r1GHzWOc0OLRc",
+                    "https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?auto=format&fit=crop&q=80&w=300&h=200"
                 )
         
         with col2:
@@ -321,7 +321,7 @@ def learn_page():
                     "Advanced techniques for maximizing the effect of compound interest.", 
                     "Video", 
                     "Advanced", 
-                    "https://www.youtube.com/watch?v=example8",
+                    "https://youtu.be/wtAB-Zg_79I?si=ymcaQnt5j70n8_JO",
                     "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=300&h=200"
                 ),
             
@@ -346,7 +346,7 @@ def learn_page():
                     "A guide to common tax deductions that many taxpayers overlook.", 
                     "Video", 
                     "Beginner", 
-                    "https://www.youtube.com/watch?v=example9",
+                    "https://youtu.be/3v9hFUq4of0?si=f0eoFq96JfVau30q",
                     "https://images.unsplash.com/photo-1554224154-22dec7ec8818?auto=format&fit=crop&q=80&w=300&h=200"
                 )
             
@@ -356,7 +356,7 @@ def learn_page():
                     "Sophisticated tax planning techniques for high-income individuals.", 
                     "Article", 
                     "Advanced", 
-                    "https://www.kiplinger.com/taxes/tax-planning/602464/tax-planning-strategies-for-your-golden-years",
+                    "https://www.nerdwallet.com/article/taxes/tax-planning",
                     "https://plus.unsplash.com/premium_photo-1678567671227-fc52dc1e307f?auto=format&fit=crop&q=80&w=300&h=200"
                 )
             
@@ -365,7 +365,7 @@ def learn_page():
                     "How to use investment losses to offset capital gains tax.", 
                     "Video", 
                     "Advanced", 
-                    "https://www.youtube.com/watch?v=example10",
+                    "https://youtu.be/xOmgmoV80NM?si=QkiXx7cnMrXXp_fU",
                     "https://images.unsplash.com/photo-1434626881859-194d67b2b86f?auto=format&fit=crop&q=80&w=300&h=200"
                 )
     

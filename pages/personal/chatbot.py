@@ -17,7 +17,7 @@ load_dotenv()
 
 model = ChatGroq(
     temperature=0.1,  # Lower temperature for more precise responses
-    model_name="mistral-saba-24b",  # Using Mixtral as the Mistral-like model
+    model_name="mistral-saba-24b",
     # Retrieve API key from environment variable
     groq_api_key = os.getenv("GROQ_API_KEY")
 )
@@ -431,13 +431,13 @@ def query_chain(chain, query):
     response = chain.invoke(query)
     return response['result']
 
-# DataDigger Function (formerly trial7.py)
+# DataDigger Function
 def data_digger():
     """History Based Bot that analyzes transaction data using SQL"""
-    # Create a container for the chat history that will take most of the screen
+    # Create a container for the chat history
     chat_container = st.container()
     
-    # Create a container at the bottom for the input
+    # Create a container for the input
     input_container = st.container()
     
     # Initialize the database when the tab is selected
@@ -451,7 +451,7 @@ def data_digger():
     if "query_counter" not in st.session_state:
         st.session_state.query_counter = 0
     
-    # Use the input container for the chat input (will be at the bottom)
+    # Use the input container for the chat input
     with input_container:
         prompt = st.chat_input("Ask questions about your transaction history...")
         id = st.session_state.query_counter
@@ -511,19 +511,21 @@ def data_digger():
             check = message["query_id"]
             with st.chat_message(message["role"]):
                 st.markdown(message["content"])
-                
-                # If this is an assistant message, display its associated dataframe
-                if message["role"] == "assistant" and "dataframes" in st.session_state:
-                    # Check if there is a dataframe for this query_id
+
+                if (
+                    message["role"] == "assistant"
+                    and "query_id" in message
+                    and message["query_id"] in st.session_state.dataframes
+                ):
                     st.dataframe(st.session_state.dataframes[check])
 
-# FinMentor Function (formerly QnA4.py)
+# FinMentor Function
 def fin_mentor():
     """Intelligence-Based Bot that provides financial advice from documents"""
-    # Create a container for the chat history that will take most of the screen
+    # Create a container for the chat history
     chat_container = st.container()
     
-    # Create a container at the bottom for the input
+    # Create a container for the input
     input_container = st.container()
     
     # Set up session state for chat history if not already done
@@ -543,7 +545,7 @@ def fin_mentor():
             prompt = create_prompt_template()
             st.session_state.mentor_chain = create_retrieval_chain(model, db, prompt)
     
-    # Use the input container for the chat input (will be at the bottom)
+    # Use the input container for the chat input
     with input_container:
         prompt = st.chat_input("What is your finance question?")
         
@@ -609,16 +611,13 @@ def custom_bot():
     st.write("## 💬 Financial Assistant") 
     st.write("Choose between two specialized bots: one that analyzes your transaction history for insights, and another that provides expert financial advice.")
     
-    # Create tabs for bot versions in the top navigation
     tab1, tab2 = st.tabs(["DataDigger📈: History-Based", "FinMentor🧠: Intelligence-Based"])
     
-    # Content for Bot Version 1
     with tab1:
         st.write("#### Welcome to DataDigger!")
         st.write("Your financial history, decoded with precision.")
         data_digger()
     
-    # Content for Bot Version 2
     with tab2:
         st.write("#### Welcome to FinMentor!")
         st.write("Smart financial advice, simplified.")

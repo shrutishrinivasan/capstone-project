@@ -3,6 +3,224 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 from datetime import timedelta
+from plotly.subplots import make_subplots
+import numpy as np
+
+# Function for payment mode analysis
+def payment_mode_analysis(df):
+    """
+    Create payment mode analysis visualizations
+    
+    Parameters:
+    -----------
+    df : pandas DataFrame
+        Financial data with columns: 'Mode', 'Amount', 'Income_Expense'
+    
+    Returns:
+    --------
+    None - displays the visualizations directly
+    """
+    finance_df = df.copy()
+    
+    finance_df['Date'] = pd.to_datetime(finance_df['Date'], format='%d-%m-%Y')
+    
+    st.write("")
+    st.write("")
+    st.write("### 📊 Payment Mode Analysis")
+    
+    with st.container():
+        st.markdown("""
+        <style>
+        .payment-insights {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        </style>
+        """, unsafe_allow_html=True)
+        
+        col1, col2 = st.columns([1, 1])
+        
+        with col1:
+            # Group by Mode and Income_Expense to get count
+            mode_type_counts = finance_df.groupby(['Mode', 'Income_Expense']).size().reset_index(name='Count')
+            
+            # Pivot to get the right format for stacked bar
+            mode_type_pivot = mode_type_counts.pivot(index='Mode', columns='Income_Expense', values='Count').fillna(0)
+            
+            # Sort by total transactions
+            mode_type_pivot['Total'] = mode_type_pivot.sum(axis=1)
+            mode_type_pivot = mode_type_pivot.sort_values('Total', ascending=False)
+            mode_type_pivot = mode_type_pivot.drop('Total', axis=1)
+            
+            # Create the stacked bar chart
+            fig1 = go.Figure()
+            
+            for col in mode_type_pivot.columns:
+                fig1.add_trace(go.Bar(
+                    x=mode_type_pivot.index,
+                    y=mode_type_pivot[col],
+                    name=col,
+                    text=mode_type_pivot[col].apply(lambda x: f"{int(x)}" if x > 0 else ""),
+                    textposition='auto',
+                    marker_color='#2E86C1' if col == 'Income' else '#E74C3C'
+                ))
+            
+            fig1.update_layout(
+                title="Transaction Count",
+                barmode='stack',
+                plot_bgcolor='rgba(0,0,0,0)',
+                paper_bgcolor='rgba(0,0,0,0)', 
+                height=400,
+                legend=dict(
+                    orientation="h",
+                    yanchor="bottom",
+                    y=1.02,
+                    xanchor="right",
+                    x=1
+                ),
+                margin=dict(l=20, r=20, t=60, b=20),
+                xaxis=dict(title='Payment Mode'),
+                yaxis=dict(title='Number of Transactions')
+            )
+            
+            st.plotly_chart(fig1, use_container_width=True)
+        
+        with col2:
+            # Calculate total amount by mode
+            mode_amount = finance_df.groupby('Mode').agg(
+                Total_Amount=('Amount', 'sum'),
+                Avg_Amount=('Amount', 'mean')
+            ).reset_index()
+            
+            # Sort by total amount
+            mode_amount = mode_amount.sort_values('Total_Amount', ascending=True)
+            
+            # Create the horizontal bar chart
+            fig2 = go.Figure()
+            
+            fig2.add_trace(go.Bar(
+                y=mode_amount['Mode'],
+                x=mode_amount['Total_Amount'],
+                orientation='h',
+                text=mode_amount['Total_Amount'].apply(lambda x: f"₹{int(x):,}"),
+                textposition='auto',
+                marker=dict(
+                    color=mode_amount['Total_Amount'],
+                    colorscale='Viridis',
+                    showscale=True,
+                    colorbar=dict(title="Amount")
+                )
+            ))
+            
+            fig2.update_layout(
+                title="Total Amount by Payment Mode",
+                height=400,
+                plot_bgcolor='rgba(0,0,0,0)',
+                paper_bgcolor='rgba(0,0,0,0)', 
+                margin=dict(l=20, r=20, t=60, b=20),
+                xaxis=dict(title='Total Amount'),
+                yaxis=dict(
+                    title='',
+                    autorange="reversed"  # To match the order with the first chart
+                )
+            )
+            
+            st.plotly_chart(fig2, use_container_width=True)
+        
+        st.write("### Key Insights 💡")
+        
+        col3, col4, col5 = st.columns(3)
+        
+        with col3:
+            # Most used payment mode
+            most_used_mode = finance_df['Mode'].value_counts().idxmax()
+            most_used_count = finance_df['Mode'].value_counts().max()
+            total_transactions = len(finance_df)
+            most_used_percentage = (most_used_count / total_transactions) * 100
+            
+            st.metric(
+                label="Most Used Payment Mode",
+                value=most_used_mode,
+                delta=f"{most_used_percentage:.1f}% of transactions"
+            )
+        
+        with col4:
+            # Highest average transaction
+            mode_avg = finance_df.groupby('Mode')['Amount'].mean()
+            highest_avg_mode = mode_avg.idxmax()
+            highest_avg_amount = mode_avg.max()
+            
+            st.metric(
+                label="Highest Avg. Transaction",
+                value=highest_avg_mode,
+                delta=f"₹{highest_avg_amount:.2f}"
+            )
+        
+        with col5:
+            # Mode with highest expenses
+            expense_df = finance_df[finance_df['Income_Expense'] == 'Expense']
+            if not expense_df.empty:
+                mode_expense = expense_df.groupby('Mode')['Amount'].sum()
+                highest_expense_mode = mode_expense.idxmax()
+                highest_expense_amount = mode_expense.max()
+                
+                st.metric(
+                    label="Highest Expense Mode",
+                    value=highest_expense_mode,
+                    delta=f"₹{highest_expense_amount:.2f}",
+                    delta_color="inverse"
+                )
+            else:
+                st.metric(label="Highest Expense Mode", value="No data", delta="0")
+        
+        # Get the top 5 payment modes by transaction count
+        top_modes = finance_df['Mode'].value_counts().nlargest(5).index.tolist()
+        
+        # Filter data for top modes
+        top_modes_df = finance_df[finance_df['Mode'].isin(top_modes)]
+        
+        # Group by month and mode to see trends
+        top_modes_df['Month'] = top_modes_df['Date'].dt.to_period('M')
+        monthly_mode_data = top_modes_df.groupby(['Month', 'Mode'])['Amount'].sum().reset_index()
+        monthly_mode_data['Month'] = monthly_mode_data['Month'].astype(str)
+        
+        fig3 = go.Figure()
+
+        # Sort months to ensure proper ordering
+        monthly_mode_data['Month'] = pd.to_datetime(monthly_mode_data['Month'])
+        monthly_mode_data = monthly_mode_data.sort_values('Month')
+
+        custom_colors = ['#4CAF50', '#FFC107', '#03A9F4', '#E91E63', '#9C27B0']
+
+        for i, mode in enumerate(top_modes):
+            mode_df = monthly_mode_data[monthly_mode_data['Mode'] == mode]
+            fig3.add_trace(go.Scatter(
+                x=mode_df['Month'],
+                y=mode_df['Amount'],
+                mode='lines',
+                stackgroup='one',
+                name=mode,
+                line=dict(width=0.5, color=custom_colors[i % len(custom_colors)]),
+                fillcolor=custom_colors[i % len(custom_colors)],
+                hoverinfo='x+y+name'
+            ))
+
+        # Styling
+        fig3.update_layout(
+            title="Payment Mode Trends",
+            xaxis_title="Month",
+            yaxis_title="Amount Spent",
+            hovermode='x unified',
+            showlegend=True,
+            plot_bgcolor='rgba(0,0,0,0)',
+            paper_bgcolor='rgba(0,0,0,0)', 
+            height=450,
+            margin=dict(l=20, r=20, t=60, b=20)
+        )
+
+        st.plotly_chart(fig3, use_container_width=True)
 
 # Function to format numbers in Indian system
 def indian_metric(num):
@@ -77,10 +295,8 @@ def plot_trend(df, show_income=True, show_expense=True):
 def filter_expenses(df, duration, budget_data):
     """Filter the expenses dataframe based on selected duration and prepare data for plotting."""
     
-    # Get the end date as the maximum date in the dataset
     end_date = df['Date'].max()
     
-    # Determine the start date based on the selected duration
     if duration == "Current Month":
         start_date = end_date.replace(day=1)
     elif duration == "Previous Month":
@@ -144,7 +360,6 @@ def overview():
         data = st.session_state.finance_df
         df = data.copy()
         
-        # Convert Date column to datetime format
         df['Date'] = pd.to_datetime(df['Date'], format='%d-%m-%Y')
         
         # Add month and year columns for easier grouping
@@ -160,7 +375,6 @@ def overview():
         # Filter data for the latest month and year
         latest_month_df = df[(df['Date'].dt.month == latest_month) & (df['Date'].dt.year == latest_year)]
 
-        # Create container layout: 3 containers in upper row and 2 in lower row
         upper_row = st.columns(3)
         lower_row = st.columns([2,1])
         
@@ -170,7 +384,7 @@ def overview():
             
             # Time frequency selection
             time_options = ["Weekly", "Monthly", "Quarterly", "Yearly"]
-            selected_frequency = st.selectbox("Select Time Frequency", time_options, key="balance_frequency")
+            selected_frequency = st.selectbox("Select Time Frequency", time_options, key="balance_frequency", index=2)
             
             # Calculate current balance
             income_total = df[df['Income_Expense'] == 'Income']['Amount'].sum()
@@ -459,10 +673,9 @@ def overview():
                 hole=0.4,
                 category_orders={"Category": custom_order},
                 color='Category',
-                color_discrete_map=color_map  # Coordinated Colors
+                color_discrete_map=color_map
             )
 
-            # Custom hover template to include 'Transactions'
             fig.update_traces(
                 textinfo='none',
                 hovertemplate='<b>%{label}</b><br>Amount: ₹%{value}'
@@ -474,7 +687,6 @@ def overview():
             )
 
 
-            # Display Pie Chart
             st.plotly_chart(fig, use_container_width=True)
 
             # Ensure 'Category' column follows custom order
@@ -492,7 +704,6 @@ def overview():
             for index, row in filtered_df.iterrows():
                 percentage_spent = row["Amount"] / row["Budget"]
 
-                # Coordinated Color Mapping for Bars
                 bar_color = color_map.get(row['Category'], '#FFFFFF')
 
                 st.markdown(
@@ -513,3 +724,5 @@ def overview():
                     """,
                     unsafe_allow_html=True
                 )
+
+        payment_mode_analysis(st.session_state.finance_df)

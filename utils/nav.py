@@ -44,7 +44,7 @@ def vertical_navbar():
                 "house",
                 "cloud-upload",
                 "pie-chart",
-                "currency-dollar",
+                "currency-rupee",
                 "lightbulb",
                 "chat-dots",
                 "search",

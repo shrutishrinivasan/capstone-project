@@ -226,15 +226,15 @@ def getting_started():
     st.markdown("""
     <h4 class="subsection-header">CSV File Format Requirements</h4>
     <p class="text-content">
-        For seamless data integration, your CSV file should be formatted with these 7 columns:
+        For seamless data integration, your CSV file should be formatted with these 6 columns:
     </p>
     """, unsafe_allow_html=True)
     
     # CSV Format Example
     csv_format = {
-        'Column': ['Date', 'Mode', 'Category', 'Remark', 'Amount', 'Income_Expense', 'Transaction_id'],
-        'Format': ['dd-mm-yyyy', 'String', 'String', 'String', 'Numeric', 'String', 'String'],
-        'Example': ['25-03-2025', 'Credit Card', 'Groceries', 'Weekly groceries', '2500', 'Expense', 'TR123456']
+        'Column': ['Date', 'Mode', 'Category', 'Remark', 'Amount', 'Income_Expense'],
+        'Format': ['dd-mm-yyyy', 'String', 'String', 'String', 'Numeric', 'String'],
+        'Example': ['25-03-2025', 'Credit Card', 'Groceries', 'Weekly groceries', '2500', 'Expense']
     }
     
     csv_df = pd.DataFrame(csv_format)
@@ -261,9 +261,7 @@ def getting_started():
     <p class="text-content"><strong>Amount:</strong> The monetary value of the transaction.</p>
     
     <p class="text-content"><strong>Income_Expense:</strong> Type of transaction - either "Income" or "Expense".</p>
-    
-    <p class="text-content"><strong>Transaction_id:</strong> A unique identifier for each transaction.</p>
-    """, unsafe_allow_html=True)
+        """, unsafe_allow_html=True)
     
     # What happens after upload
     st.markdown("""
@@ -379,7 +377,7 @@ def getting_started():
     </div>
     """, unsafe_allow_html=True)
     
-    # Section 4: Financial Foresight (placeholder)
+    # Section 4: Financial Foresight
     st.markdown('<h3 class="section-header">4. Financial Foresight</h3>', unsafe_allow_html=True)
     
     st.markdown("""
@@ -485,47 +483,8 @@ def getting_started():
     
     with tab2:
         financial_scenario_description()
-
     
-    # # Section 5: Trend Analysis
-    # st.markdown('<h3 class="section-header">5. Trend Analysis</h3>', unsafe_allow_html=True)
-    
-    # st.markdown("""
-    # <p class="text-content">
-    #     This section provides deeper insights into your financial behavior with detailed visualizations.
-    # </p>
-    # """, unsafe_allow_html=True)
-    
-    # trend = get_base64_image("static/trend.PNG")
-
-    # st.markdown(f"""
-    # <div class="screenshot-container">
-    #     <img src="data:image/png;base64,{trend}" alt="Trend Analysis Dashboard" width="95%">
-    #     <p class="screenshot-caption">Trend Analysis Dashboard</p>
-    # </div>
-    # """, unsafe_allow_html=True)
-    
-    # st.markdown("""
-    # <p class="text-content">
-    #     It is designed to help you in the following ways:
-    # </p>
-    # <ul>
-    #     <li>Identify long-term financial patterns and trends</li>
-    #     <li>Compare income-expense distribution across different time periods</li>
-    #     <li>Discover spending habits you might not be aware of</li>
-    #     <li>Recognize seasonal variations in your financial activity</li>
-    #     <li>Track progress toward your financial goals</li>
-    # </ul>
-    
-    # <div class="highlight-box">
-    #     <center><p class="text-content" style="margin-bottom: 0; color: black">
-    #         Use these insights to make informed decisions about your financial future and identify areas 
-    #         where you can optimize your spending and saving habits.
-    #     </p></center>
-    # </div>
-    # """, unsafe_allow_html=True)
-    
-    # Section 6: Custom Bot
+    # Section 5: Custom Bot
     st.markdown('<h3 class="section-header">5. Custom Bot</h3>', unsafe_allow_html=True)
     
     st.markdown("""
@@ -579,7 +538,7 @@ def getting_started():
     </ul>
     """, unsafe_allow_html=True)
     
-    # Section 7: Explore Resources
+    # Section 6: Explore Resources
     st.markdown('<h3 class="section-header">6. Explore Resources</h3>', unsafe_allow_html=True)
     
     st.markdown("""
@@ -600,7 +559,7 @@ def getting_started():
     </div>
     """, unsafe_allow_html=True)
     
-    # Section 8: Log Out
+    # Section 7: Log Out
     st.markdown('<h3 class="section-header">7. Log Out</h3>', unsafe_allow_html=True)
     
     st.markdown("""
@@ -610,7 +569,6 @@ def getting_started():
     </p>
     """, unsafe_allow_html=True)
     
-    # Final CTA
     st.markdown("""
     <div class="highlight-box">
         <center><h3 style="margin-top: 0; color: #1E3A8A; font-size: 1.3rem;">Ready to Take Control of Your Finances?</h3>
