@@ -4,10 +4,12 @@
 A lightweight, privacy-focused financial management tool with intelligent features to help you make better financial decisions without requiring external account integration.
 </p>
 
-<img src="images/screenshot1.png" width="600"/>
+<div align="center">
+  <img src="output/about.PNG" width="800"/>
+</div>
 
 ## Key Features
-- **Butterfly Effect Simulator:** LSTM model showing the compounding impact of small financial changes over time reflecting the butterfly effect concept of chaos theory in personal finance.
+- **Butterfly Effect Simulator:** LSTM model showing the compounding impact of small financial changes over time, reflecting the butterfly effect concept of chaos theory in personal finance.
 - **Financial Scenario Tester:** XGBoost model for stress testing various financial situations (market crash, medical emergency, job loss) and assessing likelihood of reaching financial milestones (education, home purchase, investments).
 - **AI-Powered Assistant:** Custom chatbot using Mistral Saba 24B to answer both transactional and financial queries.
 - **Privacy-First Design:** No external account integration required, eliminating data security concerns.
@@ -67,7 +69,7 @@ A lightweight, privacy-focused financial management tool with intelligent featur
    - Add your Groq API key:  
      ```env
      GROQ_API_KEY=your_api_key_here
-   - Update MySQL credentials in `chatbot.py`.
+   - Update MySQL credentials in `chatbot.py`
 
 4. Launch the application.
    
@@ -76,11 +78,30 @@ A lightweight, privacy-focused financial management tool with intelligent featur
 ## Usage Guide
 ### Application Layout
 - **Landing Page:** About, Features, Tools, Bot, Learn, Login sections
-- **Personal Dashboard:** Getting Started, Upload Data, Overview, Income/Expense Analysis, Financial Foresight, Custom Bot, Resources
+- **Personal Dashboard:** Getting Started, Upload Data, Overview, Income/Expense, Financial Foresight, Custom Bot, Resources, Logout sections 
 
 ### Frontend Screenshots
-### 🏠 Home Page
-![Home Screen](static/butterfly.JPG)
+### Overview Section
+<div align="center">
+  <img src="output/overview1.PNG" width="800"/>
+  <img src="output/overview4.PNG" width="800"/>
+</div>
 
-### 📊 Analytics Dashboard
-![Dashboard](static/trend.PNG)
+### Chabot Section
+### Butterfly Effect Simulator
+<div align="center">
+  <img src="output/data_digger.PNG" width="800"/>
+  <img src="output/fin_mentor.PNG" width="800"/>
+</div>
+
+### Butterfly Effect Simulator
+<div align="center">
+  <img src="output/butterfly_effect1.PNG" width="800"/>
+</div>
+
+### Financial Scenario Tester
+<div align="center">
+  <img src="output/scenario_tester1.PNG" width="800"/>
+</div>
+
+To see more frontend screenshots, please refer the output folder.
