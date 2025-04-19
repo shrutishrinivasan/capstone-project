@@ -4,6 +4,8 @@
 A lightweight, privacy-focused financial management tool with intelligent features to help you make better financial decisions without requiring external account integration.
 </p>
 
+<img src="images/screenshot1.png" width="600"/>
+
 ## Key Features
 - **Butterfly Effect Simulator:** LSTM model showing the compounding impact of small financial changes over time reflecting the butterfly effect concept of chaos theory in personal finance.
 - **Financial Scenario Tester:** XGBoost model for stress testing various financial situations (market crash, medical emergency, job loss) and assessing likelihood of reaching financial milestones (education, home purchase, investments).
@@ -28,14 +30,30 @@ A lightweight, privacy-focused financial management tool with intelligent featur
 ### Libraries  
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)  
 [![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org/)  
+[![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)](https://keras.io/)
 [![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)  
 [![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)](https://plotly.com/)  
+[![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
 [![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=matplotlib&logoColor=white)](https://matplotlib.org/)  
 [![LangChain](https://img.shields.io/badge/LangChain-000000?style=for-the-badge)](https://www.langchain.com/)  
-[![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
 
+### Evaluation
+[![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)  
+[![NLTK](https://img.shields.io/badge/NLTK-4B8BBE?style=for-the-badge&logoColor=white)](https://www.nltk.org/)  
+[![ROUGE](https://img.shields.io/badge/ROUGE-E34F26?style=for-the-badge&logoColor=white)](https://pypi.org/project/rouge-score/)  
+[![SacreBLEU](https://img.shields.io/badge/SacreBLEU-00BFFF?style=for-the-badge&logoColor=white)](https://github.com/mjpost/sacrebleu)  
+[![Ragas](https://img.shields.io/badge/Ragas-111111?style=for-the-badge&logoColor=white)](https://github.com/explodinggradients/ragas)
+[![asyncio](https://img.shields.io/badge/asyncio-6E57E0?style=for-the-badge)](https://docs.python.org/3/library/asyncio.html)
 
-## Set up
+## Installation
+
+### Prerequisites
+- Windows 10/11
+- Minimum 8GB RAM
+- MySQL
+- Groq API access
+
+### Set up
 1. Clone the repository.
    
    `git clone https://github.com/shrutishrinivasan/capstone-project.git`
@@ -45,12 +63,24 @@ A lightweight, privacy-focused financial management tool with intelligent featur
    `pip install -r requirements.txt`
 
 3. Configure API Access.
-- Create a `.env` file in the root directory  
-- Add your Groq API key:  
-  ```env
-  GROQ_API_KEY=your_api_key_here
-- Update MySQL credentials in `chatbot.py`
+   - Open the `.env` file in the root directory.  
+   - Add your Groq API key:  
+     ```env
+     GROQ_API_KEY=your_api_key_here
+   - Update MySQL credentials in `chatbot.py`.
 
 4. Launch the application.
    
    `python -m streamlit run app.py`
+
+## Usage Guide
+### Application Layout
+- **Landing Page:** About, Features, Tools, Bot, Learn, Login sections
+- **Personal Dashboard:** Getting Started, Upload Data, Overview, Income/Expense Analysis, Financial Foresight, Custom Bot, Resources
+
+### Frontend Screenshots
+### 🏠 Home Page
+![Home Screen](static/butterfly.JPG)
+
+### 📊 Analytics Dashboard
+![Dashboard](static/trend.PNG)
