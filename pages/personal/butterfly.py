@@ -8,11 +8,9 @@ import random
 
 def get_monthly_averages(df):
     """Calculate average monthly expenses and income by category"""
-    # Convert Date to datetime if it's not already
     if not pd.api.types.is_datetime64_any_dtype(df['Date']):
         df['Date'] = pd.to_datetime(df['Date'])
     
-    # Extract month and year
     df['Month_Year'] = df['Date'].dt.to_period('M')
     
     # Get number of unique months in the data
@@ -31,13 +29,13 @@ def get_monthly_averages(df):
     
     return monthly_avg
 
-def generate_realistic_projection(base_value, months, variance=0.6):
-    """Generate a realistic projection with peaks and valleys"""
+def generate_projection(base_value, months, variance=0.6):
+    """Generate projections with saving trends"""
     projection = []
     current_value = base_value
     
     for i in range(months):
-        # More pronounced seasonality for certain months (e.g., higher expenses in December)
+        # More pronounced seasonality for certain months
         seasonal_factor = 1.0
         month_num = (datetime.datetime.now().month + i) % 12
         
@@ -87,9 +85,9 @@ def calculate_savings(df, monthly_expenses, category_adjustments, months_to_pred
     # Projected monthly savings
     projected_monthly_savings = monthly_income - adjusted_monthly_expense
     
-    # Generate realistic projections
-    current_savings_projection = generate_realistic_projection(current_monthly_savings, months_to_predict)
-    projected_savings_projection = generate_realistic_projection(projected_monthly_savings, months_to_predict)
+    # Generate projections
+    current_savings_projection = generate_projection(current_monthly_savings, months_to_predict)
+    projected_savings_projection = generate_projection(projected_monthly_savings, months_to_predict)
     
     # Calculate cumulative savings
     total_current_savings = sum(current_savings_projection)
@@ -101,7 +99,6 @@ def display_savings_graph(current_monthly_savings, projected_monthly_savings, mo
     """Display the savings projection graph"""
     st.markdown("<center><h3>Savings Projection</h3></center>", unsafe_allow_html=True)
     
-    # Create month labels for x-axis
     current_month = datetime.datetime.now().month
     current_year = datetime.datetime.now().year
     
@@ -190,19 +187,17 @@ def display_sankey_chart(df, category_adjustments, monthly_expenses):
     
     # Create node colors
     node_colors = ['rgba(44, 160, 44, 0.8)']  # Total Income in green
-    node_colors.extend([color for color in income_colors])  # Income categories
+    node_colors.extend([color for color in income_colors]) 
     node_colors.append('rgba(214, 39, 40, 0.8)')  # Total Expenses in red
-    node_colors.extend([color for color in expense_colors])  # Expense categories
+    node_colors.extend([color for color in expense_colors])
     
-    # Create links with appropriate colors
     links = []
     
-    # Income categories to Total Income
     for i, category in enumerate(income_categories):
         if category in monthly_expenses:
             links.append({
                 'source': category_to_index[category],
-                'target': 0,  # Total Income
+                'target': 0,
                 'value': monthly_expenses[category],
                 'color': income_colors[i]
             })
@@ -215,10 +210,8 @@ def display_sankey_chart(df, category_adjustments, monthly_expenses):
         'color': 'rgba(150, 150, 150, 0.3)'  # Neutral color for the main flow
     })
     
-    # Total Expenses to expense categories
     for i, category in enumerate(expense_categories):
         if category in monthly_expenses:
-            # Apply adjustments for adjustable categories
             if category in category_adjustments:
                 value = monthly_expenses[category] * (1 - category_adjustments[category] / 100)
             else:
@@ -231,7 +224,6 @@ def display_sankey_chart(df, category_adjustments, monthly_expenses):
                 'color': expense_colors[i]
             })
     
-    # Create the Sankey diagram
     fig = go.Figure(data=[go.Sankey(
         node=dict(
             pad=15,
@@ -396,22 +388,17 @@ def butterfly():
             st.session_state.menu_state = "main"
             st.rerun()
     else:
-        # Make a copy of the dataframe to avoid modifying the original
         df = st.session_state.finance_df.copy()
         
-        # Convert Date to datetime if it's not already
         if not pd.api.types.is_datetime64_any_dtype(df['Date']):
             df['Date'] = pd.to_datetime(df['Date'], format='%d-%m-%Y')
         
-        # Get average monthly expenses by category
         monthly_expenses = get_monthly_averages(df)
         
-        # Sidebar for adjustments
         st.sidebar.markdown("## Grow your Savings!")
         
         # Time range selection for predictions
         prediction_periods = {
-            # "1 Month": 1,
             "3 Months": 3,
             "6 Months": 6,
             "12 Months": 12
@@ -515,7 +502,7 @@ def butterfly():
                     unsafe_allow_html=True
                 )
         with h2:
-            # Display what you could do with these savings
+            # Display potential uses for savings
             potential_uses = []
             if savings_difference > 5000:
                 potential_uses.append("Start an emergency fund")

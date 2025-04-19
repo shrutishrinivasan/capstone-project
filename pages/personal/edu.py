@@ -16,21 +16,20 @@ def education():
    st.write("## 🧭 Explore Resources")
    st.write("Access insightful articles, videos to boost your financial IQ & make smarter money moves.")
 
-   # Function to encode PNG image to base64
    def img_to_b64(path):
+      """Function to encode PNG image to base64"""
       with open(path, "rb") as image_file:
          encoded_string = base64.b64encode(image_file.read()).decode("utf-8")
       return f"data:image/png;base64,{encoded_string}"
 
    def centered_link_button(col, label, image_path, link, key):
       b64_image = img_to_b64(image_path)
-      # Determine background color based on image name
       if "video.png" in image_path:
-         bg_color = "#f08080 "  # Light red for YouTube
+         bg_color = "#f08080 "
       elif "bill.png" in image_path:
-         bg_color = "#CC99CC"  # Light yellow for bill
+         bg_color = "#CC99CC"
       else:
-         bg_color = "#f0f0f0" # Default color
+         bg_color = "#f0f0f0"
 
       with stylable_container(
          key=key + "_container",

@@ -2,7 +2,6 @@ import streamlit as st
 import os
 import mysql.connector as sql
 import pandas as pd
-from transformers import AutoTokenizer
 from langchain.text_splitter import CharacterTextSplitter
 from langchain_community.document_loaders import CSVLoader
 from langchain_community.vectorstores import Chroma
@@ -10,7 +9,6 @@ from langchain.chains import RetrievalQA
 from langchain.prompts import PromptTemplate
 from langchain_groq import ChatGroq
 from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_core.runnables import RunnableSequence
 from dotenv import load_dotenv
 
 #For loading environment variable from a .env file
@@ -28,7 +26,7 @@ Instantiation model object from ChatGroq Class
 '''
 model = ChatGroq(
     temperature=0.1,  # Lower temperature for more precise responses
-    model_name="mistral-saba-24b",  # Using Mixtral as the Mistral-like model
+    model_name="mistral-saba-24b",
     # Retrieve API key from environment variable
     groq_api_key = os.getenv("GROQ_API_KEY")
 )
@@ -490,12 +488,17 @@ def query_chain(chain, query):
     response = chain.invoke(query) #invoke the chain with the query and retrun result field
     return response['result']
 
-
+# DataDigger Function
 def data_digger():
-
-    chat_container = st.container()  #container for chat history (will take most of the screen)
-    input_container = st.container() # container at the bottom for the input
-    initialize_database() # Initialize the database when the tab is selected
+    """History Based Bot that analyzes transaction data using SQL"""
+    # Create a container for the chat history
+    chat_container = st.container()
+    
+    # Create a container for the input
+    input_container = st.container()
+    
+    # Initialize the database when the tab is selected
+    initialize_database()
     
     # Set up session state for chat history if not already done
     if "digger_messages" not in st.session_state:
@@ -557,8 +560,11 @@ def data_digger():
             with st.chat_message(message["role"]):
                 st.markdown(message["content"])
 
-                if (message["role"] == "assistant" and "query_id" in message
-                    and message["query_id"] in st.session_state.dataframes ):
+                if (
+                    message["role"] == "assistant"
+                    and "query_id" in message
+                    and message["query_id"] in st.session_state.dataframes
+                ):
                     st.dataframe(st.session_state.dataframes[check])
 
 
@@ -646,16 +652,13 @@ def custom_bot():
     st.write("## 💬 Financial Assistant") 
     st.write("Choose between two specialized bots: one that analyzes your transaction history for insights, and another that provides expert financial advice.")
     
-    # Create tabs for bot versions in the top navigation
     tab1, tab2 = st.tabs(["DataDigger📈: History-Based", "FinMentor🧠: Intelligence-Based"])
     
-    # Content for Bot Version 1
     with tab1:
         st.write("#### Welcome to DataDigger!")
         st.write("Your financial history, decoded with precision.")
         data_digger()
     
-    # Content for Bot Version 2
     with tab2:
         st.write("#### Welcome to FinMentor!")
         st.write("Smart financial advice, simplified.")

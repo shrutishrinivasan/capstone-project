@@ -1,7 +1,5 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
 import plotly.express as px
 import plotly.graph_objects as go
 
@@ -50,11 +48,9 @@ def scenario():
     </style>
     """, unsafe_allow_html=True)
 
-    # App title
     st.markdown("<h1 class='main-header'>Financial Scenario Tester</h1>", unsafe_allow_html=True)
     st.markdown("<p style='text-align: center; font-size: 1.2rem;'>Test your financial resilience and plan for your financial goals</p>", unsafe_allow_html=True)
 
-    # Sidebar
     with st.sidebar:
         st.header("Your Financial Profile")
         
@@ -235,7 +231,6 @@ def scenario():
             
             # Calculate scenario metrics
             adjusted_monthly_expenses = total_monthly_expenses * (1 - reduced_expenses/100)
-            # total_unemployment_cost = adjusted_monthly_expenses * unemployment_duration
             available_funds = emergency_fund + severance_pay + (stocks_value * 0.8)  # Assuming 20% loss on liquidating stocks
             
             survival_duration = available_funds / adjusted_monthly_expenses if adjusted_monthly_expenses > 0 else float('inf')
@@ -938,17 +933,17 @@ def scenario():
                 fig.update_layout(plot_bgcolor='rgba(0,0,0,0)',paper_bgcolor='rgba(0,0,0,0)',height=300, margin=dict(l=20, r=20, t=30, b=20))
                 st.plotly_chart(fig, use_container_width=True)
             
-            # Total cost of ownership analysis
+        # Total cost of ownership analysis
         st.markdown("<h4>5-Year Cost of Ownership Analysis</h4>", unsafe_allow_html=True)
             
-            # Calculate ownership costs
+        # Calculate ownership costs
         fuel_cost_per_year = 50000  # Estimate
         insurance_per_year = car_value * 0.04  # 4% of car value
         maintenance_per_year = car_value * 0.02  # 2% of car value for first 5 years
         registration = car_value * 0.1  # One-time cost
         depreciation_5yr = car_value * 0.5  # 50% depreciation in 5 years
             
-            # Ownership cost breakdown
+        # Ownership cost breakdown
         cost_categories = ['Loan Payments', 'Fuel', 'Insurance', 'Maintenance', 'Registration', 'Depreciation']
         cost_values = [
                 emi * 12 * loan_term_years,
@@ -976,7 +971,7 @@ def scenario():
         fig.update_layout(plot_bgcolor='rgba(0,0,0,0)',paper_bgcolor='rgba(0,0,0,0)',height=300, margin=dict(l=20, r=20, t=50, b=20))
         st.plotly_chart(fig, use_container_width=True)
             
-            # Total 5-year cost
+        # Total 5-year cost
         total_ownership_cost = sum(cost_values)
         monthly_ownership_cost = total_ownership_cost / (5 * 12)
             
@@ -990,7 +985,7 @@ def scenario():
         </div>
         """, unsafe_allow_html=True)
             
-            # Recommendations
+        # Recommendations
         st.markdown("<h4>Action Plan & Recommendations</h4>", unsafe_allow_html=True)
         if achievability_score >= 80:
                 st.markdown("""
@@ -1036,7 +1031,6 @@ def scenario():
             
             with col1:
                 st.markdown("<h3>Higher Education Goal</h3>", unsafe_allow_html=True)
-                # education_type = st.selectbox("Education Type", ["Self Higher Education", "Child's Education"])
                 
                 course_fee = st.number_input("Total Course Fee (₹)", 100000, 5000000, 1200000)
                 living_expenses = st.number_input("Annual Living Expenses (₹)", 0, 2000000, 300000)
@@ -1065,7 +1059,7 @@ def scenario():
                 savings_required = total_education_cost - education_loan_amount
                 loan_affordability = min(1, total_monthly_income * 0.3 / expected_emi) if expected_emi > 0 else 1
                 savings_affordability = min(1, monthly_savings / monthly_savings_needed) if monthly_savings_needed > 0 else 1
-                existing_education_funds = 0  # Placeholder for education-specific savings
+                existing_education_funds = 0
                 fund_readiness = min(1, existing_education_funds / savings_required) if savings_required > 0 else 1
                 
                 # Calculate achievability score
@@ -1237,7 +1231,6 @@ def scenario():
                 life_expectancy = st.slider("Life Expectancy", retirement_age + 1, 100, 85)
                 expected_inflation = st.slider("Expected Inflation Rate (%)", 4.0, 10.0, 6.0, 0.1)
                 expected_return = st.slider("Expected Investment Return (%)", 6.0, 15.0, 12.0, 0.1)
-                # replacement_ratio = st.slider("Income Replacement Ratio (%)", 40, 100, 70)
                 
                 # Calculate retirement metrics
                 years_to_retirement = retirement_age - age
@@ -1391,7 +1384,6 @@ def scenario():
                 target_gold_value = st.number_input("Target Gold Investment Value (₹)", 50000, 10000000, 500000)
                 investment_horizon = st.slider("Investment Horizon (Years)", 1, 20, 5)
                 gold_return_rate = st.slider("Expected Gold Return Rate (%)", 5.0, 15.0, 8.0, 0.1)
-                # investment_mode = st.selectbox("Preferred Investment Mode", ["Physical Gold", "Gold ETF", "Sovereign Gold Bonds", "Digital Gold"])
                 
                 # Calculate required monthly investment
                 monthly_investment_needed = (target_gold_value * (gold_return_rate/100/12)) / (((1 + gold_return_rate/100/12) ** (investment_horizon * 12)) - 1)

@@ -73,9 +73,9 @@ def expense():
         "Communication": "Phone, internet, cable, and other communication-related expenses.",
         "Education": "Educational expenses including tuition, books, courses, and learning materials.",
         "Enrichment": "Expenses for activities that enhance skills, fitness, or personal growth, including dance, music, art classes, sports coaching, entrance exam preparation, gym memberships, yoga, etc.",
-        "Domestic Help": "Payments for household staff including maids, cooks, chauffeurs, gardeners, and nannies.",
+        "Domestic Help": "Payments for household staff including maids, cooks, drivers, gardeners, and nannies.",
         "Care Essentials": "Expenses on personal care, hygiene products, nursery needs, makeup, pet care, and related essentials.",
-        "Financial Dues": "Debt payments, loan installments, credit card payments, emergency fund, retirement savingsand financial fees.",
+        "Financial Dues": "Debt payments, loan installments, credit card payments, emergency fund, retirement savings and financial fees.",
         "Discretionary": "Non-essential expenses like entertainment, dining out, hobbies, and leisure activities.",
         "Salary": "Primary income earned through employment, including wages, bonuses, and incentives.",
         "Side Hustle": "Supplementary income from freelancing, consulting, small businesses, or part-time work.",
@@ -213,7 +213,6 @@ def expense():
                 # Success message
                 st.success(f"Transaction recorded successfully!")
                 st.info("Please check upload data section to see the manually entered data")
-                # st.rerun()
     
     st.markdown("""
         ##### Select a category to record your transaction
@@ -234,9 +233,9 @@ def expense():
                 category = categories[i + j]
                 cat_type = category_types[category]
                 indicator_color = {
-                        "expense": "#e1b2ed",  # red
-                        "income": "#96d99b",   # green
-                        "dual": "white"      # yellow
+                        "expense": "#e1b2ed",
+                        "income": "#96d99b",
+                        "dual": "white"
                     }[cat_type]
                 
                 with cols[j]:
