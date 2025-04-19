@@ -1,7 +1,7 @@
 # AI Assisted Personal Finance Management System
 
 <p align="justify">
-A lightweight, privacy-focused financial management tool with intelligent features to help you make better financial decisions without requiring external account integration.
+A lightweight, privacy-focused financial management tool with intelligent features to help users make better financial decisions without requiring external account integration.
 </p>
 
 <div align="center">
@@ -48,7 +48,7 @@ A lightweight, privacy-focused financial management tool with intelligent featur
    `pip install -r requirements.txt`
 
 3. Configure API Access.
-   - Open the `.env` file in the root directory.  
+   - Open the `.env` file in the root directory  
    - Add your Groq API key:  
      ```env
      GROQ_API_KEY=your_api_key_here
