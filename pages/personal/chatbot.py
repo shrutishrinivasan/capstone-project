@@ -13,8 +13,19 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_core.runnables import RunnableSequence
 from dotenv import load_dotenv
 
-load_dotenv()
+#For loading environment variable from a .env file
+load_dotenv() 
 
+#==============================================================================================
+#STEP 1: INSTANTIATION
+#===============================================================================================
+'''
+Instantiation model object from ChatGroq Class
+
+-> temperature: controls how random or deterministic the generated o/p is
+					lower temp = more predictable, focused and conservative resp
+					high temp = more random, diverse and creative responses
+'''
 model = ChatGroq(
     temperature=0.1,  # Lower temperature for more precise responses
     model_name="mistral-saba-24b",  # Using Mixtral as the Mistral-like model
@@ -22,26 +33,48 @@ model = ChatGroq(
     groq_api_key = os.getenv("GROQ_API_KEY")
 )
 
+#=============================================================================================
+#STEP 2: EMBEDDING FUNC INITIALIZATION
+#=============================================================================================
 
-# Initialize Hugging Face Embeddings (shared between both bots)
+'''Convert text into vector embeddings for similarity search'''
 embedding_function = HuggingFaceEmbeddings(model_name="sentence-transformers/all-mpnet-base-v2")
+
+'''
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+STEPS 3-8: FOR SQL CHATBOT (DATADIGGER): 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+'''
+#===============================================================================================
+#STEP 3: DATABASE CONFIG
+#===============================================================================================
 
 # MySQL Configuration for DataDigger
 mysql_config = {
     'host': 'localhost',
     'user': 'root',  
-    'password': 'mysql',
+    'password': 'themortalinstruments',
     'database': 'expenses_db'
 }
 
-# Function to initialize the database for DataDigger
+#=================================================
+#STEP 4: DATABASE INITIALIZATION FUNCTION
+#=================================================
+
+'''
+1. Connects to MySQL without specifying a database
+2. Creates the database if it doesn't exist and selects it
+3. Creates the Capstone table with fields for financial transactions if it doesn't exist
+4. Checks if the table is empty; if so and if a dummy1.csv file exists:
+	a) Loads the CSV data using pandas
+	b) Converts dates from DD-MM-YYYY to YYYY-MM-DD format for MySQL
+	c) Bulk inserts the data into the Capstone table
+5. Closes the connection
+'''
+
 def initialize_database():
-    # Connect to MySQL server without specifying a database
-    mycon = sql.connect(
-        host=mysql_config['host'],
-        user=mysql_config['user'],
-        password=mysql_config['password']
-    )
+    mycon = sql.connect( host=mysql_config['host'], user=mysql_config['user'],
+                         password=mysql_config['password'] )
     cursor = mycon.cursor()
     
     # Step 1: Create database if it doesn't exist
@@ -61,30 +94,22 @@ def initialize_database():
     )
     """)
     
-    # Step 3: Check if data needs to be imported
+    # Step 3: Check if data needs to be imported by checking count of no.of rows
     cursor.execute("SELECT COUNT(*) FROM Capstone")
     count = cursor.fetchone()[0]
     
-    if count == 0 and os.path.exists("data\dummy1.csv"):
-        # Import data from CSV if table is empty
-        df = pd.read_csv("data\dummy1.csv")
+    # if no.of rows==0 (ie table empty in mysql) and file exists
+    if count == 0 and os.path.exists("data\\dummy1.csv"):
+        df = pd.read_csv("data\\dummy1.csv") #Import data from CSV
         
         # Convert DataFrame to list of tuples for bulk insert
         records = []
         for _, row in df.iterrows():
-            # Convert date from DD-MM-YYYY to YYYY-MM-DD for MySQL
-            date_parts = row['Date'].split('-')
+            date_parts = row['Date'].split('-') #Convert date from DD-MM-YYYY to YYYY-MM-DD for MySQL
             mysql_date = f"{date_parts[2]}-{date_parts[1]}-{date_parts[0]}"
             
-            records.append((
-                mysql_date,
-                row['Mode'],
-                row['Category'],
-                row['Remark'],
-                float(row['Amount']),
-                row['Income_Expense'],
-                row['Transaction_id']
-            ))
+            records.append(( mysql_date, row['Mode'], row['Category'], row['Remark'],
+                float(row['Amount']), row['Income_Expense'], row['Transaction_id'] ))
         
         # Bulk insert data
         sql_query = """INSERT INTO Capstone 
@@ -96,7 +121,17 @@ def initialize_database():
     
     mycon.close()
 
-# SQL to English Prompt Template
+#=================================================
+#STEP 5: SQL-to-English Conversion
+#=================================================
+'''
+1. Defines a prompt template for converting SQL query results to conversational language
+2. Creates a function that:
+	a) Takes a question, SQL query, column names, and query results
+	b) Formats the prompt with these parameters
+	c) Calls the LLM to generate a conversational response
+	d) Returns the generated content
+'''
 sql_to_english_prompt_template = """
 You are an expert at converting SQL query results into natural, conversational English responses.
 
@@ -150,24 +185,34 @@ def generate_sql_to_english_response(original_question, sql_query, columns, resu
     response = model.invoke(prompt.format(**input_dict))
     return response.content
 
+#=====================================================
+#STEP 6: NATURAL LANGUAGE INTERPRETATION
+#=====================================================
+
+'''
+1. Handles SQL query results and converts them to natural language
+2. Checks if results are empty or contain an error
+3. For single rows or single values:
+	a) Uses the LLM to generate a response
+	b) Falls back to a simple format if that fails
+4. For aggregation queries (one column, one row):
+	a) Tries to use the LLM
+	b) Falls back to a simple format if that fails
+5. For multiple rows, returns a brief message (the data will be displayed as a table)
+'''
 def natural_language_interpretation(original_question, sql_query, columns, result):
     # If result is an error or empty
     if not result or (isinstance(result, list) and isinstance(result[0], str) and result[0].startswith("Error:")):
         return "I couldn't find any information matching your query."
     
     # Convert results to DataFrame for easier processing
-    df = pd.DataFrame(result, columns=columns)
+    #df = pd.DataFrame(result, columns=columns)
     
-    # Use the SQL to English converter
     # For single row or single value results
     if len(result) == 1:
+        # Use the SQL to English converter
         try:
-            return generate_sql_to_english_response(
-                original_question, 
-                sql_query, 
-                columns, 
-                result
-            )
+            return generate_sql_to_english_response( original_question, sql_query, columns, result)
         except Exception as e:
             # Fallback to default interpretation if generation fails
             print(f"SQL to English conversion error: {e}")
@@ -186,12 +231,7 @@ def natural_language_interpretation(original_question, sql_query, columns, resul
     # For sum or aggregation queries
     if len(columns) == 1 and len(result[0]) == 1:
         try:
-            return generate_sql_to_english_response(
-                original_question, 
-                sql_query, 
-                columns, 
-                result
-            )
+            return generate_sql_to_english_response( original_question, sql_query, columns, result)
         except Exception as e:
             # Fallback if generation fails
             print(f"SQL to English conversion error: {e}")
@@ -201,7 +241,10 @@ def natural_language_interpretation(original_question, sql_query, columns, resul
     # If more than 5 rows, don't display detailed text, will use dataframe
     return "Found multiple records. Displaying in table format."
 
-# Function to execute SQL queries for DataDigger
+#===============================================================================================
+#STEP 7: SQL QUERY EXECTUION AND DATADIGGER PROMPT TEMPLATE
+#================================================================================================
+
 def read_sql_query(sql_query, db_config):
     try:
         mycon = sql.connect(**db_config)
@@ -353,6 +396,16 @@ Question: {question}
 SQL:
 """
 
+#===============================================================================================
+# STEP 8: SQL QUERY GENERATION
+#================================================================================================
+
+'''
+1. Creates a prompt from the template and the user's question
+2. Pipes the prompt to the LLM model using a RunnableSequence
+3. Extracts timing information from the response metadata
+4. Returns both the generated SQL query and timing details
+'''
 # Function to get SQL query from Mistral for DataDigger
 def get_mistral_response(question, prompt_template):
     prompt = PromptTemplate(template=prompt_template, input_variables=["question"])
@@ -373,75 +426,76 @@ def get_mistral_response(question, prompt_template):
         'timing': timing_info
     }
 
-# Document Preprocessing Function for FinMentor
+'''
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+STEPS 9-11: FOR DOCUMENT CHATBOT (FINMENTOR): 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+'''
+
+#==========================================================================================
+# STEP 9: DOCUMENT PREPROCESSING for FinMentor
+#===========================================================================================
+
 def docs_preprocessing_helper(file):
-    """
-    Helper function to load and preprocess a CSV file containing data.
-    """
     loader = CSVLoader(file)
     docs = loader.load()
-    # Using a smaller chunk size for faster processing
-    text_splitter = CharacterTextSplitter(chunk_size=800, chunk_overlap=0)
+    text_splitter = CharacterTextSplitter(chunk_size=800, chunk_overlap=0) #Splits the documents into smaller chunks 
     docs = text_splitter.split_documents(docs)
     return docs
 
-# Setup Chroma DB for FinMentor
+#============================================================================================
+# STEP 10: CHROMA DB SETUP 
+#=============================================================================================
+
 def setup_chroma_db(docs, embedding_function, persist_directory):
-    """Sets up the Chroma database with a specific persistence directory."""
-    # Create the directory if it doesn't exist
+    # Create the persistence directory if it doesn't exist
     if not os.path.exists(persist_directory):
         os.makedirs(persist_directory)
         
     # Create a new ChromaDB instance with the specified persistence directory
-    db = Chroma.from_documents(
-        docs, 
-        embedding_function,
-        persist_directory=persist_directory
-    )
+    db = Chroma.from_documents( docs, embedding_function, persist_directory=persist_directory )
     return db
 
-# Create Prompt Template for FinMentor
+
 def create_prompt_template():
-    """Creates and formats the prompt template."""
     template = """You are a finance consultant chatbot. Answer the customer's questions only using the source data provided.
-Please answer to their specific questions. If you are unsure, say "I don't know, please call our customer support". Keep your answers concise.
+    Please answer to their specific questions. If you are unsure, say "I don't know, please call our customer support". Keep your answers concise.
 
-{context}
+    {context}
 
-Question: {question}
-Answer:"""
+    Question: {question}
+    Answer:"""
     prompt = PromptTemplate(template=template, input_variables=["context", "question"])
     return prompt
 
-# Create Retrieval Chain for FinMentor
+#==============================================================================================
+# STEP 11: RETRIEVAL CHAIN for FinMentor
+#==============================================================================================
 def create_retrieval_chain(model, db, prompt):
-    """Creates the retrieval chain."""
+    '''
+    1. Sets up a retrieval QA chain using the "stuff" method
+    2. Configures it with the provided LLM model, database, and prompt
+    3. Sets the retriever to return only the top result (k=1)
+    4. Returns the configured chain
+    '''
     chain_type_kwargs = {"prompt": prompt}
-    chain = RetrievalQA.from_chain_type(
-        llm=model,
-        chain_type="stuff",
-        retriever=db.as_retriever(search_kwargs={"k": 1}),
-        chain_type_kwargs=chain_type_kwargs,
+    chain = RetrievalQA.from_chain_type(llm=model, chain_type="stuff",
+                                        retriever=db.as_retriever(search_kwargs={"k": 1}),
+                                        chain_type_kwargs=chain_type_kwargs,
     )
     return chain
 
 # Query Chain for FinMentor
 def query_chain(chain, query):
-    """Queries the chain and returns the response."""
-    response = chain.invoke(query)
+    response = chain.invoke(query) #invoke the chain with the query and retrun result field
     return response['result']
 
-# DataDigger Function (formerly trial7.py)
+
 def data_digger():
-    """History Based Bot that analyzes transaction data using SQL"""
-    # Create a container for the chat history that will take most of the screen
-    chat_container = st.container()
-    
-    # Create a container at the bottom for the input
-    input_container = st.container()
-    
-    # Initialize the database when the tab is selected
-    initialize_database()
+
+    chat_container = st.container()  #container for chat history (will take most of the screen)
+    input_container = st.container() # container at the bottom for the input
+    initialize_database() # Initialize the database when the tab is selected
     
     # Set up session state for chat history if not already done
     if "digger_messages" not in st.session_state:
@@ -451,7 +505,6 @@ def data_digger():
     if "query_counter" not in st.session_state:
         st.session_state.query_counter = 0
     
-    # Use the input container for the chat input (will be at the bottom)
     with input_container:
         prompt = st.chat_input("Ask questions about your transaction history...")
         id = st.session_state.query_counter
@@ -478,12 +531,7 @@ def data_digger():
                     st.session_state.query_counter += 1 # Increment the counter for the next query
                 else:
                     # Call natural language interpretation
-                    natural_language_response = natural_language_interpretation(
-                        prompt, 
-                        sql_query, 
-                        columns, 
-                        result
-                    )
+                    natural_language_response = natural_language_interpretation(prompt, sql_query, columns, result)
                     
                     # Format the response with SQL query and natural language explanation
                     formatted_response = f"**SQL Query:**\n```sql\n{sql_query}\n```\n\n**Insights:**\n{natural_language_response}"
@@ -494,11 +542,8 @@ def data_digger():
     
                     # If result has rows, create and display a DataFrame
                     if result and len(result) > 0:
-                        # Create DataFrame
-                        df = pd.DataFrame(result, columns=columns)
-                        
-                        # Store the dataframe in session state, associated with the current query_id
-                        st.session_state.dataframes[id] = df
+                        df = pd.DataFrame(result, columns=columns) # Create DataFrame
+                        st.session_state.dataframes[id] = df # Store the dataframe in session state, associated with the current query_id
             
             except Exception as e:
                 formatted_response = f"**SQL Query:**\n```sql\n{sql_query}\n```\n\n**Error:**\n{str(e)}"
@@ -511,20 +556,15 @@ def data_digger():
             check = message["query_id"]
             with st.chat_message(message["role"]):
                 st.markdown(message["content"])
-                
-                # If this is an assistant message, display its associated dataframe
-                if message["role"] == "assistant" and "dataframes" in st.session_state:
-                    # Check if there is a dataframe for this query_id
+
+                if (message["role"] == "assistant" and "query_id" in message
+                    and message["query_id"] in st.session_state.dataframes ):
                     st.dataframe(st.session_state.dataframes[check])
 
-# FinMentor Function (formerly QnA4.py)
+
 def fin_mentor():
-    """Intelligence-Based Bot that provides financial advice from documents"""
-    # Create a container for the chat history that will take most of the screen
-    chat_container = st.container()
-    
-    # Create a container at the bottom for the input
-    input_container = st.container()
+    chat_container = st.container() #container for chat history 
+    input_container = st.container() #container for input
     
     # Set up session state for chat history if not already done
     if "mentor_messages" not in st.session_state:
@@ -533,7 +573,7 @@ def fin_mentor():
     # Only load and process documents once for FinMentor with a separate persistence directory
     if "mentor_chain" not in st.session_state:
         with st.spinner("Loading model and data (this will only happen once)..."):
-            file_path = "data\custom.csv"
+            file_path = "data\\custom.csv"
             docs = docs_preprocessing_helper(file_path)
             
             # Use a separate persistence directory for FinMentor
@@ -543,7 +583,6 @@ def fin_mentor():
             prompt = create_prompt_template()
             st.session_state.mentor_chain = create_retrieval_chain(model, db, prompt)
     
-    # Use the input container for the chat input (will be at the bottom)
     with input_container:
         prompt = st.chat_input("What is your finance question?")
         
@@ -551,14 +590,12 @@ def fin_mentor():
             # Add user message to chat history
             st.session_state.mentor_messages.append({"role": "user", "content": prompt})
             
-            # Implement streaming response feel
             with st.spinner("Thinking..."):
                 response = query_chain(st.session_state.mentor_chain, prompt)
                 
             # Add assistant response to chat history
             st.session_state.mentor_messages.append({"role": "assistant", "content": response})
     
-    # Use the chat container to display all messages
     with chat_container:
         for message in st.session_state.mentor_messages:
             with st.chat_message(message["role"]):
