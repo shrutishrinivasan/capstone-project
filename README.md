@@ -9,8 +9,8 @@ A lightweight, privacy-focused financial management tool with intelligent featur
 </div>
 
 ## Key Features
-- **Butterfly Effect Simulator:** LSTM model showing the compounding impact of small financial changes over time, reflecting the butterfly effect concept of chaos theory in personal finance.
-- **Financial Scenario Tester:** XGBoost model for stress testing various financial situations (market crash, medical emergency, job loss) and assessing likelihood of reaching financial milestones (education, home purchase, investments).
+- **Butterfly Effect Simulator:** Shows the compounding impact of small financial changes over time, reflecting the butterfly effect concept of chaos theory in personal finance.
+- **Financial Scenario Tester:** Meant for stress testing various financial situations (market crash, medical emergency, job loss) and assessing likelihood of reaching financial milestones (education, home purchase, investments).
 - **AI-Powered Assistant:** Custom chatbot using Mistral Saba 24B to answer both transactional and financial queries.
 - **Privacy-First Design:** No external account integration required, eliminating data security concerns.
 
